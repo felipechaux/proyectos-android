@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="bottom"
+              android:weightSum="3">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:gravity="center">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrayLight"
+                android:text="Local"/>
+
+        <TextView android:id="@+id/txtL14Equip1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:textColor="@color/colorGrayDark2"
+                  android:text="Millonarios"/>
+
+        <LinearLayout android:id="@+id/containerL14Local"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen_72"
+                      android:orientation="vertical"
+                      android:layout_marginTop="@dimen/dimen_8"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:background="@color/colorGrayLight3">
+
+            <ImageButton android:id="@+id/btL14Local"
+                         android:layout_width="@dimen/dimen_30"
+                         android:layout_height="@dimen/dimen_30"
+                         android:background="@drawable/rounded_button_white_center_transparent"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="Local" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:gravity="center">
+
+        <TextView
+                android:layout_width="@dimen/dimen_46"
+                android:layout_height="@dimen/dimen_46"
+                android:gravity="center"
+                android:background="@drawable/rounded_button_red"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_18"
+                android:text="Vs"/>
+
+        <LinearLayout android:id="@+id/containerL14Tie"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen_72"
+                      android:orientation="vertical"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:layout_marginTop="@dimen/dimen_8"
+                      android:background="@color/colorGrayLight3">
+
+            <ImageButton android:id="@+id/btL14Tie"
+                         android:layout_width="@dimen/dimen_30"
+                         android:layout_height="@dimen/dimen_30"
+                         android:background="@drawable/rounded_button_white_center_transparent"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="Empate" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:gravity="center">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrayLight"
+                android:text="visitante"/>
+
+        <TextView android:id="@+id/txtL14Equip2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:textColor="@color/colorGrayDark2"
+                  android:text="Millonarios"/>
+
+        <LinearLayout android:id="@+id/containerL14Visitant"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen_72"
+                      android:orientation="vertical"
+                      android:layout_marginTop="@dimen/dimen_8"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:background="@color/colorGrayLight3">
+
+            <ImageButton android:id="@+id/btL14Visitant"
+                         android:layout_width="@dimen/dimen_30"
+                         android:layout_height="@dimen/dimen_30"
+                         android:background="@drawable/rounded_button_white_center_transparent"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="Visitante" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

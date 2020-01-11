@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="co.com.pagatodo.core.views.sitp.SitpRechargeActivity">
+
+	<include
+		layout="@layout/main_toolbar"
+		android:id="@+id/mainToolbar"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"/>
+
+
+	 <LinearLayout
+		 android:id="@+id/layoutForm"
+		 android:orientation="vertical"
+		 android:layout_below="@+id/mainToolbar"
+		 android:layout_marginStart="@dimen/dimen_50"
+		 android:layout_marginEnd="@dimen/dimen_50"
+		 android:layout_width="match_parent"
+		 android:layout_height="match_parent"
+		 android:layout_margin="@dimen/dimen_24">
+
+        <TextView
+			android:id="@+id/lblTitle"
+			android:text="@string/sitp_recharge_title"
+			style="@style/Text.Title5"
+			android:layout_marginBottom="@dimen/dimen_24"/>
+
+
+
+			 <LinearLayout
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:orientation="horizontal"
+				 android:layout_below="@+id/mainToolbar"
+				 android:layout_above="@+id/layoutButtons"
+				 android:id="@+id/viewSitpRechargeForm">
+
+
+				<LinearLayout
+					android:layout_width="@dimen/zero"
+					android:layout_weight=".35"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:text="@string/sitp_recharge_recharge"
+						style="@style/Text.Label"/>
+					<EditText
+						android:id="@+id/txtRechargeValue"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:hint="@string/sitp_recharge_placeholder_recharge"
+						tools:ignore="Autofill"
+						android:imeOptions="actionDone"
+						style="@style/EditText.Field.Phone"/>
+					<TextView
+						android:id="@+id/labelErrorRechargeValue"
+						android:layout_gravity="end"
+						android:text="@string/sitp_recharge_placeholder_recharge"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						style="@style/Text.Error.Label"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/lnlConfirmValue"
+					android:layout_width="@dimen/zero"
+					android:layout_weight=".35"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:text="@string/sitp_recharge_recharge_confirm"
+						style="@style/Text.Label"/>
+					<EditText
+						android:id="@+id/txtRechargeConfirmValue"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:hint="@string/sitp_recharge_placeholder_recharge_confirm"
+						tools:ignore="Autofill"
+						android:imeOptions="actionDone"
+						style="@style/EditText.Field.Phone"/>
+					<TextView
+						android:id="@+id/labelErrorRechargeCoincideValue"
+						android:visibility="gone"
+						android:layout_gravity="end"
+						android:text="@string/sitp_recharge_placeholder_recharge_coincide"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						style="@style/Text.Error.Label"/>
+
+					<TextView
+						android:id="@+id/labelErrorRechargeConfirmValue"
+						android:layout_gravity="end"
+						android:text="@string/sitp_recharge_placeholder_recharge_confirm"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						style="@style/Text.Error.Label"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="@dimen/zero"
+					android:layout_weight=".3"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"/>
+
+    		</LinearLayout>
+		 <View
+			 android:id="@+id/divider1"
+			 style="@style/Divider"
+			 app:layout_constraintTop_toBottomOf="@+id/viewSitpRechargeForm"
+			 app:layout_constraintLeft_toLeftOf="parent"
+			 app:layout_constraintBottom_toTopOf="@+id/viewBtnOperations"/>
+
+		  <TextView
+			  android:id="@+id/lblTitle2"
+			  android:text="@string/sitp_recharge_title_operation"
+			  style="@style/Text.Label"
+			  android:layout_marginBottom="@dimen/dimen_24"/>
+
+		 <LinearLayout
+			 android:id="@+id/viewBtnOperations"
+			 android:layout_width="wrap_content"
+			 android:layout_height="match_parent"
+			 android:orientation="horizontal"
+			 android:weightSum="1">
+
+			 <Button
+				 android:id="@+id/btnCardBalance"
+				 android:layout_weight=".5"
+				 android:layout_marginStart="@dimen/dimen_16"
+				 android:layout_marginEnd="@dimen/dimen_8"
+				 android:text="@string/sitp_recharge_card_balance"
+				 style="@style/StyleNormalButton"/>
+			 <Button
+				 android:id="@+id/btnBackRecharge"
+				 android:layout_weight=".5"
+				 android:layout_marginStart="@dimen/dimen_16"
+				 android:layout_marginEnd="@dimen/dimen_8"
+				 android:text="@string/sitp_recharge_back_recharge"
+				 style="@style/StyleNormalButton"/>
+			 <Button
+				 android:id="@+id/btnDeviceBalance"
+				 android:layout_weight=".5"
+				 android:layout_marginStart="@dimen/dimen_16"
+				 android:layout_marginEnd="@dimen/dimen_8"
+				 android:text="@string/sitp_recharge_device_balance"
+				 style="@style/StyleNormalButton"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+
+    <include
+		android:id="@+id/layoutButtons"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"
+		android:layout_width="@dimen/dimen_500"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/dimen_50"
+		layout="@layout/layout_buttons_back_next"/>
+</RelativeLayout>

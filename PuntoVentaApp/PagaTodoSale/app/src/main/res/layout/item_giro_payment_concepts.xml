@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@color/colorGraySilver"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text.Body.Label"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_payment_code" />
+
+        <TextView
+            android:id="@+id/lblCode"
+            style="@style/Text.Body.Label"
+            android:textColor="@color/colorGrayBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:text="@string/giro_not_found" />
+
+        <TextView
+            style="@style/Text.Body.Label"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:text="@string/giro_payment_concept" />
+
+        <TextView
+            android:id="@+id/lblConcept"
+            style="@style/Text.Body.Label"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorGrayBlue"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:text="@string/giro_not_found" />
+
+        <TextView
+            style="@style/Text.Body.Label"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_payment_value" />
+
+        <TextView
+            android:id="@+id/lblValue"
+            style="@style/Text.Body.Label"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorGrayBlue"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:text="@string/giro_not_found" />
+
+    </LinearLayout>
+
+</LinearLayout>

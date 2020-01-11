@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="@dimen/dimen_8"
+        app:cardElevation="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/layoutItemLottery"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/lblTitle"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/lottery_title"
+                android:layout_marginStart="@dimen/dimen_8"
+                style="@style/Text.Body.Margin"
+                android:textAllCaps="false"/>
+        <LinearLayout
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight=".85"
+                    android:paddingStart="@dimen/dimen_8"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="@string/text_label_draw"
+                            android:layout_width="@dimen/zero"
+                            android:layout_weight=".32"
+                            style="@style/Text.Caption3" />
+                    <TextView
+                            android:id="@+id/lblDraw"
+                            android:text="@string/app_name"
+                            android:layout_width="@dimen/zero"
+                            android:layout_weight=".67"
+                            style="@style/Text.Body.Label" />
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="@string/text_label_fractions"
+                            android:layout_width="@dimen/zero"
+                            android:layout_weight=".32"
+                            style="@style/Text.Caption3" />
+                    <TextView
+                            android:id="@+id/lblFraction"
+                            android:text="@string/app_name"
+                            android:layout_width="@dimen/zero"
+                            android:layout_weight=".65"
+                            style="@style/Text.Body.Label" />
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="@string/text_label_award"
+                            android:layout_width="@dimen/zero"
+                            android:layout_weight=".32"
+                            style="@style/Text.Caption3" />
+                    <TextView
+                            android:id="@+id/lblAward"
+                            android:text="@string/app_name"
+                            android:layout_width="@dimen/zero"
+                            android:layout_weight=".65"
+                            style="@style/Text.Body.Label" />
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="@string/text_label_date"
+                            android:layout_width="@dimen/zero"
+                            android:layout_weight=".32"
+                            style="@style/Text.Caption3" />
+                    <TextView
+                            android:id="@+id/lblDate"
+                            android:text="@string/app_name"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".65"
+                            style="@style/Text.Body.Label" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".25"
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/placeholder_value"
+                        style="@style/Text.Caption2"
+                        android:textColor="@color/colorGrayLight3"/>
+                <TextView
+                        android:id="@+id/lblValue"
+                        android:text="@string/app_name"
+                        android:layout_width="wrap_content"
+                        style="@style/Text.Title5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_24"
+    android:paddingBottom="@dimen/dimen_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTransferType"
+        android:text="@string/bbva_deposits_text_transfer"
+        tools:ignore="MissingConstraints"
+        style="@style/Text.Subtitle.Ticket"/>
+    <TextView
+        android:id="@+id/lblTransferType"
+        android:layout_marginStart="12dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toEndOf="@+id/tvTransferType"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/tvDestinyAccountNumber"
+        android:text="@string/bbva_deposits_text_destiny_account_number"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransferType"
+        style="@style/Text.Subtitle.Ticket"/>
+    <TextView
+        android:id="@+id/lblDestinyAccountNumber"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransferType"
+        app:layout_constraintStart_toEndOf="@+id/tvDestinyAccountNumber"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/tvDepositValue"
+        android:text="@string/bbva_deposits_text_deposit_value"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tvDestinyAccountNumber"
+        style="@style/Text.Subtitle.Ticket" />
+    <TextView
+        android:id="@+id/lblDepositValue"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDestinyAccountNumber"
+        app:layout_constraintStart_toEndOf="@+id/tvDepositValue"
+        style="@style/Text.Content.Ticket"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

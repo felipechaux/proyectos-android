@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_16"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingBottom="@dimen/dimen_50">
+
+    <TextView
+        android:id="@+id/labelNumberSerieTitle"
+        android:text="@string/text_label_number_serie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelNumberSerie"
+        android:text="@string/text_label_parameter_operator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelNumberSerieTitle"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelValueTitle"
+        android:text="@string/text_label_value_pay_prize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNumberSerieTitle"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelValue"
+        android:text="@string/text_label_parameter_operator"
+        app:layout_constraintStart_toEndOf="@+id/labelValueTitle"
+        app:layout_constraintTop_toBottomOf="@+id/labelNumberSerie"
+        style="@style/Text.Content.Ticket"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

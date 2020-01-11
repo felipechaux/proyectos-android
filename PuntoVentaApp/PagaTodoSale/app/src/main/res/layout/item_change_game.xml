@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_4"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:maxLength="4"
+        android:inputType="number"
+        android:background="@drawable/edittext_with_rounded_border"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_4"
+        android:imeOptions="actionNext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/etDirect"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etDirect"
+        android:inputType="number"
+        android:maxLength="7"
+        android:background="@drawable/edittext_with_rounded_border_disable"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:imeOptions="actionNext"
+        android:layout_marginEnd="@dimen/dimen_4"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintLeft_toRightOf="@+id/etNumber"
+        app:layout_constraintRight_toLeftOf="@+id/etCombined"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etCombined"
+        android:inputType="number"
+        android:maxLength="7"
+        android:enabled="false"
+        android:background="@drawable/edittext_with_rounded_border_disable"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:textSize="@dimen/font_12"
+        android:imeOptions="actionNext"
+        android:layout_marginEnd="@dimen/dimen_4"
+        app:layout_constraintLeft_toRightOf="@+id/etDirect"
+        app:layout_constraintRight_toLeftOf="@+id/etPaw"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etPaw"
+        android:inputType="number"
+        android:maxLength="7"
+        android:background="@drawable/edittext_with_rounded_border_disable"
+        android:enabled="false"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:textSize="@dimen/font_12"
+        android:imeOptions="actionNext"
+        android:layout_marginEnd="@dimen/dimen_4"
+        app:layout_constraintLeft_toRightOf="@+id/etCombined"
+        app:layout_constraintRight_toLeftOf="@+id/etNail"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/etNail"
+        android:inputType="number"
+        android:maxLength="7"
+        android:enabled="false"
+        android:background="@drawable/edittext_with_rounded_border_disable"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:textSize="@dimen/font_12"
+        android:imeOptions="actionNext"
+        android:layout_marginEnd="@dimen/dimen_4"
+        app:layout_constraintLeft_toRightOf="@+id/etPaw"
+        app:layout_constraintRight_toLeftOf="@+id/btnDelete"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView android:id="@+id/btnDelete"
+        android:src="@drawable/ic_delete"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

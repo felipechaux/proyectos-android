@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_24">
+
+    <TextView android:id="@+id/titleLabelDrawDate"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintBottom_toBottomOf="@+id/textDrawDate"
+              style="@style/Text.Subtitle.Ticket"
+              android:text="@string/text_label_date_draw"/>
+
+    <TextView android:id="@+id/textDrawDate"
+              android:text="@string/text_label_date_draw"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toEndOf="@+id/titleLabelDrawDate"/>
+
+    <TextView android:id="@+id/titleLabelGameDate"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintBottom_toBottomOf="@+id/textGameDate"
+              style="@style/Text.Subtitle.Ticket"
+              android:text="@string/text_label_game"/>
+
+    <TextView android:id="@+id/textGameDate"
+              android:text="@string/text_label_date_draw"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintTop_toBottomOf="@+id/textDrawDate"
+              app:layout_constraintStart_toEndOf="@+id/titleLabelGameDate"/>
+
+    <TextView android:id="@+id/titleLabelGrid"
+              app:layout_constraintStart_toStartOf="parent"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintBottom_toBottomOf="@+id/textGrid"
+              android:text="@string/text_label_grid"/>
+
+    <TextView android:id="@+id/textGrid"
+              android:text="@string/text_label_date_draw"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintTop_toBottomOf="@+id/textGameDate"
+              app:layout_constraintStart_toEndOf="@+id/titleLabelGrid"/>
+
+    <TextView android:id="@+id/titleLabelBet"
+              app:layout_constraintStart_toStartOf="parent"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintBottom_toBottomOf="@+id/textBet"
+              android:text="@string/text_bet_equal"/>
+
+    <TextView android:id="@+id/textBet"
+              android:text="@string/text_label_date_draw"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintTop_toBottomOf="@+id/textGrid"
+              app:layout_constraintStart_toEndOf="@+id/titleLabelBet"/>
+
+    <TextView android:id="@+id/titleLabelIva"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintBottom_toBottomOf="@+id/textIva"
+              android:text="@string/text_iva_equal"/>
+
+    <TextView android:id="@+id/textIva"
+              android:text="@string/text_label_date_draw"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintTop_toBottomOf="@+id/textBet"
+              app:layout_constraintStart_toEndOf="@+id/titleLabelIva"/>
+
+
+    <TextView android:id="@+id/titleLabelTotalValue"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintBottom_toBottomOf="@+id/textTotalValue"
+              android:text="@string/text_label_total_pay"/>
+
+    <TextView android:id="@+id/textTotalValue"
+              android:text="@string/text_label_date_draw"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintTop_toBottomOf="@+id/titleLabelIva"
+              app:layout_constraintStart_toEndOf="@+id/titleLabelTotalValue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

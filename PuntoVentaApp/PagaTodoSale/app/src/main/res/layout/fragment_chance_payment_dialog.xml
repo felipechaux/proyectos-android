@@ -1,0 +1,235 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="co.com.pagatodo.core.views.components.dialogs.chancepayment.ChancePaymentDialogFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/zero"
+    android:paddingBottom="@dimen/dimen_10"
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingRight="@dimen/dimen_10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tvTitle"
+                style="@style/Text.Title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:text="@string/text_chance_ticket"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/tvTagRaffleDate"
+                style="@style/Text.Caption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Día sorteo:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <TextView
+                android:id="@+id/tvRaffleDate"
+                style="@style/Text.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvTagRaffleDate"
+                app:layout_constraintLeft_toRightOf="@+id/tvTagRaffleDate"
+                tools:text="06/09/2018" />
+
+
+        <TextView
+                android:id="@+id/tvTagLotteriesCount"
+                style="@style/Text.Caption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:text="Loterías:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTagRaffleDate" />
+
+        <TextView
+                android:id="@+id/tvLotteriesCount"
+                style="@style/Text.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvTagLotteriesCount"
+                app:layout_constraintLeft_toRightOf="@+id/tvTagLotteriesCount"
+                tools:text="2" />
+
+        <LinearLayout
+                android:id="@+id/containerNumber"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLotteriesCount"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tvTagNumbers"
+                    style="@style/Text.Caption2"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_24"
+                    android:text="Números:"/>
+
+            <TextView
+                    android:id="@+id/tvNumbers"
+                    style="@style/Text.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:singleLine="false"
+                    tools:ignore="MissingConstraints"
+                    tools:text="4267-6752-8712-1153"/>
+        </LinearLayout>
+
+
+
+        <TextView
+                android:id="@+id/tvTagStub"
+                style="@style/Text.Caption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="Colilla:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containerNumber" />
+
+        <TextView
+                android:id="@+id/tvStub"
+                style="@style/Text.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:layout_constraintStart_toEndOf="@+id/tvTagStub"
+                app:layout_constraintTop_toBottomOf="@+id/containerNumber"
+                tools:text="54D 0006140" />
+
+        <TextView
+                android:id="@+id/tvTagBet"
+                style="@style/Text.Caption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:text="Apostado:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTagStub" />
+
+        <TextView
+                android:id="@+id/tvBet"
+                style="@style/Text.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvTagBet"
+                app:layout_constraintLeft_toRightOf="@+id/tvTagBet"
+                tools:text="$1.850" />
+
+        <TextView
+                android:id="@+id/tvTagIva"
+                style="@style/Text.Caption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:text="IVA:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTagBet" />
+
+        <TextView
+                android:id="@+id/tvIva"
+                style="@style/Text.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvTagIva"
+                app:layout_constraintStart_toEndOf="@+id/tvTagIva"
+                tools:text="$150" />
+
+        <TextView
+                android:id="@+id/tvTagTotalPaid"
+                style="@style/Text.Caption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:text="Total Pagado:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTagIva" />
+
+        <TextView
+                android:id="@+id/tvPaid"
+                style="@style/Text.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvTagTotalPaid"
+                app:layout_constraintLeft_toRightOf="@+id/tvTagTotalPaid"
+                tools:text="$2000" />
+
+        <TextView
+                android:id="@+id/tvTagSuggested"
+                style="@style/Text.Caption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/text_suggested_equal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPaid" />
+
+        <EditText
+                android:id="@+id/etSuggested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginRight="@dimen/dimen_24"
+                android:background="@drawable/edittext_with_rounded_border"
+                android:hint="@string/chance_placeholder_suggested"
+                android:inputType="number"
+                android:maxLength="9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTagSuggested" />
+
+        <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/text_btn_cancel"
+                app:layout_constraintRight_toLeftOf="@+id/btnPay"
+                app:layout_constraintTop_toBottomOf="@+id/etSuggested" />
+
+        <Button
+                android:id="@+id/btnPay"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/text_btn_pay"
+                android:textColor="@color/colorRedButton"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSuggested" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:divider="@drawable/divider_vertical_gray"
+              android:showDividers="middle"
+              android:padding="@dimen/dimen_16"
+              android:weightSum="3">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:layout_weight="0.8">
+
+        <TextView
+                android:text="@string/text_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"/>
+
+        <TextView
+                android:id="@+id/tvGrid"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Caption3"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:gravity="start"
+            android:layout_weight="1">
+
+        <TextView
+                android:text="@string/text_accumulated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"/>
+
+        <TextView
+                android:id="@+id/tvAccumulated"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Caption3"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:gravity="start"
+            android:layout_weight="1.2">
+
+        <TextView
+                android:text="@string/text_date_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"/>
+
+        <TextView
+                android:id="@+id/tvClosingSales"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Caption3"/>
+    </LinearLayout>
+</LinearLayout>

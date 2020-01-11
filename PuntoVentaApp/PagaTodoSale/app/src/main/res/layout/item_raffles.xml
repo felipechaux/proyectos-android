@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/dimen_8"
+    app:cardElevation="@dimen/dimen_4"
+    android:layout_marginTop="@dimen/dimen_4"
+    android:layout_marginBottom="@dimen/dimen_4"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layoutItemLottery"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_raffle_name"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/title_view_raffles_id"
+            style="@style/Text.Body.Margin"
+            android:textAllCaps="false"/>
+        <LinearLayout
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight=".85"
+                android:paddingStart="@dimen/dimen_16"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_raffle_id_text"
+                        android:text="@string/title_view_raffles_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/zero"
+                        style="@style/Text.Caption3" />
+                    <TextView
+                        android:id="@+id/tv_raffle_id"
+                        android:text="@string/title_view_raffles_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        style="@style/Text.Body.Label" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_raffle_lottery_text"
+                        android:text="@string/title_view_raffles_lottery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/zero"
+                        style="@style/Text.Caption3" />
+                    <TextView
+                        android:id="@+id/tv_raffle_lottery"
+                        android:text="@string/title_view_raffles_lottery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        style="@style/Text.Body.Label" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_raffle_date_text"
+                        android:text="@string/title_view_raffles_date_draw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/zero"
+                        style="@style/Text.Caption3" />
+                    <TextView
+                        android:id="@+id/tv_raffle_date"
+                        android:text="@string/title_view_raffles_date_draw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        style="@style/Text.Body.Label" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".25"
+                android:orientation="vertical"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/placeholder_value"
+                    style="@style/Text.Caption2"
+                    android:textColor="@color/colorGrayLight3"/>
+                <TextView android:id="@+id/tv_raffle_price"
+                    android:text="@string/title_view_raffles_price"
+                    android:layout_width="wrap_content"
+                    style="@style/Text.Title5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

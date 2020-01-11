@@ -1,0 +1,390 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="AppThemeMainMenu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/icons</item>
+    </style>
+
+    <style name="DateDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="MainToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorGrayDark1</item>
+    </style>
+
+    <!-- Styles buttons -->
+    <style name="StyleCircleBoton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_56</item>
+        <item name="android:background">@drawable/rounded_button_red</item>
+    </style>
+
+    <!-- Styles buttons -->
+    <style name="StyleConsultButtonBlack" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/dimen_120</item>
+        <item name="android:layout_height">@dimen/dimen_38</item>
+        <item name="android:background">@drawable/rounded_button_gray_black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="StyleCleanButtonBorderBlack" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/dimen_120</item>
+        <item name="android:layout_height">@dimen/dimen_38</item>
+        <item name="android:background">@drawable/rounded_button_gray_dark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorGrayDark1</item>
+    </style>
+
+    <style name="StyleCancelButton" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:background">@drawable/rounded_button_white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="StyleGrayButton" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:background">@drawable/rounded_button_gray_dark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorGrayDark1</item>
+    </style>
+
+    <style name="StyleConfirmButton" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:background">@drawable/rounded_button_red</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="StyleButtonConsultSP" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_38</item>
+        <item name="android:background">@drawable/rounded_button_gray_black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="StyleNormalButton" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/dimen_150</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:background">@drawable/rounded_button_grey</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorGrayDark3</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+    </style>
+
+        <style name="StyleQueryButton" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/dimen_150</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:background">@drawable/rounded_button_gray_black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+    </style>
+
+    <style name="StyleDisabledButton" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/dimen_130</item>
+        <item name="android:layout_height">@dimen/dimen_30</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_14</item>
+        <item name="android:background">@drawable/rounded_button_grey</item>
+        <item name="android:textColor">@color/colorGrayLight3</item>
+    </style>
+
+    <style name="StyleButtonBigSize" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_46</item>
+        <item name="android:background">@drawable/rounded_button_white</item>
+        <item name="android:textSize">@dimen/font_18</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_16</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Styles edittext -->
+    <style name="StyleEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_46</item>
+        <item name="android:paddingStart">@dimen/dimen_8</item>
+        <item name="android:paddingEnd">@dimen/dimen_8</item>
+        <item name="android:background">@drawable/txt_background_active</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:textColorHint">@color/colorGrayLight3</item>
+    </style>
+
+    <!-- Styles edittext inactive -->
+    <style name="StyleEditTextInactive">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_46</item>
+        <item name="android:paddingStart">@dimen/dimen_8</item>
+        <item name="android:paddingEnd">@dimen/dimen_8</item>
+        <item name="android:background">@drawable/txt_background_inactive</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:textColorHint">@color/colorGrayLight3</item>
+    </style>
+
+    <!-- Styles edittext -->
+    <style name="StyleTextArea">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_100</item>
+        <item name="android:paddingStart">@dimen/dimen_8</item>
+        <item name="android:paddingEnd">@dimen/dimen_8</item>
+        <item name="android:background">@drawable/txt_background_active</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:textColorHint">@color/colorGrayLight3</item>
+    </style>
+
+    <style name="EditText.Field.Margin" parent="StyleEditText">
+        <item name="android:layout_marginLeft">@dimen/dimen_16</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16</item>
+    </style>
+
+    <style name="EditText.Field.Phone" parent="StyleEditText">
+        <item name="android:inputType">number|phone</item>
+        <item name="android:digits">@string/digits_only_numbers</item>
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <style name="EditText.Field.Number" parent="StyleEditText">
+        <item name="android:inputType">number|phone</item>
+        <item name="android:digits">@string/digits_only_numbers</item>
+    </style>
+
+    <style name="EditText.Field.PersonalName" parent="StyleEditText">
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+        <item name="android:maxLength">50</item>
+    </style>
+
+    <style name="EditText.Field.Passowrd" parent="StyleEditText">
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:digits">@string/digits_only_numbers</item>
+        <item name="android:maxLength">8</item>
+    </style>
+
+    <style name="EditText.Field.Document" parent="StyleEditText">
+        <item name="android:inputType">number</item>
+        <item name="android:digits">@string/digits_only_numbers</item>
+        <item name="android:maxLength">12</item>
+    </style>
+
+    <style name="StyleEditTextBaloto">
+        <item name="android:layout_width">@dimen/dimen_48</item>
+        <item name="android:layout_height">@dimen/dimen_48</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:background">@drawable/edittext_with_rounded_border</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Styles textview -->
+    <style name="StyleTextViewBase">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorGrayDark2</item>
+    </style>
+
+    <style name="Text.Subtitle.Ticket" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginTop">@dimen/dimen_4</item>
+    </style>
+
+    <style name="Text.Content.Ticket" parent="StyleTextViewBase">
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:layout_marginTop">@dimen/dimen_4</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_4</item>
+    </style>
+
+    <style name="Text.Caption1" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Text.Caption2" parent="StyleTextViewBase">
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+    <style name="Text.Caption3" parent="StyleTextViewBase">
+        <item name="android:textColor">@color/colorGrayLight3</item>
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+
+    <style name="Text.Caption3.colorGrayBlue" parent="StyleTextViewBase">
+        <item name="android:textColor">@color/colorGrayBlue</item>
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+    <style name="Text.Title5" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_20</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_1</item>
+    </style>
+
+    <style name="Text.Title4" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_1</item>
+    </style>
+
+    <style name="Text.Title6" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_18</item>
+        <item name="android:lineSpacingExtra">0.05dp</item>
+        <item name="android:textColor">@color/colorGrayLight</item>
+    </style>
+
+    <style name="Text.Title5.Margin" parent="Text.Title5">
+        <item name="android:layout_marginTop">@dimen/dimen_24</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_24</item>
+    </style>
+
+    <style name="Text.SubTitle1" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+    <style name="Text.SubTitle1.Light" parent="Text.SubTitle1">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Text.Label" parent="StyleTextViewBase">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_20</item>
+    </style>
+
+    <style name="Text.Label2" parent="StyleTextViewBase">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/font_11</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_16</item>
+    </style>
+
+    <style name="Text.Error.Label" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_11</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_20</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Text.Body.Label" parent="StyleTextViewBase">
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_8</item>
+    </style>
+
+    <style name="Text.Body" parent="Text.Body.Label">
+        <item name="android:textColor">@color/colorGrayDark3</item>
+    </style>
+
+    <style name="Text.Body2" parent="Text.Body.Label">
+        <item name="android:textColor">@color/colorGrayDark3</item>
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+    <style name="Text.Body.Margin" parent="Text.Body.Label">
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16</item>
+    </style>
+
+    <style name="StyleTextViewBase.WhiteLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_18</item>
+        <item name="android:textColor">@color/icons</item>
+    </style>
+
+    <!-- Styles Checkbox -->
+    <style name="CheckBoxLogin" parent="AlertDialog.AppCompat.Light">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- CardView -->
+    <style name="GeneralCardViewStyle" parent="CardView">
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="android:elevation">2dp</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <!-- SearchView -->
+    <style name="GeneralSearchViewStyle" parent="Base.Widget.AppCompat.SearchView">
+        <item name="android:iconifiedByDefault">false</item>
+        <item name="android:queryBackground">@color/colorWhite</item>
+        <item name="background">@color/colorWhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_48</item>
+    </style>
+
+    <!-- DialogFragment -->
+    <style name="ModalDialogFragment" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+    </style>
+
+    <style name="EditTextMargin2dp" parent="@android:style/Widget.EditText">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Divider_vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorGrayLight3</item>
+    </style>
+
+    <style name="rounded_button_white_with_red_edges" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:textColor">@color/colorRedButton</item>
+        <item name="android:background">@drawable/rounded_button_with_red_edges</item>
+    </style>
+</resources>

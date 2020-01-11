@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/dialog_giro_fare_pay_beneficiary" />
+
+            <TextView
+                android:id="@+id/lblBeneficiary"
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_fare_pay_document_number" />
+
+            <TextView
+                android:id="@+id/lblDocumentNumber"
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_fare_pay_email" />
+
+            <TextView
+                android:id="@+id/lblEmail"
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_fare_pay_giro_value" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:id="@+id/lblGiroValue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_fare_pay_safe_value" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:id="@+id/lblSafeValue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_payment_defauld_amount" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_fare_pay_total_value" />
+
+            <TextView
+                android:id="@+id/lblTotalValue"
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

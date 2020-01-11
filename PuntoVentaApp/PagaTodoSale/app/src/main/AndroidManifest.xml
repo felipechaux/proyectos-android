@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="co.com.pagatodo.core">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PRINTER" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.wizarpos.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:name=".PagaTodoApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".views.login.MainActivity2" />
+
+        <activity android:name=".views.elderly.ElderlyRePrintActivity"
+                android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".views.lotteryResult.DrawsAndLotteriesResultActivity" />
+        <activity
+                android:name=".views.apn.ApnSettingActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.lottery.FractionsAvailablesListActivity" />
+        <activity android:name=".views.lottery.FractionsAvailablesActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.homemenu.lotterymenu.LotteryMenuActivity" />
+        <activity android:name=".views.homemenu.sitpmenu.SitpMenuActivity" />
+        <activity
+                android:name=".views.elderly.ElderlyEnrollmentActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.elderly.ElderlyPayActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.sitp.SitpRechargeActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.homemenu.elderlymenu.ElderlyMenuActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.information.InformationDeviceActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.homemenu.MainMenuActivity"
+                android:theme="@style/AppThemeMainMenu" />
+        <activity android:name=".views.homemenu.promotionalsmenu.PromotionalMenuActivity" />
+        <activity android:name=".views.paymillionaire.QueryPayMillonaireActivity" />
+        <activity android:name=".views.lottery.LotteryActivity" />
+        <activity android:name=".views.homemenu.sportingmenu.SportingMenuActivity" />
+        <activity android:name=".views.homemenu.colsubsidiomenu.ColsubsidioMenuActivity" />
+        <activity
+                android:name=".views.sporting.megagoals.MegaGoalsActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.baloto.BalotoActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.baloto.BalotoCheckTicketActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.baloto.BalotoWinnersActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.splash.SplashActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".views.chance.ChanceActivity"
+                android:noHistory="true"
+                android:parentActivityName=".views.homemenu.chancemenu.ChanceMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity android:name=".views.login.LoginActivity" />
+        <activity
+                android:name=".views.stub.StubActivity"
+                android:windowSoftInputMode="adjustNothing" />
+        <activity
+                android:name=".views.homemenu.HomeMenuActivity"
+                android:parentActivityName=".views.stub.StubActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.stub.StubActivity" />
+        </activity>
+        <activity
+                android:name=".views.homemenu.chancemenu.ChanceMenuActivity"
+                android:parentActivityName=".views.homemenu.HomeMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.homemenu.superastromenu.SuperAstroMenuActivity"
+                android:parentActivityName=".views.homemenu.HomeMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.homemenu.paymillionariemenu.PayMillionarieMenuActivity"
+                android:parentActivityName=".views.homemenu.HomeMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.recharge.RechargeActivity"
+                android:parentActivityName=".views.homemenu.HomeMenuActivity"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.recharge.RechargeHistoryActivity"
+                android:parentActivityName=".views.homemenu.HomeMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.querywinners.QueryWinnersActivity"
+                android:parentActivityName=".views.homemenu.querymenu.QueryMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.querymenu.QueryMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.deviceprinters.DevicePrintersActivity"
+                android:parentActivityName=".views.homemenu.deviceinformationmenu.ProductDeviceMenuActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.deviceinformationmenu.ProductDeviceMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.colpensionesbeps.ColpensionesBepsActivity"
+                android:parentActivityName=".views.homemenu.HomeMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.currentbox.CurrentBoxActivity"
+                android:parentActivityName=".views.homemenu.querymenu.QueryMenuActivity"
+                android:windowSoftInputMode="adjustNothing">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.querymenu.QueryMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.resetpassword.ResetPasswordActivity"
+                android:parentActivityName=".views.homemenu.querymenu.QueryMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.querymenu.QueryMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.award.AwardActivity"
+                android:parentActivityName=".views.homemenu.querymenu.QueryMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.querymenu.QueryMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.homemenu.querymenu.QueryMenuActivity"
+                android:parentActivityName=".views.homemenu.querymenu.QueryMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.querymenu.QueryMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.wallet.WalletActivity"
+                android:parentActivityName=".views.homemenu.querymenu.QueryMenuActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.querymenu.QueryMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.superchance.SuperChanceActivity"
+                android:noHistory="true"
+                android:parentActivityName=".views.homemenu.HomeMenuActivity"
+                android:value=".views.homemenu.HomeMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.raffle.RaffleActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.maxichance.MaxiChanceActivity"
+                android:noHistory="true"
+                android:parentActivityName=".views.homemenu.chancemenu.ChanceMenuActivity"
+                android:windowSoftInputMode="stateHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.lotteryResult.LotteryResultActivity"
+                android:parentActivityName=".views.homemenu.querymenu.QueryMenuActivity"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".views.homemenu.HomeMenuActivity" />
+        </activity>
+        <activity
+                android:name=".views.betplay.BetplayActivity"
+                android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+                android:name=".views.betplay.BetplayGeneratePinActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.betplay.BetplayQuickBetActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.betplay.BetplayReprintActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.superastro.SuperAstroActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.sporting.league14.League14Activity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.homemenu.balotomenu.BalotoMenuActivity" />
+        <activity android:name=".views.homemenu.betplaymenu.ItemsBetplayMenuActivity" />
+        <activity android:name=".views.homemenu.betplaymenu.BetplayMenuActivity" />
+        <activity android:name=".views.homemenu.advisormenu.AdvisorMenuActivity" />
+        <activity android:name=".views.homemenu.deviceinformationmenu.ProductDeviceMenuActivity" />
+        <activity android:name=".views.paymillionaire.PayMillionaireActivity"
+                android:noHistory="true"/>
+        <activity android:name=".views.homemenu.deviceinformationmenu.DeviceMenuActivity" />
+        <activity android:name=".views.homemenu.payumenu.PayuMenuActivity" />
+        <activity
+                android:name=".views.payu.PayuCollectingActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.payu.PayuReprintActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.baloto.BalotoResultActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.baloto.AccumulatedBalotoActivity" />
+        <activity
+                android:name=".views.paybills.PayBillActivity"
+                android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+                android:name=".views.homemenu.ProductsHomeMenuActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.homemenu.ProductDeviceMenuActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.virtualwallet.VirtualWalletActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.soat.SoatActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.colpensionesbeps.ColpensionesBepsReprintActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.homemenu.colpensionesbepsmenu.ColpensionesBepsMenuActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.giro.GiroActivity"
+                android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+                android:name=".views.homemenu.giromenu.GiroMenuActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.homemenu.bbvamenu.BbvaMenuActivity"
+                android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+                android:name=".views.colsubsidio.ColsubsidioRetirementActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.colsubsidio.ColsubsidioCollectionActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.snr.SnrActivity" />
+        <activity
+                android:name=".views.homemenu.registraduriamenu.RegistraduriaMenuActivity"
+                android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+                android:name=".views.registraduria.RegistraduriaCollectionActivity"
+                android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+                android:name=".views.registraduria.RegistraduriaReprintCollectionActivity"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.betplay.BetplayCollectActivity"
+                android:windowSoftInputMode="stateHidden" />
+
+        <uses-library
+                android:name="com.pos.device"
+                android:required="false" />
+    </application>
+
+</manifest>

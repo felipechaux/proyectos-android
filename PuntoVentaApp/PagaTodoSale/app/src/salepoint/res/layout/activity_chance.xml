@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context=".views.chance.ChanceActivity"
+        android:orientation="vertical">
+
+    <include layout="@layout/main_toolbar" android:id="@+id/mainToolbar"></include>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorGrayLight"
+                    android:weightSum="3">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                    <co.com.pagatodo.core.views.components.daylottery.DayLotteryComponentView
+                            android:id="@+id/daysView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_24"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            app:isSelectCurrentDay="true">
+                    </co.com.pagatodo.core.views.components.daylottery.DayLotteryComponentView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                    <LinearLayout
+                            android:id="@+id/viewSummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <include layout="@layout/layout_chance_summary"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                        </include>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@color/colorGrayLight1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_4"
+                    android:gravity="center_vertical"
+                    android:weightSum="3">
+
+                <TextView
+                        android:id="@+id/tvTagLotteries"
+                        android:text="@string/placeholder_lotteries_of_day"
+                        style="@style/Text.Label"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/zero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                <Button
+                        android:visibility="gone"
+                        android:id="@+id/btnClear"
+                        style="@style/StyleCancelButton"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_8"
+                        android:text="@string/text_btn_clear" />
+
+                <include android:id="@+id/viewRandom"
+                         layout="@layout/layout_random_three_four_chance"
+                         android:background="@color/colorGraySilver"
+                         android:layout_gravity="end|center_vertical"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:orientation="vertical"
+                              android:layout_weight="2"
+                              android:layout_height="match_parent">
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/dimen_46"
+                         android:paddingTop="@dimen/dimen_20"
+                     >
+                         <TextView
+
+                             style="@style/Text.Title5.Margin"
+                             android:layout_height="29dp"
+                             android:paddingTop="@dimen/dimen_3"
+                             android:layout_marginLeft="240dp"
+                             android:layout_marginTop="@dimen/dimen_1"
+                             android:layout_marginRight="@dimen/dimen_1"
+                             android:text="@string/giro_users_check_all_lotteries"
+                             android:textSize="12dp"/>
+
+                        <Switch
+                            android:id="@+id/switchLotteries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/dimen_1"
+                            android:layout_marginRight="@dimen/dimen_14"
+                            android:layout_marginTop="@dimen/dimen_16"/>
+
+              </LinearLayout>
+                     <co.com.pagatodo.core.views.components.lottery.LotteryComponentView
+                         android:id="@+id/lotteryComponent"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="@dimen/dimen_24"
+                         android:layout_marginRight="@dimen/dimen_16"
+                         android:layout_marginTop="@dimen/dimen_16"
+                         app:lotteryLoadType="CHANCE"
+                         app:columnNumber="@string/lottery_column_3">
+                </co.com.pagatodo.core.views.components.lottery.LotteryComponentView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:id="@+id/viewChanceGames"
+                        android:layout_marginTop="@dimen/dimen_24"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_24"
+                        android:layout_weight="1">
+
+                    <include layout="@layout/layout_change_games"></include>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+            android:layout_marginEnd="@dimen/dimen_24">
+
+                <include layout="@layout/layout_buttons_back_next"
+                         android:layout_width="@dimen/dimen_500"
+                         android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

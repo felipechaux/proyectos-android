@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_70"
+            android:background="@color/colorGraySilver"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textView"
+            style="@style/Text.Title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/title_ram_raffle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+            android:id="@+id/textView2"
+            style="@style/Text.Caption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/summary_ram_raffle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/etNumberInitRaffle"
+            style="@style/EditText.Field.Phone"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_with_rounded_border"
+            android:digits="0123456789"
+            android:hint="@string/text_enter_number_init"
+            android:inputType="number"
+            android:maxLength="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+            android:id="@+id/errorInputInitRaffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_enter_number"
+            android:textColor="@color/colorRedBet"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNumberInitRaffle" />
+
+    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/etNumberFinalRaffle"
+            style="@style/EditText.Field.Phone"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_with_rounded_border"
+            android:digits="0123456789"
+            android:hint="@string/text_enter_number_final"
+            android:inputType="number"
+            android:maxLength="4"
+            app:layout_constraintStart_toEndOf="@+id/etNumberInitRaffle"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+            android:id="@+id/errorInputFinalRaffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:text="@string/text_enter_number"
+            android:textColor="@color/colorRedBet"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/etNumberFinalRaffle"
+            app:layout_constraintHorizontal_bias="0.987"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNumberFinalRaffle" />
+
+    <Button
+            android:id="@+id/btConsultRange"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_red"
+            android:text="@string/text_btn_consult_3"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@+id/etNumberFinalRaffle"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRangeAvailable"
+            android:layout_width="364dp"
+            android:layout_height="409dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNumberInitRaffle">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

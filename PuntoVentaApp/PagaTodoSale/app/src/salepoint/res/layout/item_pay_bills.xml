@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_24">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorGrayLight1"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_billed_service_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_user_code_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_user_name_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_bill_number_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_bill_date_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_bill_description_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_bill_value_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        style="@style/Text.Body"
+                        android:text="@string/text_label_value_to_pay_no_semi"
+                        android:textAllCaps="true"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_bill_state_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_bill_action_no_semi"
+                        android:textAllCaps="true"
+                        style="@style/Text.Body"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorGrayBackground"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/txtBilledService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:id="@+id/txtUserCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:id="@+id/txtBillNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:id="@+id/txtBillDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:id="@+id/txtBillDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:id="@+id/txtBillValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                        <TextView
+                                android:id="@+id/txtValueToPay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dimen_12"
+                                android:gravity="center"
+                                android:layout_weight="1"/>
+
+                        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                                android:id="@+id/txtParcialValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_36"
+                                android:layout_marginStart="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_8"
+                                android:padding="@dimen/dimen_4"
+                                android:maxLength="8"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                style="@style/EditText.Field.Number"
+                                android:visibility="gone"/>
+
+                    </LinearLayout>
+
+
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                        android:id="@+id/txtBillSate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageButton android:id="@+id/btDelete"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_30"
+                            android:src="@drawable/ic_delete"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>

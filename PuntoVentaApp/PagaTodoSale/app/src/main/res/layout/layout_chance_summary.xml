@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dimen_10"
+    android:paddingBottom="@dimen/dimen_10"
+    android:background="@color/colorGraySilver">
+
+    <!-- First row -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle"
+        android:weightSum="3">
+
+        <LinearLayout android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvTagRaffleDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"
+                android:text="@string/text_label_raffle_date"/>
+
+            <TextView android:id="@+id/tvRaffleDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                tools:text="06/09/2018"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvTagLotteries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"
+                android:text="@string/text_label_lotteries"/>
+
+            <TextView android:id="@+id/tvLotteries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                tools:text="5"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvTagStub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"
+                android:text="@string/text_label_stub"/>
+
+            <TextView android:id="@+id/tvStub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                tools:text="54D 0006140"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Secound row -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle"
+        android:weightSum="3">
+
+        <LinearLayout android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvTagBet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"
+                android:text="@string/text_label_bet"/>
+
+            <TextView android:id="@+id/tvBet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                tools:text="$ 1.500"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvTagIva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"
+                android:text="@string/text_label_iva_uppercase"/>
+
+            <TextView android:id="@+id/tvIva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                tools:text="$ 285"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvTagTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Label"
+                android:text="@string/text_label_total_value"/>
+
+            <TextView android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                tools:text="$ 1.785"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

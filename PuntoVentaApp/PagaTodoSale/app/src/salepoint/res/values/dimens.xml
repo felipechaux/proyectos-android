@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="dimen_start_device">@dimen/dimen_50</dimen>
+   <dimen name="dimen_margin_top_welcome_msg_main_menu">@dimen/dimen_70</dimen>
+   <dimen name="dimen_margin_bottom_welcome_msg_main_menu">@dimen/dimen_46</dimen>
+   <dimen name="dimen_margin_main_menu">@dimen/dimen_50</dimen>
+   <dimen name="dimen_top_margin_item_menu">@dimen/dimen_50</dimen>
+   <dimen name="dimen_margin_menus">@dimen/dimen_50</dimen>
+   <dimen name="dimen_margin_bottom_menus">@dimen/dimen_16</dimen>
+</resources>

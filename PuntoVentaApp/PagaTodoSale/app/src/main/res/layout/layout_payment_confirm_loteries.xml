@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_24">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_lottery_confirm"
+            style="@style/Text.Subtitle.Ticket"/>
+        <TextView
+            android:id="@+id/lblLotteryName"
+            android:text="@string/text_lottery_confirm"
+            style="@style/Text.Content.Ticket" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_number_game_confirm"
+            style="@style/Text.Subtitle.Ticket"/>
+        <TextView
+            android:id="@+id/lblGameName"
+            android:text="@string/text_lottery_confirm"
+            style="@style/Text.Content.Ticket" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_serie_confirm"
+            style="@style/Text.Subtitle.Ticket" />
+        <TextView
+            android:id="@+id/lblSerie"
+            android:text="@string/text_lottery_confirm"
+            style="@style/Text.Content.Ticket" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_quantity_fractions_confirm"
+            style="@style/Text.Subtitle.Ticket"/>
+        <TextView
+            android:id="@+id/lblQuantity"
+            android:text="@string/text_lottery_confirm"
+            style="@style/Text.Content.Ticket"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/containerValueLottery"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <TextView
+            android:text="@string/text_label_value"
+            style="@style/Text.Subtitle.Ticket"/>
+        <TextView
+            android:id="@+id/lblValueTotal"
+            android:text="@string/text_lottery_confirm"
+            style="@style/Text.Content.Ticket"/>
+    </LinearLayout>
+
+</LinearLayout>

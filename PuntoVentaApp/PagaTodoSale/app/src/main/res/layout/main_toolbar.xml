@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/dimen_4"
+    app:theme="@style/MainToolbar"
+    app:contentInsetStart="@dimen/zero">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="Title of View"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Text.Title5" />
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_50"
+                android:src="@drawable/ic_left_arrow"
+                android:contentDescription="@string/app_name"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:scaleType="fitCenter"
+                android:elevation="0.001dp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.Toolbar>

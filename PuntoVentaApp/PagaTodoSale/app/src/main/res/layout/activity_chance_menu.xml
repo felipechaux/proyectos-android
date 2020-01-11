@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".views.homemenu.HomeMenuActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="@dimen/dimen_margin_menus"
+        android:layout_marginEnd="@dimen/dimen_margin_menus"
+        android:layout_marginBottom="20dp"
+        tools:listitem="@layout/item_main_menu">
+        </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

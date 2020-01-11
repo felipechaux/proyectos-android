@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.com.pagatodo.core.views.virtualwallet.VirtualWalletActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginStart="@dimen/dimen_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainToolbar">
+
+        <TextView
+            android:text="@string/text_recharge_virtual_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Title5"/>
+
+        <TextView
+            android:text="@string/text_pin_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Body.Label"
+            android:layout_marginTop="@dimen/font_16"/>
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtPinNumber"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:hint="@string/placeholder_enter_pin"
+            tools:ignore="Autofill"
+            android:maxLength="20"
+            android:imeOptions="actionDone"
+            android:digits="@string/digits_words_and_numbers"
+            style="@style/EditText.Field.PersonalName"
+            android:singleLine="true"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingEnd="@dimen/dimen_16"
+            android:layout_width="@dimen/dimen_300"/>
+
+        <TextView
+            android:id="@+id/labelErrorEnterPin"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:text="@string/message_error_enter_pin"
+            android:layout_marginTop="@dimen/dimen_8"
+            style="@style/Text.Error.Label"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_500"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:layout_weight="1">
+                <include layout="@layout/layout_buttons_back_next"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

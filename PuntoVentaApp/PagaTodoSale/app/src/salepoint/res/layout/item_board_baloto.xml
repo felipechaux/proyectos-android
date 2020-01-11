@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@+id/txtItemPanelTitleBaloto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:textSize="@dimen/font_18"
+        android:textAllCaps="true"
+        android:text="@string/baloto_text_panel"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:padding="@dimen/dimen_8"
+        android:background="@color/colorGrayBackground"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemPanelTitleBaloto">
+
+        <TextView android:id="@+id/txtNumbersBaloto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/baloto_text_numbers"
+            android:textSize="@dimen/font_12"
+            android:textColor="@color/colorGrayLight3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/containerNumbersPanel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/baloto_text_s"
+            android:textSize="@dimen/font_12"
+            android:textColor="@color/colorGrayLight3"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/containerNumbersPanel"/>
+
+        <LinearLayout android:id="@+id/containerNumbersPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtNumbersBaloto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="6">
+
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste  android:id="@+id/etPanelBalota1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/baloto_text_number"
+                    android:textSize="@dimen/font_18"
+                    android:nextFocusDown="@id/etPanelBalota2"
+                    style="@style/StyleEditTextBaloto"
+                    android:layout_weight="1"/>
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste  android:id="@+id/etPanelBalota2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/baloto_text_number"
+                    android:textSize="@dimen/font_18"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:nextFocusDown="@id/etPanelBalota3"
+                    style="@style/StyleEditTextBaloto"
+                    android:layout_weight="1"/>
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste  android:id="@+id/etPanelBalota3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/baloto_text_number"
+                    android:textSize="@dimen/font_18"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:nextFocusDown="@id/etPanelBalota4"
+                    style="@style/StyleEditTextBaloto"
+                    android:layout_weight="1" />
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste  android:id="@+id/etPanelBalota4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/baloto_text_number"
+                    android:textSize="@dimen/font_18"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:nextFocusDown="@id/etPanelBalota5"
+                    style="@style/StyleEditTextBaloto"
+                    android:layout_weight="1"/>
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste  android:id="@+id/etPanelBalota5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/baloto_text_number"
+                    android:textSize="@dimen/font_18"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:nextFocusDown="@id/etPanelBalota6"
+                    style="@style/StyleEditTextBaloto"
+                    android:layout_weight="1"/>
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste  android:id="@+id/etPanelBalota6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/baloto_text_s"
+                    android:textSize="@dimen/font_18"
+                    android:nextFocusDown="@id/etPanelBalota2"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    style="@style/StyleEditTextBaloto"
+                    android:background="@drawable/edittext_with_rounded_border_red"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                    <Switch android:id="@+id/cbAutomaticBaloto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_13"
+                        android:textColor="@color/colorGrayDark2"
+                        android:text="@string/baloto_text_automatic"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                    <Switch android:id="@+id/cbRematchBaloto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_13"
+                        android:textColor="@color/colorGrayDark2"
+                        android:text="@string/baloto_text_rematch"/>
+                </LinearLayout>
+                <ImageButton android:id="@+id/btDeletePanel"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:src="@drawable/ic_delete"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

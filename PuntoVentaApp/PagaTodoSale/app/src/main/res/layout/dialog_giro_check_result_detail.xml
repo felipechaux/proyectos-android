@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/dialog_giro_check_request_id" />
+
+            <TextView
+                android:id="@+id/lblId"
+                style="@style/Text.Label"
+                android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_check_request_reference" />
+
+            <TextView
+                android:id="@+id/lblReference"
+                style="@style/Text.Label"
+                    android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_check_request_type_request" />
+
+            <TextView
+                android:id="@+id/lblTypeRequest"
+                style="@style/Text.Label"
+                    android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_check_request_catalogue" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:id="@+id/lblCatalogue"
+                    android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_check_request_status" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:id="@+id/lblStatus"
+                android:layout_marginTop="@dimen/dimen_8"
+                    android:textColor="@color/colorGrayBlue"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_check_request_third" />
+
+            <TextView
+                android:id="@+id/lblThird"
+                style="@style/Text.Label"
+                    android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    style="@style/Text.Label"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:text="@string/dialog_giro_check_request_observation" />
+
+            <TextView
+                    android:id="@+id/lblObservation"
+                    style="@style/Text.Label"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:textColor="@color/colorGrayBlue"
+                    android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

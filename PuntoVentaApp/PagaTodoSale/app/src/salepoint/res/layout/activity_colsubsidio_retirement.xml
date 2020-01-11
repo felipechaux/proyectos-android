@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="co.com.pagatodo.core.views.colsubsidio.ColsubsidioRetirementActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include
+                layout="@layout/main_toolbar"
+                android:id="@+id/mainToolbar" />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_24">
+
+            <TextView
+                    android:id="@+id/lblTitle"
+                    android:text="@string/colsubsidio_ret_title"
+                    style="@style/Text.Title5"
+                    android:layout_marginBottom="@dimen/dimen_24"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_24"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:text="@string/colsubsidio_ret_document_number"
+                            style="@style/Text.Label"
+                            android:textSize="@dimen/dimen_16" />
+
+                    <EditText
+                            android:id="@+id/txtDocumentNumber"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:hint="@string/colsubsidio_ret_placeholder_document_number"
+                            tools:ignore="Autofill"
+                            style="@style/EditText.Field.Phone"
+                            android:paddingStart="@dimen/dimen_16"
+                            android:paddingEnd="@dimen/dimen_16"/>
+                    <TextView
+                            android:id="@+id/labelErrorDocumentNumber"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="@string/colsubsidio_retirement_document_number"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            android:layout_marginEnd="@dimen/dimen_16"
+                            style="@style/Text.Error.Label"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_24"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:text="@string/colsubsidio_ret_value"
+                            style="@style/Text.Label"
+                            android:textSize="@dimen/dimen_16" />
+
+                    <EditText
+                            android:id="@+id/txtValueRetirement"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:hint="@string/colsubsidio_ret_re_placeholder_document_number"
+                            tools:ignore="Autofill"
+                            style="@style/EditText.Field.Phone"
+                            android:paddingStart="@dimen/dimen_16"
+                            android:paddingEnd="@dimen/dimen_16"/>
+                    <TextView
+                            android:id="@+id/labelErrorValueRetirement"
+                            android:visibility="gone"
+                            android:text="@string/colsubsidio_retirement_value_retirement"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            android:layout_marginEnd="@dimen/dimen_16"
+                            style="@style/Text.Error.Label"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:text="@string/colsubsidio_ret_confirm"
+                            style="@style/Text.Label"
+                            android:textSize="@dimen/dimen_16" />
+
+                    <EditText
+                            android:id="@+id/txtValueRetirementConfirm"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:hint="@string/colsubsidio_ret_re_placeholder_document_number_confirm"
+                            tools:ignore="Autofill"
+                            style="@style/EditText.Field.Phone"
+                            android:paddingStart="@dimen/dimen_16"
+                            android:paddingEnd="@dimen/dimen_16"/>
+
+                    <TextView
+                            android:id="@+id/labelErrorColsupsidioValorNoCase"
+                            android:visibility="gone"
+                            android:text="@string/colsubsidio_retirement_valor_no_case"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label" />
+
+                    <TextView
+                            android:id="@+id/labelErrorColsupsidioValorNoCaseNotWorking"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="@string/colsubsidio_retirement_valor_no_case_not_working"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:paddingTop="@dimen/dimen_35"
+                        android:layout_width="match_parent"
+                              android:layout_weight="1"
+                              android:layout_height="match_parent">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <include
+                android:layout_marginTop="-100dp"
+                android:id="@+id/layoutButtons"
+                layout="@layout/layout_buttons_back_next"
+                android:layout_width="472dp"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/dimen_20" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:baselineAligned="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <!-- start beginning balance -->
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTagBeginningBalance"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/giro_movement_text_daily_summary_beginning_balance" />
+
+            <TextView
+                android:id="@+id/tvBeginningBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                android:text="@string/giro_payment_defauld_amount" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayLight"/> <!-- divider -->
+        <!-- end beginning balance -->
+
+        <!-- start earnings -->
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTagEarnings"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/giro_movement_text_daily_summary_earnings" />
+
+            <TextView
+                android:id="@+id/tvEarnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                android:text="@string/giro_payment_defauld_amount" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayLight"/> <!-- divider -->
+        <!-- end earnings -->
+
+        <!-- start expenses -->
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTagExpenses"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/giro_movement_text_daily_summary_expenses" />
+
+            <TextView
+                android:id="@+id/tvExpenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                android:text="@string/giro_payment_defauld_amount" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayLight"/> <!-- divider -->
+        <!-- end expenses -->
+
+        <!-- start expenses -->
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTagFinalBalance"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/giro_movement_text_daily_summary_final_balance" />
+
+            <TextView
+                android:id="@+id/tvFinalBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_13"
+                android:text="@string/giro_payment_defauld_amount" />
+        </LinearLayout>
+        <!-- end expenses -->
+
+    </LinearLayout>
+
+</LinearLayout>

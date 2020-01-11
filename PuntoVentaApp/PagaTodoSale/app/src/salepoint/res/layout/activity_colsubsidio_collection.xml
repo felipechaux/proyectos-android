@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+	<include layout="@layout/main_toolbar"
+			 android:id="@+id/mainToolbar"/>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="co.com.pagatodo.core.views.colsubsidio.ColsubsidioCollectionActivity">
+
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+
+        <TextView
+			style="@style/Text.Title5.Margin"
+			android:layout_marginBottom="@dimen/dimen_10"
+			android:text="@string/colsubsidio_recaudo_title" />
+
+        <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:baselineAligned="true"
+			android:orientation="horizontal">
+
+            <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+                <TextView
+					style="@style/Text.Label"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/colsubsidio_recaudo_document_type" />
+
+                <LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:background="@drawable/txt_background_active"
+					android:padding="2dp">
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+						android:id="@+id/spinnerDocumentType"
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/dimen_42"
+						android:hint="@string/colsubsidio_recaudo_placeholder_document_type"
+						app:ms_arrow_tint="@color/colorRedButton"
+						app:ms_padding_bottom="@dimen/zero"
+						app:ms_padding_left="@dimen/dimen_8"
+						app:ms_padding_right="@dimen/dimen_8"
+						app:ms_padding_top="@dimen/zero" />
+                </LinearLayout>
+				<TextView
+					android:id="@+id/labelErrorDocumentType"
+					style="@style/Text.Error.Label"
+					android:layout_gravity="end"
+					android:layout_marginTop="@dimen/dimen_8"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/placeholder_document_type"
+					android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+                <TextView
+					style="@style/Text.Label"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/colsubsidio_recaudo_document_number" />
+
+                <LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+                    <EditText
+						android:id="@+id/txtDocumentNumber"
+						style="@style/StyleEditText"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:layout_marginEnd="@dimen/dimen_8"
+						android:layout_weight="1"
+						android:hint="@string/colsubsidio_recaudo_placeholder_document_number"
+						android:inputType="number"
+						android:maxLength="15"
+						android:paddingStart="@dimen/dimen_16"
+						android:paddingEnd="@dimen/dimen_16"
+						tools:ignore="Autofill" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="end">
+
+                    <TextView
+						android:id="@+id/labelErrorDocumentNumber"
+						style="@style/Text.Error.Label"
+						android:layout_gravity="end"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+                <TextView
+					style="@style/Text.Label"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/colsubsidio_recaudo_reference_number" />
+
+                <LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+                    <EditText
+						android:id="@+id/txtReferenceNumber"
+						style="@style/StyleEditText"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:layout_weight="1"
+						android:hint="@string/colsubsidio_recaudo_placeholder_reference_number"
+						android:inputType="number|phone"
+						android:maxLength="8"
+						android:paddingStart="@dimen/dimen_16"
+						android:paddingEnd="@dimen/dimen_16"
+						tools:ignore="Autofill" />
+
+                </LinearLayout>
+
+                <LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="end">
+
+                    <TextView
+						android:id="@+id/labelErrorReferenceNumber"
+						style="@style/Text.Error.Label"
+						android:layout_gravity="end"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+			<LinearLayout android:layout_width="match_parent"
+						  android:layout_height="match_parent"
+						  android:layout_marginEnd="@dimen/dimen_18"
+						  android:layout_weight="1"
+						  >
+
+				<Button
+						android:id="@+id/btnSearch"
+						style="@style/StyleConfirmButton"
+						android:layout_width="176dp"
+						android:layout_height="@dimen/dimen_50"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_weight="1"
+						android:text="@string/text_btn_search"
+						android:layout_marginTop="@dimen/dimen_48"
+						android:textSize="@dimen/dimen_18"/>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+		<LinearLayout
+				android:id="@+id/clientData"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+			<TextView
+					style="@style/Text.Title5.Margin"
+					android:layout_marginBottom="@dimen/dimen_10"
+					android:text="@string/colsubsidio_client_data_title"/>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/dimen_18"
+					android:layout_marginEnd="@dimen/dimen_18"
+					android:layout_marginBottom="@dimen/dimen_4"
+
+					android:baselineAligned="true"
+					android:orientation="horizontal">
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@color/colorGrayLight1"
+						android:gravity="center"
+						android:orientation="horizontal"
+						android:weightSum="2">
+
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="left"
+							android:text="Aura María Casas B"
+							style="@style/Text.Body"
+							android:layout_weight="1"/>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="right"
+							android:layout_weight="1">
+
+						<View  style="@style/Divider_vertical"/>
+
+						<Button
+
+								android:id="@+id/btnClean"
+								style="@style/Text.Body"
+								android:layout_width="100dp"
+								android:layout_height="@dimen/dimen_30"
+								android:background="@android:color/transparent"
+								android:scaleType="fitCenter"
+								android:text="@string/item_colsubsidio_recaudo_clean"/>
+
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+        <LinearLayout
+			android:id="@+id/containerResultConsult"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+            <TextView
+				android:id="@+id/lblTitle"
+				style="@style/Text.Title5.Margin"
+				android:layout_marginBottom="@dimen/dimen_24"
+				android:text="@string/colsubsidio_recaudo_obligations" />
+
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/dimen_18"
+					android:layout_marginEnd="@dimen/dimen_18"
+					android:layout_marginBottom="@dimen/dimen_4"
+					android:baselineAligned="true">
+
+
+				<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:background="@color/colorGrayLight1"
+						android:weightSum="7">
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/item_colsubsidio_recaudo_select"
+							android:textAllCaps="true"
+							style="@style/Text.Body"
+							android:layout_weight="1"/>
+
+					<View style="@style/Divider_vertical"/>
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/item_colsubsidio_recaudo_reference"
+							android:textAllCaps="true"
+							style="@style/Text.Body"
+							android:layout_weight="1"/>
+
+					<View style="@style/Divider_vertical"/>
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/item_colsubsidio_recaudo_obligation"
+							android:textAllCaps="true"
+							style="@style/Text.Body"
+							android:layout_weight="1"/>
+
+					<View style="@style/Divider_vertical"/>
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/item_colsubsidio_recaudo_description"
+							android:textAllCaps="true"
+							style="@style/Text.Body"
+							android:layout_weight="1"/>
+
+					<View style="@style/Divider_vertical"/>
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/item_colsubsidio_recaudo_expiration_date"
+							android:textAllCaps="true"
+							style="@style/Text.Body"
+							android:layout_weight="1"/>
+
+					<View style="@style/Divider_vertical"/>
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/item_colsubsidio_recaudo_status"
+							android:textAllCaps="true"
+							style="@style/Text.Body"
+							android:layout_weight="1"/>
+
+					<View style="@style/Divider_vertical"/>
+
+
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							style="@style/Text.Body"
+							android:text="@string/item_colsubsidio_recaudo_fee_value"
+							android:textAllCaps="true"
+							android:layout_weight="1"/>
+
+				</LinearLayout>
+
+
+            </LinearLayout>
+
+
+			<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/payColsubsidioCollectionList"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_80"
+					android:layout_marginEnd="@dimen/font_19"
+					app:layoutManager="LinearLayoutManager"
+					tools:listitem="@layout/item_pay_colsubsidio_collection" />
+
+			<LinearLayout
+				android:id="@+id/paymentTitle"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+			<TextView
+				style="@style/Text.Title5.Margin"
+				android:layout_marginBottom="@dimen/dimen_10"
+				android:text="@string/colsubsidio_payment_title"/>
+
+				<TextView
+					style="@style/Text.Label"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/colsubsidio_payment_text" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/payment"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent">
+
+					<EditText
+							android:id="@+id/txtPaymentValue"
+							style="@style/StyleEditText"
+							android:layout_width="@dimen/dimen_300"
+							android:layout_marginStart="@dimen/dimen_16"
+							android:layout_marginTop="@dimen/dimen_16"
+							android:layout_weight="1"
+							android:hint="@string/colsubsidio_recaudo_placeholder_payment_value"
+							android:inputType="number"
+							android:maxLength="15"
+							android:paddingStart="@dimen/dimen_16"
+							android:paddingEnd="@dimen/dimen_16" tools:ignore="Autofill"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="@dimen/dimen_16">
+
+					<CheckBox
+
+						android:id="@+id/chkSendEmail"
+						android:layout_width="@dimen/dimen_35"
+						android:layout_height="@dimen/dimen_50"
+						android:layout_marginStart="@dimen/dimen_30" />
+
+					<TextView
+						style="@style/Text.Label"
+						android:text="@string/colsubsidio_recaudo_pay_full_fee" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+        </LinearLayout>
+
+		<include
+			android:id="@+id/layoutButtons"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"
+			android:layout_width="@dimen/dimen_500"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/dimen_20"
+			android:layout_gravity="end"
+			layout="@layout/layout_buttons_back_next"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

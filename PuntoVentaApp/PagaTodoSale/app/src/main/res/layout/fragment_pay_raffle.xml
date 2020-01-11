@@ -1,0 +1,194 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.com.pagatodo.core.views.raffle.fragments.PayRaffleFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|end"
+            android:background="@color/colorGraySilver">
+            <Button
+                android:id="@+id/btGenerateRandom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:text="@string/text_generate_random_number" />
+            <ImageView
+                android:id="@+id/imgRandomRaffle"
+                android:layout_width="@dimen/dimen_35"
+                android:layout_height="@dimen/dimen_35"
+                android:src="@drawable/ic_random_4"
+                android:layout_marginEnd="@dimen/dimen_10"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_24"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingEnd="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_8"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Title5"
+                android:layout_marginBottom="@dimen/dimen_24"
+                android:text="@string/title_game"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Body.Label"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/baloto_text_number"/>
+            <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                android:id="@+id/etNumberRaffle"
+                style="@style/StyleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/edittext_with_rounded_border"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:maxLength="4"
+                android:digits="0123456789"
+                android:hint="@string/text_enter_number" />
+            <TextView android:id="@+id/messageEmptyError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                style="@style/Text.Error.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/text_enter_number"/>
+            <Button android:id="@+id/btFetchAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_red"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/text_verify_disponibility"/>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_raffle_number_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="@dimen/dimen_16">
+            <View android:id="@+id/raffle_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/divider"/>
+            <TextView android:id="@+id/raffle_name_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/dimen_35"
+                android:text="@string/app_name"
+                style="@style/Text.Title5"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_divider_line" />
+            <TextView
+                android:id="@+id/text_raffle_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_name_number_for_sale"
+                android:text="@string/text_label_number"
+                style="@style/Text.Caption2"
+                android:layout_marginTop="@dimen/dimen_8" />
+            <TextView android:id="@+id/raffle_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_4"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_name_number_for_sale"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Body"
+                app:layout_constraintStart_toEndOf="@+id/text_raffle_number_for_sale"
+                android:text="@string/title_view_raffles_number"/>
+            <TextView
+                android:id="@+id/text_raffle_prize_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_raffle_number_for_sale"
+                android:text="@string/title_view_raffles_prize"
+                style="@style/Text.Caption2"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView android:id="@+id/raffle_prize_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Body"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_number_for_sale"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/title_view_raffles_number"/>
+            <TextView android:id="@+id/text_raffle_lottery_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Caption2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_prize_number_for_sale"
+                android:text="@string/title_view_raffles_lottery"/>
+            <TextView android:id="@+id/raffle_lottery_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                style="@style/Text.Body"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_prize_number_for_sale"
+                app:layout_constraintStart_toEndOf="@+id/text_raffle_lottery_number_for_sale"
+                android:text="@string/title_view_raffles_number"/>
+            <TextView android:id="@+id/text_raffle_value_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Caption2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_lottery_number_for_sale"
+                android:text="@string/view_raffles_price"/>
+            <TextView android:id="@+id/raffle_value_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                style="@style/Text.Body"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_lottery_number_for_sale"
+                app:layout_constraintStart_toEndOf="@+id/text_raffle_value_number_for_sale"
+                android:text="@string/title_view_raffles_number"/>
+            <TextView android:id="@+id/text_raffle_date_draw_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Caption2"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_value_number_for_sale"
+                android:text="@string/title_view_raffles_date_draw"/>
+            <TextView android:id="@+id/raffle_date_draw_number_for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Body"
+                app:layout_constraintTop_toBottomOf="@+id/raffle_value_number_for_sale"
+                app:layout_constraintStart_toEndOf="@+id/text_raffle_date_draw_number_for_sale"
+                android:text="@string/title_view_raffles_number"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

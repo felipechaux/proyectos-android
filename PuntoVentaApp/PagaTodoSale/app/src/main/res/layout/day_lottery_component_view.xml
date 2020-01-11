@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/dayMonday"
+            android:tag="Monday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="L"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorGraySilver"
+            android:background="@drawable/textview_circle"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+            android:id="@+id/dayTuesday"
+            android:tag="Tuesday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="M"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorGraySilver"
+            android:background="@drawable/textview_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dayWednesday"
+            app:layout_constraintLeft_toRightOf="@+id/dayMonday"/>
+
+    <TextView
+            android:id="@+id/dayWednesday"
+            android:tag="Wednesday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="M"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorGraySilver"
+            android:background="@drawable/textview_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dayThursday"
+            app:layout_constraintLeft_toRightOf="@+id/dayTuesday"/>
+
+    <TextView
+            android:id="@+id/dayThursday"
+            android:tag="Thursday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="J"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorGraySilver"
+            android:background="@drawable/textview_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dayFriday"
+            app:layout_constraintLeft_toRightOf="@+id/dayWednesday"/>
+
+
+    <TextView
+            android:id="@+id/dayFriday"
+            android:tag="Friday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="V"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorGraySilver"
+            android:background="@drawable/textview_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/daySaturday"
+            app:layout_constraintLeft_toRightOf="@+id/dayThursday"/>
+
+    <TextView
+            android:id="@+id/daySaturday"
+            android:tag="Saturday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="S"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorGraySilver"
+            android:background="@drawable/textview_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/daySunday"
+            app:layout_constraintLeft_toRightOf="@+id/dayFriday"/>
+
+    <TextView
+            android:id="@+id/daySunday"
+            android:tag="Sunday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="D"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorGraySilver"
+            android:background="@drawable/textview_circle"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/daySaturday"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_16"
+    android:paddingBottom="@dimen/dimen_24">
+
+    <TextView
+        android:id="@+id/labelDateTitle"
+        android:text="@string/text_label_parameter_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelDate"
+        android:text="@string/text_label_parameter_date"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintStart_toEndOf="@+id/labelDateTitle"
+        app:layout_constraintBottom_toBottomOf="@id/labelDateTitle"/>
+
+    <TextView
+        android:id="@+id/labelLotteriesTitle"
+        android:text="@string/text_label_parameter_lotteries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDateTitle"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelLotteries"
+        android:text="@string/text_label_parameter_lotteries"
+        app:layout_constraintStart_toEndOf="@+id/labelLotteriesTitle"
+        app:layout_constraintBottom_toBottomOf="@id/labelLotteriesTitle"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelLotteryNumbersTitle"
+        android:text="@string/text_label_parameter_numbers"
+        app:layout_constraintTop_toBottomOf="@+id/labelLotteriesTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelLotteryNumbers"
+        android:text="@string/text_label_parameter_numbers"
+        app:layout_constraintStart_toEndOf="@+id/labelLotteryNumbersTitle"
+        app:layout_constraintBottom_toBottomOf="@id/labelLotteryNumbersTitle"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelStubTitle"
+        android:text="@string/text_label_parameter_stub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelLotteryNumbersTitle"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelStub"
+        android:text="@string/text_label_parameter_stub"
+        app:layout_constraintStart_toEndOf="@+id/labelStubTitle"
+        app:layout_constraintBottom_toBottomOf="@id/labelStubTitle"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelBetTitle"
+        android:text="@string/text_label_parameter_bet"
+        app:layout_constraintTop_toBottomOf="@+id/labelStubTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelBet"
+        android:text="@string/text_label_parameter_bet"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintStart_toEndOf="@+id/labelBetTitle"
+        app:layout_constraintBottom_toBottomOf="@id/labelBetTitle"/>
+
+    <TextView
+        android:id="@+id/labelIvaTitle"
+        android:text="@string/text_label_parameter_iva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelBetTitle"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelIva"
+        android:text="@string/text_label_parameter_iva"
+        app:layout_constraintStart_toEndOf="@+id/labelIvaTitle"
+        app:layout_constraintBottom_toBottomOf="@id/labelIvaTitle"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelValueTitle"
+        app:layout_constraintTop_toBottomOf="@+id/labelIvaTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_label_parameter_value_pay"
+        style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+        android:id="@+id/labelValue"
+        android:text="@string/text_label_parameter_value_pay"
+        app:layout_constraintStart_toEndOf="@+id/labelValueTitle"
+        app:layout_constraintBottom_toBottomOf="@id/labelValueTitle"
+        style="@style/Text.Content.Ticket"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

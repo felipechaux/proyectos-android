@@ -1,0 +1,161 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="co.com.pagatodo.core.views.giro.GiroCheckRequestFragment">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        style="@style/Text.Title5.Margin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/giro_check_request_sub_itle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitle">
+
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:background="@color/colorGrayDark4"
+            android:layout_width="@dimen/dimen_100"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/giro_check_request_reference" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_width="@dimen/dimen_80"
+            android:gravity="center"
+            android:background="@color/colorGrayDark4"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/giro_check_request_type" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorGrayDark4"
+            android:layout_weight="1">
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/giro_check_request_status" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/colorGrayDark4"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/giro_check_request_detail" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/lyBottons"
+        android:layout_alignTop="@+id/lblTitle"
+        android:layout_alignBottom="@+id/lyBottons"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_giro_check_request"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/lyBottons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/lyBottons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_16"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/StyleCancelButton"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_weight=".5"
+            android:text="@string/text_btn_back" />
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btnUpdate"
+            style="@style/StyleCancelButton"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_weight=".5"
+            android:text="@string/text_btn_update" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

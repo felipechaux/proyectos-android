@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_24">
+
+    <TextView android:id="@+id/titleLabelRecaudoDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textRecaudoDescription"
+        style="@style/Text.Subtitle.Ticket"
+        android:text="@string/text_label_colsubsidio_recaudo_description"/>
+
+    <TextView android:id="@+id/textRecaudoDescription"
+        android:text="@string/text_label_colsubsidio_recaudo_description"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelRecaudoDescription"/>
+
+    <TextView android:id="@+id/titleLabelRecaudoUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textRecaudoUserName"
+        style="@style/Text.Subtitle.Ticket"
+        android:text="@string/text_label_colsubsidio_recaudo_user_name"/>
+
+    <TextView android:id="@+id/textRecaudoUserName"
+        android:text="@string/text_label_colsubsidio_recaudo_user_name"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textRecaudoDescription"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelRecaudoUserName"/>
+
+    <TextView android:id="@+id/titleLabelRecaudoBillNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintBottom_toBottomOf="@+id/textRecaudoBillNumber"
+        android:text="@string/text_label_colsubsidio_recaudo_bill_number"/>
+
+    <TextView android:id="@+id/textRecaudoBillNumber"
+        android:text="@string/text_label_colsubsidio_recaudo_bill_number"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textRecaudoUserName"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelRecaudoBillNumber"/>
+
+    <TextView android:id="@+id/titleLabelRecaudoBillValue"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintBottom_toBottomOf="@+id/textRecaudoBillValue"
+        android:text="@string/text_label_colsubsidio_recaudo_bill_value"/>
+
+    <TextView android:id="@+id/textRecaudoBillValue"
+        android:text="@string/text_label_colsubsidio_recaudo_bill_value"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textRecaudoBillNumber"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelRecaudoBillValue"/>
+
+    <TextView android:id="@+id/titleLabelRecaudoIva"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textRecaudoIva"
+        android:text="@string/text_label_colsubsidio_recaudo_IVA"/>
+
+    <TextView android:id="@+id/textRecaudoIva"
+        android:text="@string/text_label_colsubsidio_recaudo_IVA"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textRecaudoBillValue"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelRecaudoIva"/>
+
+    <TextView android:id="@+id/titleLabelRecaudoTotalPaid"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textRecaudoTotalPaid"
+        android:text="@string/text_label_colsubsidio_recaudo_total_paid"/>
+
+    <TextView android:id="@+id/textRecaudoTotalPaid"
+              style="@style/Text.Content.Ticket"
+
+              android:text="@string/text_label_colsubsidio_recaudo_total_paid"
+              app:layout_constraintStart_toEndOf="@+id/titleLabelRecaudoTotalPaid"
+              app:layout_constraintTop_toBottomOf="@+id/titleLabelRecaudoIva"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,149 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    android:layout_height="match_parent"
+    tools:context="co.com.pagatodo.core.views.giro.GiroReprintFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Title5.Margin"
+                android:text="@string/giro_reprint_notes_title" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.Label"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:text="@string/giro_reprint_type_bill" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:background="@drawable/txt_background_active"
+                        android:padding="2dp">
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spinnerTypeBill"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_42"
+                            android:hint="@string/giro_reprint_placeholder_type_bill"
+                            app:ms_arrow_tint="@color/colorRedButton"
+                            app:ms_padding_bottom="@dimen/zero"
+                            app:ms_padding_left="@dimen/dimen_8"
+                            app:ms_padding_right="@dimen/dimen_8"
+                            app:ms_padding_top="@dimen/zero" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/labelErrorTypeBill"
+                        style="@style/Text.Error.Label"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:text="@string/giro_reprint_error_type_bill"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.Label"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:text="@string/giro_reprint_reference_number" />
+
+                    <EditText
+                        android:id="@+id/txtReferenceNumber"
+                        style="@style/EditText.Field.Number"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:hint="@string/giro_reprint_placeholder_reference_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|phone"
+                        android:maxLength="20"
+                        android:paddingStart="@dimen/dimen_16"
+                        android:paddingEnd="@dimen/dimen_16"
+                        tools:ignore="Autofill" />
+
+                    <TextView
+                        android:id="@+id/labelErrorReferenceNumber"
+                        style="@style/Text.Error.Label"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:text="@string/giro_reprint_error_refence"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_350"
+            android:gravity="end|bottom"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16">
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/StyleCancelButton"
+                android:layout_width="@dimen/dimen_200"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:text="@string/text_btn_back" />
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/StyleConfirmButton"
+                android:layout_width="@dimen/dimen_200"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/text_btn_reprint_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

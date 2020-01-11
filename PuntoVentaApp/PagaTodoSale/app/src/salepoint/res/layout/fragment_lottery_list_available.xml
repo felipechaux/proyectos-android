@@ -1,0 +1,74 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.lottery.fragment.LotteryListFragment">
+
+    <LinearLayout
+            android:id="@+id/layoutSearchView"
+            android:background="@color/colorGraySilver"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingEnd="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+                app:cardCornerRadius="@dimen/dimen_2"
+                app:cardElevation="@dimen/dimen_8"
+                android:padding="@dimen/dimen_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <SearchView
+                    android:id="@+id/searchBar"
+                    android:queryHint="@string/placeholder_lotteries_search"
+                    style="@style/GeneralSearchViewStyle"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/title_lottery_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Title5"
+            android:text="@string/title_lotteries_available"
+            android:layout_below="@+id/layoutSearchView"
+            android:layout_marginLeft="@dimen/dimen_10">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItems"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_450"/>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/dimen_16">
+
+        <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/btnBack"
+                    style="@style/StyleCancelButton"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_24"
+                    android:layout_width="@dimen/dimen_200"
+                    android:text="@string/text_btn_back" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

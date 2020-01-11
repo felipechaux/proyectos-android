@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:background="@color/colorGraySilver"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblReference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/colorGraySilver"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblTypeRequest"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorGraySilver"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lblStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/colorGraySilver"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btnView"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_hide_pass"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_2"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/colorGraySilver"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btnPrint"
+                android:layout_width="28dp"
+                android:src="@drawable/ic_print"
+                android:layout_height="28dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

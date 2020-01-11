@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingBottom="@dimen/dimen_24"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_weight=".5"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:text="@string/text_btn_back"
+        style="@style/StyleCancelButton"/>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_weight=".5"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:text="@string/text_btn_next"
+        style="@style/StyleConfirmButton"/>
+</LinearLayout>

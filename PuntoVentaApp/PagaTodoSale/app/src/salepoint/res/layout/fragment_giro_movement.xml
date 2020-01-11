@@ -1,0 +1,271 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.com.pagatodo.core.views.giro.GiroMovementFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutForm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                style="@style/Text.Title5.Margin"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:text="@string/giro_movement_text_title" />
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_movement_label_date" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtMovementDateQuery"
+                    style="@style/StyleEditText"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:drawableEnd="@drawable/ic_calendar_red"
+                    android:drawablePadding="@dimen/dimen_8"
+                    android:gravity="center|start"
+                    android:hint="@string/giro_movement_placeholder_date"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text.Title5.Margin"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_4"
+                    android:text="@string/giro_movement_label_sp" />
+
+                <TextView
+                    android:id="@+id/lblMovementTitle"
+                    style="@style/Text.Title5.Margin"
+                    android:layout_marginStart="@dimen/dimen_4"
+                    android:text="@string/giro_movement_label_total_day"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewResultSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16">
+
+                <include
+                    layout="@layout/item_movement_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:baselineAligned="true"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_2"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraySilver"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblReferencePin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:text="@string/giro_movement_reference"
+                        android:textSize="@dimen/font_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:layout_marginEnd="@dimen/dimen_2"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraySilver"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblConcept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:text="@string/giro_movement_concept"
+
+                        android:textSize="@dimen/font_13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:layout_marginEnd="@dimen/dimen_2"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraySilver"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:text="@string/giro_movement_entry"
+                        android:textSize="@dimen/font_13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:layout_marginEnd="@dimen/dimen_2"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraySilver"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblEgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:text="@string/giro_movement_egress"
+                        android:textSize="@dimen/font_13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:layout_marginEnd="@dimen/dimen_2"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraySilver"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:text="@string/giro_movement_date"
+                        android:textSize="@dimen/font_13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraySilver"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:text="@string/giro_movement_hour"
+                        android:textSize="@dimen/font_13" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMovementSummaryDetails"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_movement_summary_details">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/StyleCancelButton"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_weight=".5"
+                android:text="@string/text_btn_back" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".views.lottery.LotteryActivity">
+
+    <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/mainToolbar" />
+    <TextView
+            android:id="@+id/title_lottery_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Title5"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:text="@string/title_lotteries_available"
+            android:layout_below="@+id/mainToolbar"
+            android:layout_marginStart="@dimen/dimen_36">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItems"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/title_lottery_select"
+            android:layout_above="@+id/cardButton"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/zero"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_400"/>
+
+    <TextView
+            android:id="@+id/fraction_slopes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            style="@style/Text.Title5"
+            android:layout_below="@+id/recyclerItems"
+            android:layout_marginStart="@dimen/dimen_36"
+            android:layout_marginEnd="@dimen/dimen_36">
+    </TextView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_marginEnd="@dimen/dimen_36"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="@dimen/dimen_400"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                <include
+                        layout="@layout/layout_buttons_back_next" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

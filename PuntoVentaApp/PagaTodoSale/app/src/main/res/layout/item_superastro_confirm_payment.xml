@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_8">
+
+    <TextView
+        android:id="@+id/lblIndexGame"
+        android:text="@string/text_label_parameter_games"
+        android:layout_marginBottom="@dimen/dimen_4"
+        style="@style/Text.Subtitle.Ticket" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_label_number"
+            style="@style/Text.Subtitle.Ticket"/>
+        <TextView
+            android:id="@+id/lblNumberAstro"
+            style="@style/Text.Content.Ticket"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_label_sign"
+            style="@style/Text.Subtitle.Ticket"/>
+        <TextView
+            android:id="@+id/lblSignZodiac"
+            style="@style/Text.Content.Ticket"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/text_label_value"
+            style="@style/Text.Subtitle.Ticket"/>
+        <TextView
+            android:id="@+id/lblValue"
+            style="@style/Text.Content.Ticket"/>
+    </LinearLayout>
+
+</LinearLayout>

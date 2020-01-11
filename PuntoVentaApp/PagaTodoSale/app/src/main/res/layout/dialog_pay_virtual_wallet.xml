@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_24">
+
+    <TextView android:id="@+id/tvPinNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_label_pin_number"/>
+
+    <TextView android:id="@+id/tvPinNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPinNumberTitle"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvPinValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tvPinNumberTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_label_recharge_value"/>
+
+    <TextView android:id="@+id/tvPinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@+id/tvPinNumber"
+        app:layout_constraintStart_toEndOf="@+id/tvPinValueTitle"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

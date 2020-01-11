@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="co.com.pagatodo.core.views.soat.SoatActivity">
+
+	 <include
+		 layout="@layout/main_toolbar"
+		 android:id="@+id/mainToolbar"/>
+
+	  <androidx.core.widget.NestedScrollView
+		  android:layout_width="match_parent"
+		  android:layout_height="match_parent"
+		  android:id="@+id/rootLayout">
+
+	  <LinearLayout
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content">
+
+        <TextView
+			android:text="@string/text_title_virtual_soat"
+			style="@style/Text.Title5.Margin"/>
+
+		<TextView
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/text_document_type"
+			style="@style/Text.Label"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:background="@drawable/txt_background_active"
+			android:padding="2dp">
+			<com.jaredrummler.materialspinner.MaterialSpinner
+				android:id="@+id/spinnerDocumentType"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_42"
+				app:ms_arrow_tint="@color/colorRedButton"
+				android:hint="@string/placeholder_document_type"
+				app:ms_padding_bottom="@dimen/zero"
+				app:ms_padding_left="@dimen/dimen_8"
+				app:ms_padding_right="@dimen/dimen_8"
+				app:ms_padding_top="@dimen/zero"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/labelErrorDocumentType"
+			style="@style/Text.Error.Label"
+			android:layout_gravity="end"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/placeholder_document_type"
+			android:visibility="gone" />
+
+
+	    <TextView
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/text_document_number" />
+
+	    <EditText
+			android:id="@+id/txtDocumentNumber"
+			style="@style/EditText.Field.Document"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:hint="@string/placeholder_document_number"
+			android:inputType="number|phone"
+			android:maxLength="16"
+			android:paddingStart="@dimen/dimen_16"
+			android:paddingEnd="@dimen/dimen_16"
+			tools:ignore="Autofill" />
+
+		<TextView
+			android:id="@+id/labelErrorDocumentNumber"
+			style="@style/Text.Error.Label"
+			android:layout_gravity="end"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/placeholder_document_number"
+			android:visibility="gone" />
+
+
+	    <TextView
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/text_phone_number" />
+
+	    <EditText
+			android:id="@+id/txtPhoneValue"
+			style="@style/EditText.Field.Phone"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:hint="@string/placeholder_enter_phone_number"
+			android:inputType="number|phone"
+			android:maxLength="10"
+			android:paddingStart="@dimen/dimen_16"
+			android:paddingEnd="@dimen/dimen_16"
+			tools:ignore="Autofill" />
+
+		<TextView
+			android:id="@+id/labelErrorPhoneValue"
+			style="@style/Text.Error.Label"
+			android:layout_gravity="end"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/placeholder_enter_phone_number"
+			android:visibility="gone" />
+
+		<TextView
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/text_vehicle_type"
+			style="@style/Text.Label"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:background="@drawable/txt_background_active"
+			android:padding="2dp">
+			<com.jaredrummler.materialspinner.MaterialSpinner
+				android:id="@+id/spinnerVehicleType"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_42"
+				app:ms_arrow_tint="@color/colorRedButton"
+				android:hint="@string/placeholder_vehicle_type"
+				app:ms_padding_bottom="@dimen/zero"
+				app:ms_padding_left="@dimen/dimen_8"
+				app:ms_padding_right="@dimen/dimen_8"
+				app:ms_padding_top="@dimen/zero"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/labelErrorVehicleType"
+			style="@style/Text.Error.Label"
+			android:layout_gravity="end"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/placeholder_vehicle_type"
+			android:visibility="gone" />
+
+	    <TextView
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/text_vehicle_license_plate" />
+
+	    <EditText
+			android:id="@+id/txtVehiclePlateValue"
+			style="@style/StyleEditText"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:hint="@string/placeholder_vehicle_license_plate"
+			android:maxLength="8"
+			android:inputType="textNoSuggestions"
+			android:paddingStart="@dimen/dimen_16"
+			android:paddingEnd="@dimen/dimen_16"
+			tools:ignore="Autofill" />
+
+		<TextView
+			android:id="@+id/labelErrorVehiclePlateValue"
+			style="@style/Text.Error.Label"
+			android:layout_gravity="end"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/placeholder_vehicle_license_plate"
+			android:visibility="gone" />
+
+	<include layout="@layout/layout_buttons_back_next"/>
+	</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Preferences Key -->
+    <string name="shared_key_canal_id">CANAL_ID</string>
+    <string name="shared_key_user_type">USER_TYPE</string>
+    <string name="shared_key_seller_code">SELLER_CODE</string>
+    <string name="shared_key_seller_name">SELLER_NAME</string>
+    <string name="shared_key_code_point_sale">CODE_POINT_SALE</string>
+    <string name="shared_key_municipality_code">MUNICIPALITY_CODE</string>
+    <string name="shared_key_office_code">OFFICE_CODE</string>
+    <string name="shared_key_current_serie1">SERIE1</string>
+    <string name="shared_key_current_serie2">SERIE2</string>
+    <string name="shared_key_query_type">QUERY_TYPE</string>
+    <string name="shared_key_terminal_code">TERMINAL_CODE</string>
+    <string name="shared_key_sequence_transaction">SEQUENCE_TRANSACTION</string>
+    <string name="shared_key_repeat_bet">IS_REPEAT_BET</string>
+    <string name="shared_key_is_message_displayed">IS_MESSAGE_DISPLAYED</string>
+    <string name="shared_key_token">TOKEN</string>
+    <string name="shared_key_session_id">SESSION_ID</string>
+    <string name="shared_key_user_id">USER_ID</string>
+    <string name="shared_key_user_id_type">USER_ID_TYPE</string>
+    <string name="shared_key_device_bluetooth_uuid">BLUETOOTH_DEVICE_UUID</string>
+    <string name="shared_key_jsa_printer">JSA_PRINTER_DEVICE</string>
+    <string name="shared_key_other_printer">OTHER_PRINTER_DEVICE</string>
+    <string name="shared_key_session_time_out">SESSION_TIME_OUT</string>
+    <string name="shared_key_session_parameter_version">SESSION_PARAMETER_VERSION</string>
+    <string name="shared_key_session_time_out_date">SESSION_TIME_OUT_DATE</string>
+    <string name="shared_key_auth_mode">AUTH_MODE</string>
+    <string name="shared_key_auth_mode_giro_capture">AUTH_MODE_GIRO_CAPTURE</string>
+    <string name="shared_key_auth_mode_giro_pay">AUTH_MODE_GIRO_PAY</string>
+    <string name="shared_key_parameter_date">GLOBAL_PARAMETER_DATE</string>
+
+    // Change canalId_X for real values according to environment
+    <string name="canalId_pos">PVA</string>
+    <string name="canalId_dataphone">PVMA</string>
+    <string name="canalId_smartphone">PVMA</string>
+    <string name="userType">VENDEDOR</string>
+    <string name="login_parameter">data</string>
+    <string name="channel_id_product_baloto">BTW</string>
+    <string name="transaction">7</string>
+    <string name="terminal_code">C83F-1C0C</string>
+    <string name="query_type">c</string>
+    <string name="code_sporting_league_product">1</string>
+    <string name="code_sporting_mega_goals_product">2</string>
+    <string name="code_product_pay_u_collecting">381</string>
+    <string name="report_winning_baloto">WINNING_NUMBERS</string>
+    <string name="report_information_baloto">WINNER_INFORMATION_BALOTO</string>
+    <string name="report_information_revenge">WINNER_INFORMATION_REVANCHA</string>
+    <string name="pin_type">RECARGA_SALDO</string>
+    <string name="move_stub">MOVER_PAPELERIA</string>
+
+    <string name="soat_parametrer_id_type">TIPOS_DOCUMENTO_SOAT_VIRTUAL</string>
+    <string name="soat_parametrer_vehicle_type">TIPOS_VEHICULO_SOAT_VIRTUAL</string>
+
+    <string name="soat_parametrer_header1">HEADER1_SOAT_VIRTUAL</string>
+    <string name="soat_parametrer_header2">HEADER2_SOAT_VIRTUAL</string>
+    <string name="soat_parametrer_footer">FOOTER_SOAT_VIRTUAL</string>
+
+    <string name="beps_parametrer_id_type">TIPOS_DOCUMEMTO</string>
+
+
+
+
+    <!-- Params services-->
+    <string name="sp_seed_param_service">PARAM_SERVICIO_PARAMETROS_SEMILLA</string>
+    <string name="sp_timeout_param_service">PARAM_SERVICIO_PARAMETROS_TIMEOUT</string>
+    <string name="sp_welcome_param_service">PARAM_SERVICIO_PARAMETROS_BIENVENIDA</string>
+    <string name="sp_max_amount_lotteries_param_service">CANTIDAD_MAXIMA_LOTERIAS</string>
+    <string name="sp_pm_prize_plan">PM_PLAN_PREMIO</string>
+    <string name="sp_authorizer">Autorizador</string>
+    <string name="sp_session_id">Id-Sesion</string>
+    <string name="sp_content_encode">Content-Encoding</string>
+    <string name="sp_accept_encoding">Accept-Encoding</string>
+    <string name="sp_accept_encoding_value">application/json</string>
+
+
+    <string name="sp_invalid_document">012 DOCUMENTO INVALIDO </string>
+    <string name="sp_timeout">PARAM_SERVICIO_PARAMETROS_TIMEOUT</string>
+    <string name="sp_retry_count">PARAM_SERVICIO_PARAMETROS_NREINTENTOS</string>
+    <string name="sp_timeout_retry">PARAM_SERVICIO_PARAMETROS_TIEMOUT_REINTENTO</string>
+
+    <!-- Codes for products -->
+    <string name="code_product_recharge">CODE_PRODUCT_RECHARGE</string>
+    <string name="code_product_superchance">CODE_PRODUCT_SUPERCHANCE</string>
+    <string name="code_product_maxichance">CODE_PRODUCT_MAXICHANCE</string>
+    <string name="code_product_superastro">CODE_PRODUCT_SUPERASTRO</string>
+    <string name="code_product_sportings">CODE_PRODUCT_DEPORTIVAS</string>
+    <string name="code_product_betplay">CODE_PRODUCT_BETPLAY</string>
+    <string name="code_product_raffle">23</string>
+    <string name="code_recharge">06</string>
+    <string name="code_superchance">02</string>
+    <string name="code_maxichance">01</string>
+    <string name="code_superastro">03</string>
+    <string name="code_betplay">449</string>
+    <string name="code_sporting">176</string>
+    <string name="code_product_baloto">803</string>
+    <string name="code_product_virtual_wallet">375</string>
+    <string name="code_product_paymillionaire">804</string>
+    <string name="code_product_colpensiones_beps">858</string>
+    <string name="code_product_paybill">860</string>
+    <string name="code_stubs_operation_code">01</string>
+    <string name="code_product_virtual_soat">371</string>
+    <string name="code_product_beps">858</string>
+
+    <!-- Codes for transaction sequences -->
+    <string name="transaction_sequence">TRANSACTION_SEQUENCE</string>
+
+    <string name="seed_param_service">PARAM_SERVICIO_PARAMETROS_SEMILLA</string>
+    <string name="timeout_param_service">PARAM_SERVICIO_PARAMETROS_TIMEOUT</string>
+    <string name="iva_param_service">PARAM_SERVICIO_PARAMETROS_IVA</string>
+    <string name="documents_param_service">PARAM_SERVICIO_PARAMETROS_TIPOS_DOCUMEMTO</string>
+    <string name="param_service_gelsa_header">PARAM_SERVICIO_PARAMETROS_GELSA_HEADER</string>
+
+    <string name="key_min_value_ticket">VALOR_MINIMO_TIQUETE</string>
+    <string name="key_max_value_ticket">VALOR_MAXIMO_TIQUETE</string>
+    <string name="key_min_value_bet">VALOR_MINIMO_APUESTA</string>
+    <string name="key_max_value_bet">VALOR_MAXIMO_APUESTA</string>
+    <string name="key_max_size_bet">CANTIDAD_MAXIMA_APUESTAS</string>
+
+    <string name="bundle_value_without_Iva">BUNDLE_VALUE_WITHOUT_IVA</string>
+    <string name="bundle_value_raffle_date">BUNDLE_VALUE_RAFFLE_DATE</string>
+    <string name="bundle_value_lotteries_number">BUNDLE_VALUE_LOTTERIES_NUMBER</string>
+    <string name="bundle_value_numbers">BUNDLE_VALUE_NUMBERS</string>
+    <string name="bundle_value_stubs">BUNDLE_VALUE_STUBS</string>
+    <string name="bundle_value_min_amount">BUNDLE_VALUE_MIN_AMOUNT</string>
+
+    <!-- RAFFLES VARIABLES -->
+    <string name="key_raffle_number">RAFFLE_NUMBER</string>
+    <string name="key_raffle_code">RAFFLE_ID</string>
+    <string name="response_code_zero">0</string>
+    <string name="response_code_zero_2">00</string>
+    <string name="response_code_one">1</string>
+
+    <!-- Product Codes -->
+    <string name="code_chance">01</string>
+    <string name="code_paymillionaire">804</string>
+    <string name="code_weekly_lotteries">8</string>
+
+
+    <!-- Max Lotteries -->
+    <string name="max_lotteries_all">-1</string>
+    <string name="max_lotteries_paymillionaire">0</string>
+
+    <!-- Max Column Number Of Lotteries -->
+    <string name="lottery_column_3">3</string>
+
+    <!-- P_BALOTO VARIABLES -->
+    <string name="baloto_game_name">BALOTO</string>
+    <string name="baloto_game_id_addonplayed">REVANCHA</string>
+
+    <!-- Superastro variables -->
+    <string name="list_signos_todos">13-TODOS</string>
+
+
+    <!-- PRODUCT NAMES -->
+    <string name="product_name_maxichance">MAXICHANCE</string>
+
+    <!-- GRADLE -->
+    <string name="device_type_dataphone">dataphone</string>
+    <string name="device_type_salepoint">salepoint</string>
+    <string name="device_type_smartphone">smartphone</string>
+
+    <!-- CONFIGURATION -->
+    <string name="key_repeat_superastro_bet">SUPERASTRO_REPEAT</string>
+    <string name="default_timeout">30</string>
+    <string name="paybill_default_bill_number">1</string>
+    <string name="paybill_default_agreement_code">0</string>
+    <string name="usb_print_key">ab01</string>
+
+    <!-- SUCCESS CODES -->
+    <string name="code_expired_prize">CM_055</string>
+    <string name="code_paid_prize">CM_034</string>
+    <string name="code_award_restriction">CM_033</string>
+    <string name="code_user_winner">0</string>
+
+    <!-- ERROR CODES -->
+    <string name="code_error_seller_not_exist">CM_020</string>
+    <string name="code_transaction_error">99</string>
+    <string name="code_terminal_not_exist">CM_031</string>
+
+    <!-- DAYS OF P_JUEGOS_CHANCE -->
+    <string name="chance_weekly_day">08</string>
+    <string name="chance_weekly_day_without_zero">8</string>
+
+    <!-- CODES FOR VIRTUAL SOAT -->
+    <string name="code_entity_virtual_soat">49161</string>
+    <string name="code_document_type">C</string>
+    <string name="code_cashier">data</string>
+    <string name="code_dane">18205</string>
+    <string name="code_user_type">RECAUDADOR</string>
+    <string name="code_status_type">CONFIRMADO</string>
+    <string name="code_payment_type">1</string>
+    <string name="code_payment_method">EFECTIVO</string>
+    <string name="code_document_number">52120654</string>
+    <string name="code_license_plate">PNJ40A</string>
+    <string name="code_vehicle_type">MOTO</string>
+    <string name="code_phone">2655145423</string>
+    <string name="code_rprint">false</string>
+    <string name="code_collecting_value">480100</string>
+    <string name="code_brand">YAMAHA</string>
+
+
+
+    <!-- CODES PARAMETERS SIVEMTX -->
+    <string name="param_sivemtx_seguridad_session_time">PARAM_SIVEMTX_SEGURIDAD_SESSION_TIME</string>
+    <string name="param_sivemtx_seguridad_version_parametros">PARAM_SIVEMTX_SEGURIDAD_VERSION_PARAMETROS</string>
+    <string name="param_login">SEG_LOGIN</string>
+    <string name="param_giro_capture">SEG_GIRO_CAPTACION</string>
+    <string name="param_giro_pay">SEG_GIRO_PAGO</string>
+
+    <!-- CODES_GIRO -->
+    <string name="code_product_giro">301</string>
+    <string name="code_product_giro_pago">304</string>
+    <string name="GIRO_MIN_VALUE">5000</string>
+
+    <string name="GIRO_CAPTURE_CONCEPT_CODE_VALUE">2</string>
+    <string name="GIRO_CAPTURE_CONCEPT_CODE_FREIGHT">3</string>
+
+    <string name="GIRO_QUERY_CONCEPT_CODE_VALUE">17</string>
+    <string name="GIRO_QUERY_CONCEPT_CODE_FREIGHT">2</string>
+
+    <string name="EXT_MENU_GIRO_ITEM">EXT_MENU_GIRO_ITEM</string>
+    <string name="TYPE_GIRO_CAPTURE">CAPTACION</string>
+    <string name="GIRO_TYPE_THIRD_SENDER">REMITENTE</string>
+    <string name="GIRO_ERROR_GR_020">GR_020</string>
+    <string name="GIRO_CHECKREQUEST_PRINT">ACEPTADO</string>
+
+
+    <!-- GIRO PARAMS -->
+    <string name="CODE_PARAM_GIRO_DOCUMENT_TYPE">GIRO_TIPOS_DOCUMEMTO</string>
+    <string name="CODE_PARAM_GIRO_ECONOMIC_ACTIVITY">GIR_ACTIVIDAD_ECONOMICA</string>
+    <string name="CODE_PARAM_GIRO_UNUSUAL_OPERATIONS">OPERACIONES_INUSUALES</string>
+    <string name="DOCUMENT_TYPE_DEFAULT">CC</string>
+    <string name="DOCUMENT_TYPE_OTHER">OTROS</string>
+    <string name="shared_key_user_giro">USER_GIRO_OBJECT</string>
+    <string name="shared_key_giro_login">GIRO_LOGIN_OBJECT</string>
+    <string name="shared_key_giro_parameter">GIRO_PARAMETER_OBJECT</string>
+    <string name="shared_key_dialog_pending">DIALOG_PENDIG_MSM</string>
+
+    <string name="shared_key_baloto_parameter">BALOTO_PARAMETER_OBJECT</string>
+    <string name="ECONOMY_ACTIVITY_DEFAULT">EMPLEADO PRIVADO</string>
+    <string name="CODE_PARAM_GIRO_TYPE_PERSON">TIPO_PERSONA</string>
+    <string name="CODE_PARAM_GIRO_SOCIAL_STRATUM">ESTRATOS</string>
+    <string name="shared_key_user_giro_edit">USER_GIRO_OBJECT_EDIT</string>
+    <string name="title_fraction_slopes">Fracciones pendientes:</string>
+
+
+    <string name="giro_print_next_line">&amp;&amp;</string>
+    <string name="giro_print_format">|</string>
+    <string name="giro_print_aling_left">LEFT</string>
+    <string name="giro_print_aling_center">CENTER</string>
+
+    <!-- ELDERLY PARAMS -->
+
+    <string name="shared_key_elderly_login">ELDERLY_LOGIN_OBJECT</string>
+    <string name="shared_key_user_elderly">USER_ELDERLY_OBJECT</string>
+
+    <!-- RECHARGE SITP PARAMS -->
+    <string name="recharge_sitp_serie1">JC1</string>
+    <string name="recharge_sitp_serie2">0002152</string>
+    <string name="recharge_sitp_product_code">352</string>
+    <string name="recharge_sitp_seller_code">111112</string>
+    <string name="recharge_sitp_terminal_code">C83F-1C0C</string>
+    <string name="recharge_sitp_operation_type">RECARGA</string>
+    <string name="recharge_sitp_channel_id">PVA</string>
+    <string name="recharge_sitp_transaction">recarga</string>
+    <string name="balance_sitp_transaction">saldo</string>
+    <string name="sam_balance_sitp_transaction">saldo_dispositivo</string>
+    <string name="giro_ext_type_document">giro_ext_type_document</string>
+    <string name="giro_ext_reference">giro_ext_reference</string>
+    <string name="giro_ext_document">giro_ext_document</string>
+    <string name="giro_ext_edit">giro_ext_edit</string>
+    <string name="giro_ext_origin">giro_ext_origin</string>
+    <string name="giro_ext_type_operation">giro_ext_type_operation</string>
+    <string name="shared_key_sitp_data">shared_key_sitp_data</string>
+    <string name="giro_movement_type_concept_entry">ING</string>
+
+
+    <string name="giro_auth_type_exonerate_fingerprint">Solicitud exoneración de huella</string>
+    <string name="giro_auth_type_auth_giro">Autorizar Giros</string>
+    <string name="giro_auth_type_change_benChange">Cambio de beneficiario</string>
+    <string name="giro_auth_type_cancel_giro">Anular Giros</string>
+    <string name="giro_auth_type_lifting_restriction">Levantamiento restricción</string>
+    <string name="giro_auth_type_lifting_defeated">Levantamiento vencido</string>
+
+    <string name="title_fractions_available">Tiquete Lotería disponible</string>
+    <string name="message_fraction_available">¿Desea imprimir tiquete de fracciones disponibles?</string>
+
+    <string name="registraduria_mac_address">0445-54EC</string>
+    <string name="registraduria_product_code">394</string>
+    <string name="registraduria_seller_code">111111</string>
+    <string name="registraduria_user_type">VENDEDOR</string>
+    <string name="registraduria_sale_pin">4684684663</string>
+    <string name="registraduria_ot_service">OT</string>
+
+    <string name="giro_reprint_type_bill_capture">Captación</string>
+    <string name="giro_reprint_type_bill_pay">Pago</string>
+    <string name="giro_reprint_type_bill_cancel">Anulación</string>
+    <string name="fingerprint_exonerate">EXONERATE</string>
+
+    <!-- CODE ELDERLY -->
+    <string name="code_product_elderly">442</string>
+    <string name="giro_user_type_person_legal">PERSONA JURIDICA</string>
+    <string name="giro_user_type_person_natural">PERSONA NATURAL</string>
+    <string name="giro_user_type_document_nit">NIT</string>
+    <string name="giro_user_type_document_ti">TI</string>
+    <string name="giro_user_type_document_pas">PA</string>
+
+    <string name="giro_parameter_reprint_send">REIMPRESION_IMPOSICION</string>
+    <string name="giro_parameter_reprint_pay">REIMPRESION_PAGO</string>
+    <string name="giro_parameter_time_out">PARAM_SERVICIO_PARAMETROS_TIMEOUT</string>
+
+
+    <string name="recharge_parameter_values">RECARGA_VALORES_RECARGA</string>
+    <string name="code_product_lottery">811</string>
+
+    <string name="apn">APN</string>
+
+    <string name="apn_claro">internet.comcel.com.co</string> <!-- ael.comcel.com.co-->
+    <string name="apn_movistar">internet.movistar.com.co</string>
+    <string name="apn_tigo">web.colombiamovil.com.co</string>
+
+
+    <string name="apn_operator_tigo">TIGO</string>
+    <string name="apn_operator_claro">CLARO</string>
+    <string name="apn_operator_movistar">MOVISTAR</string>
+    <string name="lottery_result_filter">PREMIO MAYOR</string>
+
+    <!-- CODES_BBVA -->
+    <string name="code_product_bbva_deposit">855</string>
+    <string name="code_product_bbva_withdrawal">850</string>
+
+    <!-- CODES_COLSUBSIDIO -->
+    <string name="code_product_colsubsidio_collection">354</string>
+    <string name="response_success_code">0</string>
+
+
+</resources>

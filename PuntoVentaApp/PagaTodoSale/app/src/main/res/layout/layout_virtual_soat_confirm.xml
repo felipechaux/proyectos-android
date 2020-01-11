@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingTop="@dimen/dimen_16"
+	android:paddingStart="@dimen/dimen_24"
+	android:paddingBottom="@dimen/dimen_24">
+
+
+	  <LinearLayout
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/labelLicencePlate"
+			android:layout_marginTop="@dimen/dimen_16"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_vehicle_license_plate"
+			style="@style/Text.Label"/>
+
+		<TextView
+			android:id="@+id/txtLicencePlate"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="HDV345"
+			style="@style/Text.Content.Ticket"/>
+
+
+	    <TextView
+			android:id="@+id/labelVehicleOwner"
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_vehicle_owner" />
+
+
+	    <TextView
+			android:id="@+id/txtVehicleOwner"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="Carlos Albeiro Donoso Quevedo" />
+
+
+		<TextView
+			android:id="@+id/labelDocumentNumber"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_document_number"
+			style="@style/Text.Label"/>
+
+		<TextView
+			android:id="@+id/txtDocumentNumber"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="1130594034" />
+
+
+	    <TextView
+			android:id="@+id/labelCellNumber"
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_cell_phone_number" />
+
+		<TextView
+			android:id="@+id/txtCellNumber"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="3106668907" />
+
+	    <TextView
+			android:id="@+id/labelVehicleBrand"
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_vehicle_brand" />
+
+		<TextView
+			android:id="@+id/txtVehicleBrand"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="Nissan" />
+
+	    <TextView
+			android:id="@+id/labelVehicleColor"
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_vehicle_color" />
+
+		<TextView
+			android:id="@+id/txtVehicleColor"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="Rojo" />
+
+	    <TextView
+			android:id="@+id/labelBeginDate"
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_begin_date_soat" />
+
+		<TextView
+			android:id="@+id/txtBeginDate"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="2018/10/01" />
+
+	    <TextView
+			android:id="@+id/labelSoatValue"
+			style="@style/Text.Label"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginTop="@dimen/dimen_8"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="@string/ticket_text_soat_value" />
+
+		<TextView
+			android:id="@+id/txtSoatValue"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="@dimen/dimen_16"
+			android:layout_marginEnd="@dimen/dimen_16"
+			android:text="$ 205.000" />
+
+	</LinearLayout>
+
+</LinearLayout>

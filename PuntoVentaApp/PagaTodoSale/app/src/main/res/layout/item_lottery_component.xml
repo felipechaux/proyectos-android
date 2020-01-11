@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_40"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="@dimen/zero"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/chkLotterySelect"
+            android:layout_width="@dimen/dimen_35"
+            android:layout_height="@dimen/dimen_50"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvLotteryName"
+            app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+        <TextView
+            android:id="@+id/tvLotteryName"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            tools:text="Lottery Name"
+            style="@style/Text.SubTitle1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/chkLotterySelect"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

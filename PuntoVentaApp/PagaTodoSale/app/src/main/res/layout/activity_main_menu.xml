@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.homemenu.MainMenuActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/background_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_250"
+            android:scaleType="fitXY"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/lblNameUser"
+                style="@style/Text.Title5"
+                android:layout_marginTop="@dimen/dimen_margin_top_welcome_msg_main_menu"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_welcome_msg_main_menu"
+                android:textAlignment="center"
+                android:text="@string/text_label_parameter_name_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMenus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen_margin_main_menu"
+                android:layout_marginEnd="@dimen/dimen_margin_main_menu"
+                android:layout_marginBottom="@dimen/dimen_16"
+                tools:listitem="@layout/item_main_menu"/>
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+</RelativeLayout>

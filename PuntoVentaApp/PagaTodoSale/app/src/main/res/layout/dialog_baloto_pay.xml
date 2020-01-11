@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:padding="@dimen/dimen_24">
+    <TextView android:id="@+id/dialogPayBalotoTitleNumber"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/baloto_text_panel"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="@dimen/dimen_8" />
+
+    <TextView
+            android:id="@+id/dialogPayBalotoNumber"
+            style="@style/Text.Content.Ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:text="@string/baloto_text_panel"
+            app:layout_constraintBottom_toBottomOf="@+id/dialogPayBalotoTitleNumber"
+            app:layout_constraintStart_toEndOf="@+id/dialogPayBalotoTitleNumber"
+            app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@+id/dialogPayBalotoTotalValueTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/font_14"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/dialogPayBalotoNumber"
+              android:text="@string/dialog_baloto_total_value"
+              android:layout_marginStart="@dimen/dimen_8" />
+
+    <TextView
+            android:id="@+id/dialogPayBalotoTotalValue"
+            style="@style/Text.Content.Ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:text="@string/baloto_text_panel"
+            app:layout_constraintBottom_toBottomOf="@+id/dialogPayBalotoTotalValueTitle"
+            app:layout_constraintStart_toEndOf="@+id/dialogPayBalotoTotalValueTitle"
+            app:layout_constraintTop_toBottomOf="@+id/dialogPayBalotoNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>

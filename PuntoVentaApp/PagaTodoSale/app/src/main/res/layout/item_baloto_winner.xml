@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/dimen_16"
+    android:layout_marginEnd="@dimen/dimen_16"
+    android:layout_marginBottom="@dimen/dimen_4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTagDiv"
+        android:text="@string/text_label_div"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_weight=".18"
+        android:gravity="center"
+        android:background="@drawable/rounded_background_gray_ligth_3"
+        android:layout_marginEnd="@dimen/dimen_4"
+        style="@style/Text.SubTitle1.Light"/>
+    <TextView
+        android:id="@+id/tvTagWinners"
+        android:text="@string/text_label_game_result"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_weight=".35"
+        android:gravity="center"
+        android:background="@drawable/rounded_background_gray_ligth_3"
+        android:layout_marginEnd="@dimen/dimen_4"
+        style="@style/Text.SubTitle1"/>
+    <TextView
+        android:id="@+id/tvTagValue"
+        android:text="@string/placeholder_value"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_weight=".47"
+        android:gravity="center|start"
+        android:paddingStart="@dimen/dimen_8"
+        android:background="@drawable/rounded_background_gray_ligth_3"
+        style="@style/Text.SubTitle1.Light"/>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.baloto.AccumulatedBalotoActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+        <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/mainToolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:text="@string/accumulated_baloto_subtitle"
+                style="@style/Text.Title5.Margin"
+                android:layout_marginStart="@dimen/zero"/>
+            <TextView
+                android:text="@string/text_label_baloto"
+                android:textStyle="bold"
+                style="@style/Text.Caption1"/>
+            <TextView
+                android:text="@string/text_label_baloto_accumulated"
+                android:layout_marginTop="@dimen/dimen_16"
+                style="@style/Text.Body"/>
+            <TextView
+                android:id="@+id/lblDateDraw"
+                android:text="@string/text_label_baloto_date_draw"
+                style="@style/Text.Body"/>
+            <TextView
+                android:id="@+id/lblValueDraw"
+                android:text="@string/text_label_baloto_value"
+                android:textStyle="bold"
+                style="@style/Text.Body"/>
+
+            <View
+                android:layout_marginTop="@dimen/dimen_24"
+                android:layout_marginBottom="@dimen/dimen_24"
+                android:background="@color/colorGrayLight3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"/>
+
+            <TextView
+                android:text="@string/baloto_text_rematch"
+                android:textStyle="bold"
+                style="@style/Text.Caption1"/>
+            <TextView
+                android:text="@string/text_label_baloto_accumulated"
+                android:layout_marginTop="@dimen/dimen_16"
+                style="@style/Text.Body"/>
+            <TextView
+                android:id="@+id/lblDateDrawRevenge"
+                android:text="@string/text_label_baloto_date_draw"
+                style="@style/Text.Body"/>
+            <TextView
+                android:id="@+id/lblValueDrawRevenge"
+                android:text="@string/text_label_baloto_value"
+                android:textStyle="bold"
+                style="@style/Text.Body"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_buttons_back_next"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

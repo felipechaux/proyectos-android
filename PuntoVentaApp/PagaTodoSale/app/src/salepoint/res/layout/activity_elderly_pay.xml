@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="co.com.pagatodo.core.views.elderly.ElderlyPayActivity">
+
+	<include
+		layout="@layout/main_toolbar"
+		android:id="@+id/mainToolbar"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"/>
+
+	<androidx.core.widget.NestedScrollView
+	   android:id="@+id/scrollMain"
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:layout_below="@+id/mainToolbar">
+
+	<LinearLayout
+		android:id="@+id/layoutForm"
+		android:orientation="vertical"
+		android:layout_below="@+id/mainToolbar"
+		android:layout_marginStart="@dimen/dimen_16"
+		android:layout_marginEnd="@dimen/dimen_16"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:text="@string/elderly_auth_title"
+			style="@style/Text.Title5.Margin"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight=".35"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/elderly_select_option"
+					style="@style/Text.Label"/>
+
+				<LinearLayout
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					    <RadioGroup
+							android:id="@+id/radioUser"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+
+							<RadioButton
+								android:id="@+id/rdB"
+								android:text="@string/elderly_option_holder"
+								android:layout_marginTop="@dimen/dimen_16"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="10dp"/>
+
+							<RadioButton
+								android:id="@+id/rdA"
+								android:text="@string/elderly_option_auth"
+								android:layout_marginRight="10dp"
+								android:layout_marginTop="@dimen/dimen_16"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</RadioGroup>
+
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<View android:id="@+id/divider1" style="@style/Divider" />
+
+		<LinearLayout
+			android:baselineAligned="false"
+			android:id="@+id/lyElderlyB"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/elderly_document_typeB"
+					style="@style/Text.Label2"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_8"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:background="@drawable/txt_background_active"
+					android:padding="2dp">
+						<com.jaredrummler.materialspinner.MaterialSpinner
+							android:id="@+id/spinnerDocumentTypeB"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/dimen_42"
+							app:ms_arrow_tint="@color/colorRedButton"
+							app:ms_padding_bottom="@dimen/zero"
+							app:ms_padding_left="@dimen/dimen_8"
+							app:ms_padding_right="@dimen/dimen_8"
+							app:ms_padding_top="@dimen/zero"
+							/>
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="@dimen/zero"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+				<TextView
+						style="@style/Text.Label2"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:text="@string/elderly_document_numberB" />
+
+				<EditText
+						android:id="@+id/txtDocumentNumberB"
+						style="@style/StyleEditText"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:inputType="number"
+						android:maxLength="15"
+						android:paddingStart="@dimen/dimen_16"
+						android:paddingEnd="@dimen/dimen_16"
+						tools:ignore="Autofill" />
+
+				<TextView
+						android:id="@+id/labelErrorDocumentNumberB"
+						style="@style/Text.Error.Label"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="end"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:text="@string/registraduria_collection_document_number_placeholder"
+						android:visibility="gone" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				 <TextView
+					 style="@style/Text.Label2"
+					 android:layout_marginStart="@dimen/dimen_16"
+					 android:layout_marginTop="@dimen/dimen_16"
+					 android:layout_marginEnd="@dimen/dimen_16"
+					 android:text="@string/elderly_name_user" />
+
+				<EditText
+					android:id="@+id/txtUserNameB"
+					android:enabled="false"
+					style="@style/StyleEditTextInactive"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_8"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:paddingStart="@dimen/dimen_16"
+					android:paddingEnd="@dimen/dimen_16"
+					tools:ignore="Autofill" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight="1"
+					android:layout_marginTop="@dimen/dimen_20"
+					android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+						android:id="@+id/btnQueryT"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:text="@string/text_btn_consult2"
+						style="@style/StyleQueryButton"/>
+
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:baselineAligned="false"
+			android:id="@+id/lyElderlyA"
+			android:visibility="gone"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/elderly_document_typeA"
+					style="@style/Text.Label2"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_8"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:background="@drawable/txt_background_active"
+					android:padding="2dp">
+						<com.jaredrummler.materialspinner.MaterialSpinner
+							android:id="@+id/spinnerDocumentTypeA"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/dimen_42"
+							app:ms_arrow_tint="@color/colorRedButton"
+							app:ms_padding_bottom="@dimen/zero"
+							app:ms_padding_left="@dimen/dimen_8"
+							app:ms_padding_right="@dimen/dimen_8"
+							app:ms_padding_top="@dimen/zero"
+						/>
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				 <TextView
+					 style="@style/Text.Label2"
+					 android:layout_marginStart="@dimen/dimen_16"
+					 android:layout_marginTop="@dimen/dimen_16"
+					 android:layout_marginEnd="@dimen/dimen_16"
+					 android:text="@string/elderly_document_numberA" />
+
+				<EditText
+					android:id="@+id/txtDocumentNumberA"
+					style="@style/StyleEditText"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_8"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:maxLength="15"
+					android:paddingStart="@dimen/dimen_16"
+					android:paddingEnd="@dimen/dimen_16"
+					tools:ignore="Autofill"
+					android:inputType="number"/>
+
+				<TextView
+						android:id="@+id/labelErrorDocumentNumberA"
+						style="@style/Text.Error.Label"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="end"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:text="@string/registraduria_collection_document_number_placeholder"
+						android:visibility="gone" />
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				 <TextView
+					 style="@style/Text.Label2"
+					 android:layout_marginStart="@dimen/dimen_16"
+					 android:layout_marginTop="@dimen/dimen_16"
+					 android:layout_marginEnd="@dimen/dimen_16"
+					 android:text="@string/elderly_name_user" />
+
+				<EditText
+					android:id="@+id/txtUserNameA"
+					android:enabled="false"
+					style="@style/StyleEditTextInactive"
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_8"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:paddingStart="@dimen/dimen_16"
+					android:paddingEnd="@dimen/dimen_16"
+					tools:ignore="Autofill" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/zero"
+				android:layout_weight="1"
+				android:layout_marginTop="@dimen/dimen_20"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+
+				<CheckBox
+					android:id="@+id/checkCurador"
+					android:text="@string/elderly_is_curator"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/dimen_16"/>
+
+
+				<Button
+					android:id="@+id/btnQueryB"
+					style="@style/StyleQueryButton"
+					android:width="@dimen/dimen_50"
+
+					android:text="@string/text_btn_consult2"
+					/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<View android:id="@+id/divider2" style="@style/Divider" />
+
+		<LinearLayout
+				android:id="@+id/containerPayment"
+				android:visibility="gone"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:layout_height="wrap_content">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+				<LinearLayout
+						android:id="@+id/elderlyQueryResult"
+						android:layout_width="@dimen/zero"
+						android:layout_weight=".35"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+					<TextView
+							android:layout_marginStart="@dimen/dimen_16"
+							android:layout_marginTop="@dimen/dimen_16"
+							android:layout_marginEnd="@dimen/dimen_16"
+							android:text="@string/elderly_subsidy_reference"
+							style="@style/Text.Label"/>
+
+					<LinearLayout
+							android:layout_width="@dimen/dimen_350"
+							android:layout_height="wrap_content"
+							android:layout_marginStart="@dimen/dimen_16"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginEnd="@dimen/dimen_16"
+							android:background="@drawable/txt_background_active"
+							android:padding="2dp">
+						<com.jaredrummler.materialspinner.MaterialSpinner
+								android:id="@+id/spinnerSubsidyReference"
+								android:layout_width="match_parent"
+								android:layout_height="@dimen/dimen_42"
+								app:ms_arrow_tint="@color/colorRedButton"
+								app:ms_padding_bottom="@dimen/zero"
+								app:ms_padding_left="@dimen/dimen_8"
+								app:ms_padding_right="@dimen/dimen_8"
+								app:ms_padding_top="@dimen/zero"
+								/>
+					</LinearLayout>
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<TextView
+					android:layout_marginStart="@dimen/dimen_16"
+					android:layout_marginTop="@dimen/dimen_16"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:text="@string/elderly_data_beneficiary_title"
+					style="@style/Text.Title5.Margin"/>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/dimen_4"
+					android:baselineAligned="true"
+					android:orientation="horizontal">
+
+
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/text_elderly_enrollment_document_type" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/text_elderly_enrollment_document_number" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/item_giro_consult_document_origin" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/elderly_name_result" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/elderly_lastname_result" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/elderly_subsidy_result" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/elderly_value_result" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							style="@style/Text.Label"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/dimen_8"
+							android:layout_marginBottom="@dimen/dimen_8"
+							android:text="@string/elderly_period_result" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/dimen_4"
+					android:baselineAligned="true"
+					android:orientation="horizontal">
+
+
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayTypeId"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:text="@string/giro_not_found"
+							android:gravity="center"
+							android:layout_weight="1" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayId"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/giro_not_found"
+
+							android:layout_weight="1" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayThirdOrigin"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/giro_not_found"
+
+							android:layout_weight="1" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayNameB"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/giro_not_found"
+							android:layout_weight="1" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayLastNameB"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/giro_not_found"
+							android:layout_weight="1" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayReference"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/giro_not_found"
+							android:layout_weight="1" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_4"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayValue"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:text="@string/giro_not_found"
+							android:gravity="center"
+							android:layout_weight="1" />
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_4"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:layout_weight="1"
+						android:background="@color/colorGraySilver"
+						android:gravity="center">
+
+					<TextView
+							android:id="@+id/txtPayDate"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/dimen_12"
+							android:gravity="center"
+							android:text="@string/giro_not_found"
+							android:layout_weight="1" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:id="@+id/nextButtom"
+					android:layout_width="@dimen/dimen_500"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginTop="@dimen/dimen_24"
+					android:layout_marginEnd="@dimen/dimen_16"
+					android:paddingTop="@dimen/dimen_24"
+					android:paddingBottom="@dimen/dimen_24"
+					android:visibility="visible"
+					android:weightSum="1">
+
+				<Button
+						android:id="@+id/btnBack"
+						style="@style/StyleCancelButton"
+						android:layout_marginStart="@dimen/dimen_16"
+						android:layout_marginEnd="@dimen/dimen_8"
+						android:layout_weight=".5"
+						android:text="@string/text_btn_back"/>
+
+				<Button
+						android:id="@+id/btnNext"
+						style="@style/StyleConfirmButton"
+						android:layout_marginStart="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						android:layout_weight=".5"
+						android:text="@string/text_btn_next"/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+
+
+
+	</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

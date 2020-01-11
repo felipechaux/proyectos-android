@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.lottery.LotteryActivity">
+
+    <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/mainToolbar" />
+    <TextView
+            android:id="@+id/title_lottery_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Title5"
+            android:text="@string/title_lotteries_available"
+            android:layout_below="@+id/mainToolbar"
+            android:layout_marginLeft="@dimen/dimen_16">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItems"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/title_lottery_select"
+            android:layout_above="@+id/cardButton"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_440"/>
+
+    <TextView
+            android:id="@+id/fraction_slopes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Title5"
+            android:layout_below="@+id/recyclerItems"
+            android:layout_marginLeft="@dimen/dimen_16">
+    </TextView>
+
+    <LinearLayout
+            android:layout_width="@dimen/dimen_500"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_weight="1">
+
+        <include layout="@layout/layout_buttons_back_next"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

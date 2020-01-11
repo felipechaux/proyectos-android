@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="co.com.pagatodo.core.views.betplay.BetplayActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include
+                layout="@layout/main_toolbar"
+                android:id="@+id/mainToolbar" />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_24">
+
+            <TextView
+                    android:id="@+id/lblTitle"
+                    android:text="@string/text_title_recharge"
+                    style="@style/Text.Title5"
+                    android:textSize="@dimen/dimen_30"
+                    android:layout_marginBottom="@dimen/dimen_30"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_24"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/labelNumberId"
+                            android:text="@string/text_numberid_betplay"
+                            style="@style/Text.Label"
+                            android:textSize="@dimen/dimen_16"/>
+
+                    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                            android:id="@+id/txtNumberId"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:hint="@string/placeholder_numberid"
+                            tools:ignore="Autofill"
+                            style="@style/EditText.Field.Document"
+                            android:imeOptions="actionNext"
+                            android:paddingStart="@dimen/dimen_16"
+                            android:paddingEnd="@dimen/dimen_16"/>
+                    <TextView
+                            android:id="@+id/labelErrorNumberId"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="@string/message_error_numberid"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/labelNumberIdConfirm"
+                        android:text="@string/text_numberid_confirm_betplay"
+                        style="@style/Text.Label"
+                        android:textSize="@dimen/dimen_16"/>
+
+                    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                        android:id="@+id/txtNumberIdConfirm"
+                        style="@style/EditText.Field.Document"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:hint="@string/placeholder_numberid_confirm"
+                        android:imeOptions="actionNext"
+                        android:longClickable="false"
+                        android:paddingStart="@dimen/dimen_16"
+                        android:paddingEnd="@dimen/dimen_16"
+                        tools:ignore="Autofill" />
+
+                    <TextView
+                        android:id="@+id/labelErrorNumberIdConfirm"
+                        android:visibility="gone"
+                        android:layout_gravity="end"
+                        android:text="@string/message_error_numberid_confirm"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        style="@style/Text.Error.Label" />
+                    <TextView
+                        android:id="@+id/labelErrorNumberIdNotEqual"
+                        android:visibility="gone"
+                        android:layout_gravity="end"
+                        android:text="@string/message_error_numberid_not_equal"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        style="@style/Text.Error.Label" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_24"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/labelValueRecharge"
+                        android:layout_marginTop="@dimen/dimen_24"
+                        android:text="@string/text_recharge_value"
+                        style="@style/Text.Label"
+                        android:textSize="@dimen/dimen_16"/>
+                    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                        android:id="@+id/txtValueRecharge"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:hint="@string/placeholder_value_recharge"
+                        tools:ignore="Autofill"
+                        style="@style/EditText.Field.Document"
+                        android:imeOptions="actionNext"
+                        android:paddingStart="@dimen/dimen_16"
+                        android:paddingEnd="@dimen/dimen_16"/>
+                    <TextView
+                        android:id="@+id/labelErrorValueRecharge"
+                        android:visibility="gone"
+                        android:layout_gravity="end"
+                        android:text="@string/message_error_value_recharge"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        style="@style/Text.Error.Label"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/labelValueRechargeConfirm"
+                            android:layout_marginTop="@dimen/dimen_24"
+                            android:text="@string/text_recharge_value_confirm"
+                            style="@style/Text.Label"
+                            android:textSize="@dimen/dimen_16"/>
+                    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                            android:id="@+id/txtValueRechargeConfirm"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:hint="@string/placeholder_value_recharge_confirm"
+                            tools:ignore="Autofill"
+                            android:imeOptions="actionDone"
+                            style="@style/EditText.Field.Document"
+                            android:paddingStart="@dimen/dimen_16"
+                            android:paddingEnd="@dimen/dimen_16"
+                            android:longClickable="false"
+                            />
+                    <TextView
+                            android:id="@+id/labelErrorValueRechargeConfirm"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="@string/message_error_value_confirm_empty"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label"/>
+                    <TextView
+                            android:id="@+id/labelErrorValueRechargeNotEqual"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="@string/message_error_value_not_equal"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="@dimen/dimen_500"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:layout_weight="1">
+
+                <include layout="@layout/layout_buttons_back_next"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

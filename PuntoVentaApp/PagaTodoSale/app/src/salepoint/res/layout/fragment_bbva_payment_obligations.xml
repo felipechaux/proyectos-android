@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="co.com.pagatodo.core.views.bbva.BbvaPaymentObligationsFragment">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/layoutForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_540"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/Text.Title5.Margin"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:text="@string/bbva_obligations_title" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_obligations_label_reference_number" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaReferenceNumber"
+                                style="@style/EditText.Field.Number"
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:hint="@string/bbva_obligations_placeholder_reference_number"
+                                android:maxLength="16"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16" />
+
+                        <TextView
+                                android:id="@+id/labelErrorReferenceNumber"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_obligations_placeholder_reference_number"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_obligations_label_payment_value" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaPaymentValue"
+                                style="@style/EditText.Field.Number"
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:hint="@string/bbva_obligations_placeholder_payment_value"
+                                android:maxLength="9"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16" />
+
+                        <TextView
+                                android:id="@+id/labelErrorPaymentValue"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_obligations_placeholder_payment_value"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_16"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_obligations_label_confirm_payment_value" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaConfirmPaymentValue"
+                                style="@style/EditText.Field.Number"
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:hint="@string/bbva_obligations_placeholder_confirm_payment_value"
+                                android:maxLength="9"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16" />
+
+                        <TextView
+                                android:id="@+id/labelErrorConfirmPaymentValue"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_obligations_placeholder_confirm_payment_value"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/dimen_16"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:weightSum="1">
+
+                <Button
+                        android:id="@+id/btnPaymentBack"
+                        style="@style/StyleCancelButton"
+                        android:layout_width="@dimen/dimen_200"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_8"
+                        android:text="@string/text_btn_back" />
+
+                <Button
+                        android:id="@+id/btnPay"
+                        style="@style/StyleConfirmButton"
+                        android:layout_width="@dimen/dimen_200"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:text="@string/text_btn_pay_2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

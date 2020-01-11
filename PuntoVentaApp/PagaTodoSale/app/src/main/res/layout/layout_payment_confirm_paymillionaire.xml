@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="horizontal"
+                                                   android:padding="@dimen/dimen_24">
+
+    <TextView
+            android:id="@+id/tvTagRaffleDate"
+            android:text="Día sorteo:"
+            style="@style/Text.Subtitle.Ticket"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/tvRaffleDate"
+            style="@style/Text.Content.Ticket"
+            tools:text="06/09/2018"
+            app:layout_constraintLeft_toRightOf="@+id/tvTagRaffleDate"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvTagRaffleDate" />
+
+    <TextView
+            android:id="@+id/tvTagLotteriesCount"
+            android:text="Loterías:"
+            style="@style/Text.Subtitle.Ticket"
+            app:layout_constraintTop_toBottomOf="@+id/tvTagRaffleDate"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/tvLotteriesCount"
+            style="@style/Text.Content.Ticket"
+            tools:text="2"
+            app:layout_constraintLeft_toRightOf="@+id/tvTagLotteriesCount"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvTagLotteriesCount" />
+
+    <TextView
+            android:id="@+id/tvTagStub"
+            android:text="Colilla:"
+            style="@style/Text.Subtitle.Ticket"
+            app:layout_constraintTop_toBottomOf="@+id/tvTagLotteriesCount"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/tvStub"
+            style="@style/Text.Content.Ticket"
+            tools:text="54D 0006140"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            app:layout_constraintLeft_toRightOf="@+id/tvTagStub"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvTagStub" />
+
+    <TextView
+            android:id="@+id/tvTagBet"
+            android:text="Apostado:"
+            style="@style/Text.Subtitle.Ticket"
+            app:layout_constraintTop_toBottomOf="@+id/tvTagStub"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/tvBet"
+            style="@style/Text.Content.Ticket"
+            tools:text="$1.850"
+            app:layout_constraintLeft_toRightOf="@+id/tvTagBet"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvTagBet" />
+
+    <TextView
+            android:id="@+id/tvTagIva"
+            android:text="IVA:"
+            style="@style/Text.Subtitle.Ticket"
+            app:layout_constraintTop_toBottomOf="@+id/tvTagBet"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/tvIva"
+            style="@style/Text.Content.Ticket"
+            tools:text="$150"
+            app:layout_constraintLeft_toRightOf="@+id/tvTagIva"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvTagIva" />
+
+    <TextView
+            android:id="@+id/tvTagTotalPaid"
+            android:text="Total Pagado:"
+            style="@style/Text.Subtitle.Ticket"
+            app:layout_constraintTop_toBottomOf="@+id/tvTagIva"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/tvTotalPaid"
+            style="@style/Text.Content.Ticket"
+            tools:text="$2000"
+            app:layout_constraintLeft_toRightOf="@+id/tvTagTotalPaid"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvTagTotalPaid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

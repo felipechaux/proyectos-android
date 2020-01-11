@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.com.pagatodo.core.views.querywinners.QueryWinnersActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar" />
+
+    <LinearLayout
+        android:id="@+id/layoutForm"
+        android:orientation="vertical"
+        android:layout_below="@+id/mainToolbar"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_50"
+        android:layout_marginEnd="@dimen/dimen_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/lblTitle"
+            android:text="@string/text_title_recharge"
+            style="@style/Text.Title5"
+            android:layout_marginBottom="@dimen/dimen_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:text="@string/unique_serial"
+                    style="@style/Text.Label"/>
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                    android:id="@+id/txtUniqueSerie"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/enter_seria_unique"
+                    android:digits="@string/digits_words_and_numbers"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    style="@style/StyleEditText"/>
+                <TextView
+                    android:id="@+id/labelErrorUniqueSerial"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/enter_seria_unique"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    style="@style/Text.Error.Label"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:text="@string/serie_one"
+                    style="@style/Text.Label"/>
+                 <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                     android:id="@+id/txtSerieOne"
+                     android:layout_marginEnd="@dimen/dimen_16"
+                     android:layout_marginTop="@dimen/dimen_8"
+                     android:hint="@string/enter_serie_one"
+                     android:digits="@string/digits_words_and_numbers_uppercase"
+                     android:inputType="text"
+                     android:imeOptions="actionNext"
+                     style="@style/StyleEditText"/>
+                <TextView
+                    android:id="@+id/labelErrorSerieOne"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/enter_serie_one"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    style="@style/Text.Error.Label"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                 <TextView
+                     android:layout_marginStart="@dimen/dimen_16"
+                     android:text="@string/serie_two"
+                     style="@style/Text.Label"/>
+                <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                    android:id="@+id/txtSerieTwo"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="center|start"
+                    android:hint="@string/enter_serie_two"
+                    android:digits="@string/digits_words_and_numbers_uppercase"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    style="@style/StyleEditText"/>
+                <TextView
+                    android:id="@+id/labelErrorSerieTwo"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/enter_serie_two"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    style="@style/Text.Error.Label"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_buttons_back_next"
+        android:id="@+id/layoutButtons"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dimen_500"/>
+
+</RelativeLayout>

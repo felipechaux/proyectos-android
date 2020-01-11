@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16"
+    android:layout_marginBottom="@dimen/dimen_8"
+    android:background="@color/colorGraySilver"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                android:id="@+id/txtNumber"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:hint="@string/text_enter_number_item"
+                android:maxLength="4"
+                android:digits="0123456789"
+                style="@style/StyleEditText"
+                tools:ignore="Autofill"/>
+            <TextView
+                android:id="@+id/labelErrorNumber"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:text="@string/message_error_number_empty"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Error.Label"/>
+            <TextView
+                android:id="@+id/labelErrorNumberFormatInvalid"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:text="@string/message_error_number_no_valid"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Error.Label"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgRandomNumber"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_random_4"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="6dp"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30" />
+        <Space
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                android:id="@+id/txtValueGame"
+                android:inputType="number"
+                android:maxLength="8"
+                android:layout_gravity="center"
+                android:hint="@string/text_value_item_with_sign"
+                style="@style/StyleEditText"
+                tools:ignore="Autofill"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingEnd="@dimen/dimen_16"
+                android:textSize="@dimen/dimen_14"/>
+            <TextView
+                android:id="@+id/labelErrorValue"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:text="@string/message_error_value_empty"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Error.Label"/>
+            <TextView
+                android:id="@+id/labelErrorValueInvalid"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:text="@string/message_error_value_no_validate"
+                android:layout_marginTop="@dimen/dimen_8"
+                style="@style/Text.Error.Label"/>
+        </LinearLayout>
+        <Space
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5">
+
+            <LinearLayout
+                android:padding="4dp"
+                android:background="@drawable/txt_background_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinnerZodiacSigns"
+                    app:ms_padding_left="@dimen/dimen_8"
+                    app:ms_padding_right="@dimen/dimen_8"
+                    app:ms_padding_bottom="@dimen/zero"
+                    app:ms_padding_top="@dimen/zero"
+                    app:ms_arrow_tint="@color/colorAccent"
+                    android:textSize="@dimen/font_14"
+                    android:hint="@string/placeholder_zodiac"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelErrorZodiac"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/message_error_select_zodiac"
+                style="@style/Text.Error.Label"/>
+
+        </LinearLayout>
+        <Space
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20" />
+        <ImageView
+            android:id="@+id/imgClear"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_trash"
+            android:layout_marginTop="6dp"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"/>
+    </LinearLayout>
+
+</LinearLayout>

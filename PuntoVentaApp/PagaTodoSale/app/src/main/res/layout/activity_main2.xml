@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.login.MainActivity2">
+    <include android:id="@+id/mainToolbar" layout="@layout/main_toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/rootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <co.com.pagatodo.core.views.components.lottery.LotteryComponentView2
+            android:id="@+id/lotteryComponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_24"
+            app:columnNumber="@string/lottery_column_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lotteryLoadType="CHANCE">
+    </co.com.pagatodo.core.views.components.lottery.LotteryComponentView2>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

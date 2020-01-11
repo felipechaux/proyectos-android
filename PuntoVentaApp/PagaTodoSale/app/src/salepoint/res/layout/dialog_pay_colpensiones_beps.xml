@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_24">
+
+    <TextView android:id="@+id/tvTitleDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/title_dialog_pay_document_number"/>
+
+    <TextView android:id="@+id/tvDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleDocument"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvTitlePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleDocument"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/title_dialog_pay_phone_number"/>
+
+    <TextView android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocument"
+        app:layout_constraintStart_toEndOf="@+id/tvTitlePhone"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvTitleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitlePhone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/title_dialog_pay_value"/>
+
+    <TextView android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleValue"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

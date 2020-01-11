@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.com.pagatodo.core.views.giro.GiroUsersFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/lblTitle"
+            style="@style/Text.Title5.Margin"
+            android:text="@string/giro_users_title" />
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_type_identification" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:background="@drawable/txt_background_active"
+            android:padding="4dp">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerTypeIdentification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:hint="@string/giro_users_placeholder_type_identification"
+                app:ms_arrow_tint="@color/colorRedButton"
+                app:ms_padding_bottom="@dimen/zero"
+                app:ms_padding_left="@dimen/dimen_8"
+                app:ms_padding_right="@dimen/dimen_8"
+                app:ms_padding_top="@dimen/zero" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_document_number" />
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtDocumentNumber"
+            style="@style/EditText.Field.Phone"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:maxLength="15"
+            android:hint="@string/giro_users_placeholder_document_number"
+            android:imeOptions="actionSearch"
+            tools:ignore="Autofill" />
+
+        <TextView
+                android:id="@+id/labelErrorGiroDocumentNumber"
+                style="@style/Text.Error.Label"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_error_document_number"
+                android:visibility="gone" />
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_type_person" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:background="@drawable/txt_background_inactive"
+            android:padding="4dp">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerTypePerson"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:enabled="false"
+                android:hint="@string/giro_users_placeholder_type_person"
+                app:ms_arrow_tint="@color/colorRedButton"
+                app:ms_background_color="@color/colorGraySilver"
+                app:ms_padding_bottom="@dimen/zero"
+                app:ms_padding_left="@dimen/dimen_8"
+                app:ms_padding_right="@dimen/dimen_8"
+                app:ms_padding_top="@dimen/zero" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelErrorGiroTypePerson"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_type_person"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_names" />
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtNames"
+            style="@style/EditText.Field.PersonalName"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:hint="@string/giro_users_placeholder_names"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            tools:ignore="Autofill"
+            android:maxLength="50"/>
+
+        <TextView
+            android:id="@+id/labelErrorGiroNames"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_names"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_first_surname" />
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtFirstSurname"
+            style="@style/EditText.Field.PersonalName"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:hint="@string/giro_users_placeholder_first_surname"
+            tools:ignore="Autofill"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="50"/>
+          <TextView
+              android:id="@+id/labelErrorGiroFirstSurname"
+              style="@style/Text.Error.Label"
+              android:layout_gravity="end"
+              android:layout_marginTop="@dimen/dimen_8"
+              android:layout_marginEnd="@dimen/dimen_16"
+              android:text="@string/giro_users_error_first_surname"
+              android:visibility="gone" />
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_second_surname" />
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtSecondSurname"
+            style="@style/EditText.Field.PersonalName"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:hint="@string/giro_users_placeholder_second_surname"
+            tools:ignore="Autofill"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="50"/>
+
+        <TextView
+            android:id="@+id/labelErrorGiroSecondSurname"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_second_name"
+            android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_number" />
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                android:id="@+id/txtNumber"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:hint="@string/giro_users_placeholder_number"
+                tools:ignore="Autofill"
+                android:imeOptions="actionNext"
+                style="@style/EditText.Field.Phone" />
+
+        <TextView
+            android:id="@+id/labelErrorGiroNumber"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_number"
+            android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_phone" />
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                android:id="@+id/txtPhone"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:maxLength="7"
+                android:hint="@string/giro_users_placeholder_phone"
+                tools:ignore="Autofill"
+                android:imeOptions="actionNext"
+                style="@style/EditText.Field.Phone"/>
+
+        <TextView
+            android:id="@+id/labelErrorGiroPhone"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_phone"
+            android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_email" />
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                android:id="@+id/txtEmail"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:hint="@string/giro_users_placeholder_email"
+                tools:ignore="Autofill"
+                android:imeOptions="actionNext"
+                android:maxLength="50"
+                style="@style/StyleEditText"
+                android:inputType="textEmailAddress" />
+
+        <TextView
+              android:id="@+id/labelErrorGiroEmail"
+              style="@style/Text.Error.Label"
+              android:layout_gravity="end"
+              android:layout_marginTop="@dimen/dimen_8"
+              android:layout_marginEnd="@dimen/dimen_16"
+              android:text="@string/giro_users_error_email"
+              android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/labelErrorGiroEmailInvalid"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_email_invalid"
+            android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_social_stratum" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:background="@drawable/txt_background_active"
+                android:padding="4dp">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinnerSocialStratum"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:hint="@string/giro_users_placeholder_social_stratum"
+                    app:ms_arrow_tint="@color/colorRedButton"
+                    app:ms_padding_bottom="@dimen/zero"
+                    app:ms_padding_left="@dimen/dimen_8"
+                    app:ms_padding_right="@dimen/dimen_8"
+                    app:ms_padding_top="@dimen/zero" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelErrorGiroSocialStratum"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_social_stratum"
+            android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_address" />
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                android:id="@+id/txtAddress"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:hint="@string/giro_users_placeholder_address"
+                tools:ignore="Autofill"
+                android:imeOptions="actionNext"
+                android:maxLength="50"
+                style="@style/StyleEditText"
+                android:inputType="textEmailAddress" />
+           <TextView
+               android:id="@+id/labelErrorGiroAddress"
+               style="@style/Text.Error.Label"
+               android:layout_gravity="end"
+               android:layout_marginTop="@dimen/dimen_8"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:text="@string/giro_users_error_address"
+               android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_city" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/txtCity"
+                style="@style/StyleEditText"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:hint="@string/giro_users_placeholder_city"
+                android:maxLength="50"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingEnd="@dimen/dimen_16"
+                android:singleLine="true"
+                android:longClickable="false"
+
+            />
+
+              <TextView
+                  android:id="@+id/labelErrorGiroCity"
+                  style="@style/Text.Error.Label"
+                  android:layout_gravity="end"
+                  android:layout_marginTop="@dimen/dimen_8"
+                  android:layout_marginEnd="@dimen/dimen_16"
+                  android:text="@string/giro_users_error_city"
+                  android:visibility="gone"/>
+
+         <TextView
+             android:id="@+id/labelErrorGiroCityInvalid"
+             style="@style/Text.Error.Label"
+             android:layout_gravity="end"
+             android:layout_marginTop="@dimen/dimen_8"
+             android:layout_marginEnd="@dimen/dimen_16"
+             android:text="@string/giro_users_error_city_invalid"
+             android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_economy_activity" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:background="@drawable/txt_background_active"
+                android:padding="4dp">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinnerEconomyActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:hint="@string/giro_users_placeholder_economy_activity"
+                    app:ms_arrow_tint="@color/colorRedButton"
+                    app:ms_padding_bottom="@dimen/zero"
+                    app:ms_padding_left="@dimen/dimen_8"
+                    app:ms_padding_right="@dimen/dimen_8"
+                    app:ms_padding_top="@dimen/zero" />
+        </LinearLayout>
+
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_date_birth" />
+        <TextView
+                android:id="@+id/txtDateBirth"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:drawableEnd="@drawable/ic_calendar_red"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center|start"
+                android:hint="@string/giro_users_placeholder_date_birth"
+                tools:ignore="Autofill"
+                style="@style/StyleEditText"/>
+
+        <TextView
+            android:id="@+id/labelErrorGiroDateBirth"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_date_birth"
+            android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_date_expedition" />
+
+        <TextView
+                android:id="@+id/txtDateExpedition"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:drawableEnd="@drawable/ic_calendar_red"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center|start"
+                android:hint="@string/giro_users_placeholder_date_expedition"
+                tools:ignore="Autofill"
+                style="@style/StyleEditText"/>
+
+         <TextView
+             android:id="@+id/labelErrorDateExpedition"
+             style="@style/Text.Error.Label"
+             android:layout_gravity="end"
+             android:layout_marginTop="@dimen/dimen_8"
+             android:layout_marginEnd="@dimen/dimen_16"
+             android:text="@string/giro_users_error_date_expedition"
+             android:visibility="gone"/>
+
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_country_expedition" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtCountryExpedition"
+                style="@style/StyleEditText"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:hint="@string/giro_users_placeholder_country_expedition"
+                android:inputType="textNoSuggestions"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingEnd="@dimen/dimen_16"
+                android:singleLine="true"
+                android:longClickable="false"
+
+            />
+
+
+        <TextView
+            android:id="@+id/labelErrorCountryExpedition"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_country_expedition"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/labelErrorCountryExpeditionInvalid"
+            style="@style/Text.Error.Label"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/giro_users_error_country_expedition_invalid"
+            android:visibility="gone"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_city_expedition" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/txtCityExpedition"
+            style="@style/StyleEditText"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:hint="@string/giro_users_placeholder_city_expedition"
+            android:maxLength="50"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingEnd="@dimen/dimen_16"
+            android:singleLine="true"
+            android:longClickable="false"/>
+
+         <TextView
+             android:id="@+id/labelErrorGiroCityExpedition"
+             style="@style/Text.Error.Label"
+             android:layout_gravity="end"
+             android:layout_marginTop="@dimen/dimen_8"
+             android:layout_marginEnd="@dimen/dimen_16"
+             android:text="@string/giro_users_error_city_expedition"
+             android:visibility="gone"/>
+
+           <TextView
+               android:id="@+id/labelErrorGiroCityExpeditionInvalid"
+               style="@style/Text.Error.Label"
+               android:layout_gravity="end"
+               android:layout_marginTop="@dimen/dimen_8"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:text="@string/giro_users_error_city_expedition_invalid"
+               android:visibility="gone"/>
+
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_date_entry_country" />
+
+
+          <TextView
+              android:id="@+id/txtDateEntryCountry"
+              android:layout_marginTop="@dimen/dimen_8"
+              android:layout_marginStart="@dimen/dimen_16"
+              android:layout_marginEnd="@dimen/dimen_16"
+              android:drawableEnd="@drawable/ic_calendar_red"
+              android:drawablePadding="@dimen/dimen_8"
+              android:background="@drawable/txt_background_inactive"
+              android:enabled="false"
+              android:gravity="center|start"
+              android:hint="@string/giro_users_placeholder_date_entry_country"
+              tools:ignore="Autofill"
+              style="@style/StyleEditText"/>
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/giro_users_date_expire_passport" />
+
+
+              <TextView
+                  android:id="@+id/txtDateExpirePassport"
+                  android:layout_marginTop="@dimen/dimen_8"
+                  android:layout_marginStart="@dimen/dimen_16"
+                  android:layout_marginEnd="@dimen/dimen_16"
+                  android:drawableEnd="@drawable/ic_calendar_red"
+                  android:drawablePadding="@dimen/dimen_8"
+                  android:gravity="center|start"
+                  android:enabled="false"
+                  android:background="@drawable/txt_background_inactive"
+                  android:hint="@string/giro_users_placeholder_date_expire_passport"
+                  tools:ignore="Autofill"
+                  style="@style/StyleEditText"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/btnFingerPrint"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_width="wrap_content"
+                    android:src = "@drawable/ic_fingerprint_standart"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_buttons_back_next"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

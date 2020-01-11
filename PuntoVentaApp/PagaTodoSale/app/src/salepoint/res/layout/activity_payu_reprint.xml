@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.com.pagatodo.core.views.payu.PayuReprintActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_24">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:text="@string/text_label_payu_reprint"
+                style="@style/Text.Title5"
+                android:layout_marginBottom="@dimen/dimen_24"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_24"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="@string/text_ref_number"
+                        style="@style/Text.Label"
+                        android:textSize="@dimen/dimen_16" />
+
+                    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                        android:id="@+id/txtRefNumber"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:hint="@string/placeholder_ref_number"
+                        tools:ignore="Autofill"
+                        style="@style/EditText.Field.Phone"
+                        android:paddingStart="@dimen/dimen_16"
+                        android:paddingEnd="@dimen/dimen_16"
+                        android:inputType="number"/>
+
+                    <TextView
+                            android:id="@+id/labelErrorRefNumber"
+                            style="@style/Text.Error.Label"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            android:layout_marginEnd="@dimen/dimen_16"
+                            android:text="@string/message_error_ref_number"
+                            android:textSize="@dimen/dimen_12"
+                            android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1">
+
+                    <Button
+                            android:id="@+id/btnQuery"
+                            style="@style/StyleConfirmButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_50"
+                            android:layout_marginStart="@dimen/dimen_4"
+                            android:layout_marginEnd="@dimen/dimen_8"
+                            android:text="@string/text_btn_query_ref"
+                            android:textSize="@dimen/dimen_18" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/text_payment_info"
+                style="@style/Text.Title5"
+                android:layout_marginTop="@dimen/dimen_24"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorGrayLight1"
+                    android:layout_weight="1"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_ref"
+                        android:textAllCaps="true"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_username"
+                        android:textAllCaps="true"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_user_document"
+                        android:textAllCaps="true"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_value_to_pay_payu"
+                        android:textAllCaps="true"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:text="@string/text_label_clean_data"
+                        android:textAllCaps="true"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorGrayBackground"
+                    android:layout_weight="1"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/txtReference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtUserDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtValueToPay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_12"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageButton android:id="@+id/btnDelete"
+                            android:layout_width="@dimen/dimen_30"
+                            android:layout_height="@dimen/dimen_30"
+                            android:src="@drawable/ic_delete"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_500"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_weight="1">
+
+                <include layout="@layout/layout_buttons_back_next"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

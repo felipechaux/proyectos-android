@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center_vertical|right"
+        android:background="@color/colorGrayBackground">
+
+    <LinearLayout android:id="@+id/layoutRandom3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_marginStart="@dimen/dimen_8">
+
+        <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_aleatorio"
+                style="@style/Text.Label"/>
+
+        <ImageView android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@drawable/ic_random_3"/>
+    </LinearLayout>
+
+    <View
+            android:id="@+id/dividerVertical"
+            android:background="@color/colorGraySilver"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_40"/>
+
+    <LinearLayout android:id="@+id/layoutRandom4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_weight="0.8">
+
+        <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_aleatorio"
+                style="@style/Text.Label"/>
+
+        <ImageView android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@drawable/ic_random_4"/>
+    </LinearLayout>
+
+    <View
+            android:background="@color/colorGraySilver"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_40"/>
+
+    <LinearLayout android:id="@+id/layoutRepeat"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4">
+
+        <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_repeat"
+                style="@style/Text.Label"/>
+
+    </LinearLayout>
+
+    <Button
+            android:visibility="gone"
+            android:id="@+id/btnClearSP"
+            style="@style/StyleCancelButton"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/text_btn_clear" />
+
+</LinearLayout>

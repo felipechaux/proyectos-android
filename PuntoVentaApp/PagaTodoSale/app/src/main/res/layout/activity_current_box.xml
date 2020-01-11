@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.com.pagatodo.core.views.currentbox.CurrentBoxActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar"/>
+
+    <LinearLayout
+        android:id="@+id/layoutSearchView"
+        android:visibility="gone"
+        android:background="@color/colorGraySilver"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_8"
+        android:paddingStart="@dimen/dimen_start_device"
+        android:paddingEnd="@dimen/dimen_start_device"
+        android:paddingBottom="@dimen/dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtDate"
+            android:queryHint="@string/placeholder_lotteries_search"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/dimen_8"
+            android:gravity="center|start"
+            android:hint="@string/placeholder_filter_by_date"
+            tools:ignore="Autofill"
+            style="@style/StyleEditText"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:background="@color/colorGrayLight3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblTitle"
+            android:text="@string/text_label_total_value_zero"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginStart="@dimen/dimen_start_device"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:textColor="@color/colorWhite"
+            style="@style/Text.Title5" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerItemsCurrentBox"
+        android:layout_weight=".7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginStart="@dimen/dimen_start_device"
+        android:layout_marginEnd="@dimen/dimen_start_device"
+        android:layout_marginBottom="@dimen/dimen_24"
+        android:text="@string/text_btn_print"
+        style="@style/StyleConfirmButton" />
+
+</LinearLayout>

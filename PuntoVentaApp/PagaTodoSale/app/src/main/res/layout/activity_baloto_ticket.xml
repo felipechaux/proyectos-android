@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.baloto.BalotoCheckTicketActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar"/>
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_below="@+id/mainToolbar"
+        android:text="@string/text_title_recharge"
+        style="@style/Text.Title5.Margin"/>
+
+    <TextView
+        android:id="@+id/lblLabel"
+        android:layout_below="@+id/lblTitle"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:text="@string/text_label_serie_number"
+        style="@style/Text.Label"/>
+
+    <LinearLayout
+        android:id="@+id/layoutForm"
+        android:layout_below="@+id/lblLabel"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtNumberTicketOne"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_weight=".30"
+            android:imeOptions="actionNext"
+            android:maxLength="4"
+            tools:ignore="Autofill,LabelFor"
+            style="@style/EditText.Field.Phone"
+            android:text=""/>
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtNumberTicketTwo"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_width="@dimen/zero"
+            android:layout_weight=".36"
+            android:imeOptions="actionNext"
+            android:maxLength="9"
+            tools:ignore="Autofill,LabelFor"
+            style="@style/EditText.Field.Phone"
+            android:text=""/>
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtNumberTicketThree"
+            android:layout_width="@dimen/zero"
+            android:layout_weight=".30"
+            android:imeOptions="actionDone"
+            android:maxLength="6"
+            tools:ignore="Autofill,LabelFor"
+            style="@style/EditText.Field.Phone"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLabelsErrors"
+        android:layout_below="@+id/layoutForm"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/labelErrorNumberEmpty"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:text="@string/message_error_serie_number_empty"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            style="@style/Text.Error.Label"/>
+        <TextView
+            android:id="@+id/labelErrorNumberFormat"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:text="@string/message_error_serie_number_format"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            style="@style/Text.Error.Label"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheckTicket"
+        android:layout_below="@+id/layoutLabelsErrors"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:text="@string/text_btn_consult"
+        android:textSize="@dimen/font_13"
+        style="@style/StyleConfirmButton"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@+id/btnCheckTicket"
+        style="@style/Divider"/>
+
+    <LinearLayout
+        android:id="@+id/layoutAwardValue"
+        android:visibility="gone"
+        android:layout_below="@+id/divider"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblTagTicket"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:text="@string/text_winner_ticket"
+            style="@style/Text.Title5"/>
+        <TextView
+            android:id="@+id/lblTagAward"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/text_award_value"
+            style="@style/Text.Label"/>
+        <TextView
+            android:id="@+id/lblAwardValue"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/text_award_value"
+            style="@style/Text.Body"/>
+    </LinearLayout>
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_buttons_back_next"/>
+
+</RelativeLayout>

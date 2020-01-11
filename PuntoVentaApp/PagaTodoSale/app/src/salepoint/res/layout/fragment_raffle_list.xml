@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="co.com.pagatodo.core.views.raffle.fragments.RaffleListFragment">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_70"
+            style="@style/Text.Title5"
+            android:padding="@dimen/dimen_24"
+            android:text="@string/text_title_raffles"
+            android:background="@color/colorGraySilver"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRaffleList"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

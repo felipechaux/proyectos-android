@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    <LinearLayout android:id="@+id/layoutRandom3"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/dimen_16"
+                  android:layout_weight="1">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/text_aleatorio"
+                  style="@style/Text.Label"/>
+
+        <ImageView android:layout_width="@dimen/dimen_30"
+                   android:layout_height="@dimen/dimen_30"
+                   android:layout_marginStart="@dimen/dimen_8"
+                   android:src="@drawable/ic_random_3"/>
+    </LinearLayout>
+
+    <View
+            android:id="@+id/dividerVertical"
+            android:background="@color/colorGraySilver"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_40"/>
+
+    <LinearLayout android:id="@+id/layoutRandom4"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/dimen_16"
+                  android:layout_weight="1">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/text_aleatorio"
+                  style="@style/Text.Label"/>
+
+        <ImageView android:layout_width="@dimen/dimen_30"
+                   android:layout_height="@dimen/dimen_30"
+                   android:layout_marginStart="@dimen/dimen_8"
+                   android:src="@drawable/ic_random_4"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorGraySilver"
+        android:layout_width="@dimen/dimen_1"
+        android:layout_height="@dimen/dimen_40"/>
+
+    <LinearLayout android:id="@+id/layoutRepeat"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_repeat"
+            style="@style/Text.Label"/>
+
+    </LinearLayout>
+
+</LinearLayout>

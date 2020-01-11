@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dimen_16"
+	android:paddingStart="@dimen/dimen_24"
+	android:paddingBottom="@dimen/dimen_24">
+
+    <TextView
+		android:id="@+id/labelOperatorTitle"
+		android:text="@string/text_label_parameter_operator"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+		android:id="@+id/labelOperator"
+		android:text="@string/text_label_parameter_operator"
+		app:layout_constraintStart_toEndOf="@+id/labelOperatorTitle"
+		app:layout_constraintBottom_toBottomOf="@id/labelOperatorTitle"
+		style="@style/Text.Content.Ticket"/>
+
+    <TextView
+		android:id="@+id/labelPackageTitle"
+		android:text="@string/text_label_parameter_package"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/labelOperatorTitle"
+		style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+		android:id="@+id/labelPackage"
+		android:text="@string/text_label_parameter_package"
+		app:layout_constraintStart_toEndOf="@+id/labelPackageTitle"
+		app:layout_constraintBottom_toBottomOf="@id/labelPackageTitle"
+		style="@style/Text.Content.Ticket"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

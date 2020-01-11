@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/colorRedButton</color>
+    <color name="colorPrimaryDark">@color/colorRedButton</color>
+    <color name="colorAccent">@color/colorRedButton</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="divider">#EFEFF4</color>
+    <color name="icons">#fff</color>
+
+
+    <color name="colorRedApp">#c91f32</color>
+    <color name="colorRedBet">#af003a</color>
+    <color name="colorGrayDarkDeep">#434953</color>
+    <color name="colorGrayDark1">#434a54</color>
+    <color name="colorGrayDark2">#4d4d4d</color>
+    <color name="colorGrayDark3">#9D9D9D</color>
+    <color name="colorGrayDark4">#74737e</color>
+    <color name="colorGrayLight">#646464</color>
+    <color name="colorGrayLight1">#EEEEF4</color>
+    <color name="colorGrayLight2">#d6d6d6</color>
+    <color name="colorGrayLight3">#acacb3</color>
+    <color name="colorGrayLight4">#f9f9f9</color>
+    <color name="colorGraySilver">#efeff4</color>
+    <color name="colorGrayBackground">#f7f8f9</color>
+    <color name="colorGrayBlue">#acacb3</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorYellowSpin">#f2d03b</color>
+
+
+    <!-- Buttons -->
+    <color name="colorRedButton">#ce0031</color>
+
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="co.com.pagatodo.core.views.betplay.BetplayGeneratePinActivity">
+
+
+        <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/mainToolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/mainToolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/dimen_24">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:text="@string/text_title_generate_pin_betplay"
+                style="@style/Text.Title6"
+                android:textSize="@dimen/dimen_30"
+                android:layout_marginBottom="@dimen/dimen_16"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_24">
+
+                    <TextView
+                        android:id="@+id/labelCollectValue"
+                        android:text="@string/text_collect_value_betplay"
+                        style="@style/Text.Label"
+                        android:textSize="@dimen/dimen_16"/>
+
+                    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                        android:id="@+id/txtNumberId"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:hint="@string/placeholder_collect_value"
+                        tools:ignore="Autofill"
+                        style="@style/EditText.Field.Document"
+                        android:layout_width="300dp"
+                        android:imeOptions="actionDone"
+                        android:paddingStart="@dimen/dimen_16"
+                        android:paddingEnd="@dimen/dimen_16"/>
+                    <TextView
+                        android:id="@+id/labelErrorNumberId"
+                        android:visibility="gone"
+                        android:layout_gravity="end"
+                        android:text="@string/message_error_collect_value"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        style="@style/Text.Error.Label"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnQueryId"
+                    android:text="@string/text_btn_query_id"
+                    android:textSize="@dimen/font_16"
+                    style="@style/StyleConfirmButton"
+                    android:layout_width="@dimen/dimen_200"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_marginStart="@dimen/dimen_4"
+                    android:layout_marginEnd="@dimen/dimen_8"/>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingEnd="@dimen/dimen_12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Valor retiro"/>
+
+                        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                            android:id="@+id/txtCollectValue"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:hint="Digita el valor"
+                            tools:ignore="Autofill"
+                            android:enabled="false"
+                            style="@style/EditText.Field.Document"
+                            android:imeOptions="actionNext"
+                            android:paddingStart="@dimen/dimen_16"
+                            android:paddingEnd="@dimen/dimen_16"/>
+
+                        <TextView
+                            android:id="@+id/labelErrorCollectValue"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="Digita el valor"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingEnd="@dimen/dimen_12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Confirmar valor"/>
+
+                        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+                            android:id="@+id/txtCollectValueConfirm"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:hint="Confirmar valor a recargar"
+                            tools:ignore="Autofill"
+                            android:enabled="false"
+                            style="@style/EditText.Field.Document"
+                            android:imeOptions="actionDone"
+                            android:paddingStart="@dimen/dimen_16"
+                            android:paddingEnd="@dimen/dimen_16" />
+
+                        <TextView
+                            android:id="@+id/labelErrorCollectConfirmValue"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="Confirmar valor a recargar"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label"/>
+
+                        <TextView
+                            android:id="@+id/labelErrorCollectNotEquals"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:text="@string/message_error_value_not_equal"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            style="@style/Text.Error.Label"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/viewDisable"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorWhite"
+                    android:alpha="0.6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_500"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <include layout="@layout/layout_buttons_back_next"/>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

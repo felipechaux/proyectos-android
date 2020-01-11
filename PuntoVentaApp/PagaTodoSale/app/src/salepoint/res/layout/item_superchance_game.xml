@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+
+            android:id="@+id/txtNumber"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:hint="@string/text_number_item"
+                tools:ignore="Autofill"
+                style="@style/StyleEditText"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/dimen_16"
+                android:textSize="@dimen/dimen_18"/>
+        <Space
+                android:layout_width="@dimen/dimen_16"
+                android:layout_height="@dimen/dimen_16" />
+        <LinearLayout
+                android:padding="4dp"
+                android:background="@drawable/txt_background_active"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinnerValue"
+                    app:ms_padding_left="@dimen/dimen_8"
+                    app:ms_padding_right="@dimen/dimen_8"
+                    app:ms_padding_bottom="@dimen/zero"
+                    app:ms_padding_top="@dimen/zero"
+                    app:ms_arrow_tint="@color/colorRedButton"
+                    android:hint="@string/placeholder_package"
+                    android:textSize="@dimen/dimen_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"/>
+        </LinearLayout>
+        <Space android:layout_gravity="center"
+                android:layout_width="@dimen/dimen_16"
+                android:layout_height="@dimen/dimen_16" />
+        <ImageView
+                android:id="@+id/imgClear"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_delete"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.com.pagatodo.core.views.homemenu.giromenu.GiroMenuActivity">
+
+    <include
+        android:id="@+id/mainToolbar"
+        layout="@layout/main_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayDark4"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/giro_banner_adviser"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/lblBannerAdviser"
+                style="@style/Text.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:text="@string/giro_not_found"
+                android:textSize="@dimen/font_10"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.5dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_35"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+
+                android:text="@string/giro_banner_agency"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/lblBannerAgency"
+                style="@style/Text.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_10"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:text="@string/giro_not_found"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="0.5dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_35"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+                android:layout_width="@dimen/dimen_120"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+            <TextView
+                    style="@style/Text.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:visibility="invisible"
+                    android:text="@string/giro_banner_opening_balance"
+                    android:textColor="@color/colorWhite" />
+
+            <TextView
+                    android:id="@+id/lblBannerOpenningBalance"
+                    style="@style/Text.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:text="@string/giro_not_found"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="0.5dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_35"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+            <TextView
+                    style="@style/Text.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+
+                    android:text="@string/giro_banner_income"
+                    android:textColor="@color/colorWhite" />
+
+            <TextView
+                    android:id="@+id/lblBannerIncome"
+                    style="@style/Text.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:text="@string/giro_not_found"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/dimen_35"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:background="@color/colorWhite"
+                android:visibility="invisible" />
+
+        <LinearLayout
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+            <TextView
+                    style="@style/Text.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:text="@string/giro_banner_expenses"
+                    android:textColor="@color/colorWhite" />
+
+            <TextView
+                    android:id="@+id/lblBannerExpenses"
+                    style="@style/Text.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:text="@string/giro_not_found"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/dimen_35"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:background="@color/colorWhite"
+                android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dimen_16"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnClosebox"
+                style="@style/StyleButtonConsultSP"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:text="@string/giro_banner_close_box" />
+
+
+        </LinearLayout>
+
+        <!-- use only datafono -->
+        <androidx.core.widget.NestedScrollView
+            android:visibility="gone"
+            android:id="@+id/scrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenu"
+            android:layout_width="@dimen/item_giro_menu_width"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/item_salepoint_menu" />
+
+        <FrameLayout
+            android:id="@+id/containerMainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dimen_16"
+	android:paddingStart="@dimen/dimen_24"
+	android:paddingBottom="@dimen/dimen_24">
+
+    <TextView
+		android:id="@+id/labelNumberCardTitle"
+		android:text="@string/text_label_card_number"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		style="@style/Text.Subtitle.Ticket"/>
+
+    <TextView
+		android:id="@+id/labelNumberCard"
+		android:text=" - "
+		app:layout_constraintStart_toEndOf="@+id/labelNumberCardTitle"
+		app:layout_constraintBottom_toBottomOf="@id/labelNumberCardTitle"
+		style="@style/Text.Content.Ticket"/>
+
+	<TextView
+			android:id="@+id/labelValueBalanceTitle"
+			style="@style/Text.Subtitle.Ticket"
+			android:text="@string/text_label_balance_card"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/labelNumberCardTitle" />
+
+	<TextView
+			android:id="@+id/labelValueBalance"
+			style="@style/Text.Content.Ticket"
+			android:text="@string/text_label_balance_card"
+			app:layout_constraintBottom_toBottomOf="@id/labelValueBalanceTitle"
+			app:layout_constraintStart_toEndOf="@+id/labelValueBalanceTitle" />
+
+	<TextView
+			android:id="@+id/labelValueReloadTitle"
+			style="@style/Text.Subtitle.Ticket"
+			android:layout_marginTop="8dp"
+			android:text="@string/text_label_value_reload"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/labelValueBalanceTitle" />
+
+	<TextView
+			android:id="@+id/labelValueReload"
+			style="@style/Text.Content.Ticket"
+			android:layout_marginStart="4dp"
+			android:text="@string/text_label_balance_card"
+			app:layout_constraintBottom_toBottomOf="@id/labelValueReloadTitle"
+			app:layout_constraintStart_toEndOf="@+id/labelValueReloadTitle"
+			app:layout_constraintTop_toBottomOf="@+id/labelValueBalance"
+			app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

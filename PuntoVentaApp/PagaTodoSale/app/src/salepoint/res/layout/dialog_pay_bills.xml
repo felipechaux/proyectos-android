@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_24">
+
+    <TextView android:id="@+id/titleLabelBilledService"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textBilledService"
+        style="@style/Text.Subtitle.Ticket"
+        android:text="@string/text_label_billed_service"/>
+
+    <TextView android:id="@+id/textBilledService"
+        android:text="@string/text_label_billed_service"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelBilledService"/>
+
+    <TextView android:id="@+id/titleLabelUserCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textUserCode"
+        style="@style/Text.Subtitle.Ticket"
+        android:text="@string/text_label_user_code"/>
+
+    <TextView android:id="@+id/textUserCode"
+        android:text="@string/text_label_user_code"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textBilledService"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelUserCode"/>
+
+    <TextView android:id="@+id/titleLabelUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintBottom_toBottomOf="@+id/textUserName"
+        android:text="@string/text_label_user_name"/>
+
+    <TextView android:id="@+id/textUserName"
+        android:text="@string/text_label_user_name"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textUserCode"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelUserName"/>
+
+    <TextView android:id="@+id/titleLabelBillNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintBottom_toBottomOf="@+id/textBillNumber"
+        android:text="@string/text_label_bill_number"/>
+
+    <TextView android:id="@+id/textBillNumber"
+        android:text="@string/text_label_bill_number"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textUserName"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelBillNumber"/>
+
+    <TextView android:id="@+id/titleLabelBillDate"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textBillDate"
+        android:text="@string/text_label_bill_date"/>
+
+    <TextView android:id="@+id/textBillDate"
+        android:text="@string/text_label_bill_date"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/textBillNumber"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelBillDate"/>
+
+    <TextView android:id="@+id/titleLabelBillValue"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textBillValue"
+        android:text="@string/text_label_bill_value"/>
+
+    <TextView android:id="@+id/textBillValue"
+        android:text="@string/text_label_bill_value"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/titleLabelBillDate"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelBillValue"/>
+
+    <TextView android:id="@+id/titleLabelBillIva"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textBillIva"
+        android:visibility="gone"
+        android:text="@string/text_label_parameter_iva"/>
+
+    <TextView android:id="@+id/textBillIva"
+        android:text="@string/text_label_parameter_iva"
+        style="@style/Text.Content.Ticket"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/titleLabelBillValue"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelBillIva"/>
+
+    <TextView android:id="@+id/titleLabelTotalValue"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textTotalValue"
+        android:text="@string/text_label_total_pay"/>
+
+    <TextView android:id="@+id/textTotalValue"
+        android:text="@string/text_label_total_pay"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintTop_toBottomOf="@+id/titleLabelBillIva"
+        app:layout_constraintStart_toEndOf="@+id/titleLabelTotalValue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/txtVsMegagol"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTagLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="@dimen/font_13"
+                android:textColor="@color/colorGrayLight"
+                android:text="Local"/>
+
+            <TextView
+                android:id="@+id/tvLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/colorGrayDark2"
+                tools:text="Millonarios" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/txtVsMegagol"
+            android:text="Vs"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@drawable/rounded_button_red"
+                  android:textSize="@dimen/font_18"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/txtVsMegagol"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tvTagVisitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="@dimen/font_13"
+                android:textColor="@color/colorGrayLight"
+                android:text="Visitante"/>
+
+            <TextView
+                android:id="@+id/tvVisitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/colorGrayDark2"
+                tools:text="Santa Fé"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:background="@color/colorGraySilver">
+
+        <Button
+            android:id="@+id/btnPlusLocal"
+            android:text="+"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            style="@style/rounded_button_white_with_red_edges"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnRestLocal"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Button
+            android:id="@+id/btnRestLocal"
+            android:text="-"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            style="@style/rounded_button_white_with_red_edges"
+            app:layout_constraintTop_toBottomOf="@+id/btnPlusLocal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/btnPlusLocal"/>
+
+        <Button
+            android:id="@+id/btnPlusVisitor"
+            android:text="+"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            style="@style/rounded_button_white_with_red_edges"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnRestLocal"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Button
+            android:id="@+id/btnRestVisitor"
+            android:text="-"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            style="@style/rounded_button_white_with_red_edges"
+            app:layout_constraintTop_toBottomOf="@+id/btnPlusVisitor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/btnPlusVisitor"/>
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/etLocalMarker"
+            android:hint="@string/placeholder_n_goles"
+            android:gravity="center"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edittext_with_rounded_border"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnPlusLocal"
+            app:layout_constraintRight_toLeftOf="@+id/etVisitorMarker"/>
+
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/etVisitorMarker"
+            android:hint="@string/placeholder_n_goles"
+            android:gravity="center"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:maxLength="1"
+            android:background="@drawable/edittext_with_rounded_border"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btnPlusVisitor"
+            app:layout_constraintLeft_toRightOf="@+id/etLocalMarker"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

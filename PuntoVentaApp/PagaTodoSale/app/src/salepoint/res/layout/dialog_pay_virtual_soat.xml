@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_24">
+
+    <TextView android:id="@+id/tvLicensePlateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/ticket_text_vehicle_license_plate"/>
+
+    <TextView android:id="@+id/tvLicensePlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvLicensePlateTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvLicensePlateTitle"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvVehicleOwnerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@id/tvLicensePlate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/ticket_text_vehicle_owner"/>
+
+    <TextView android:id="@+id/tvVehicleOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvVehicleOwnerTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvVehicleOwnerTitle"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvDocumentNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@id/tvVehicleOwner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/ticket_text_document_number"/>
+
+    <TextView android:id="@+id/tvDocumentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvDocumentNumberTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvDocumentNumberTitle"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvCellPhoneNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@id/tvDocumentNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/ticket_text_cell_phone_number"/>
+
+    <TextView android:id="@+id/tvCellPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvCellPhoneNumberTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvCellPhoneNumberTitle"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvVehicleMarkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@id/tvCellPhoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/ticket_text_vehicle_brand"/>
+
+    <TextView android:id="@+id/tvVehicleMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvVehicleMarkTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvVehicleMarkTitle"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvVehicleColorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@id/tvVehicleMark"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/ticket_text_vehicle_color"/>
+
+    <TextView android:id="@+id/tvVehicleColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvVehicleColorTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvVehicleColorTitle"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvBeginDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@id/tvVehicleColor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/ticket_text_begin_date_soat"/>
+
+    <TextView android:id="@+id/tvBeginDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvBeginDateTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvBeginDateTitle"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvSoatValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@id/tvBeginDate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/ticket_text_soat_value"/>
+
+    <TextView android:id="@+id/tvSoatValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@id/tvSoatValueTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvSoatValueTitle"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="-"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

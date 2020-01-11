@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_24">
+
+    <TextView android:id="@+id/tvRefNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_label_ticket_ref"/>
+
+    <TextView android:id="@+id/tvRefNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRefNumberTitle"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvUserNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefNumberTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_label_ticket_username"/>
+
+    <TextView android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefNumber"
+        app:layout_constraintStart_toEndOf="@+id/tvUserNameTitle"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvUserDocTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserNameTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_label_ticket_user_document"/>
+
+    <TextView android:id="@+id/tvUserDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+        app:layout_constraintStart_toEndOf="@+id/tvUserDocTitle"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+    <TextView android:id="@+id/tvValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserDocTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_label_ticket_value_to_pay"/>
+
+    <TextView android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.Body"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserDoc"
+        app:layout_constraintStart_toEndOf="@+id/tvValueTitle"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="-"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

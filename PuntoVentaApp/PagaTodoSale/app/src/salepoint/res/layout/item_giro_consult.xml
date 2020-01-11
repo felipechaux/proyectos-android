@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_4"
+    android:layout_marginTop="@dimen/dimen_4"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lyReference"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:background="@color/colorGraySilver"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtReference"
+                style="@style/Text.Label"
+                android:textSize="@dimen/font_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyValue"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_4"
+
+            android:layout_weight="1"
+            android:background="@color/colorGraySilver"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtValue"
+                android:textSize="@dimen/font_12"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:text="@string/giro_not_found" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyDocumentNumberOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:background="@color/colorGraySilver"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtDocumentNumberOrigin"
+                style="@style/Text.Label"
+                android:textSize="@dimen/font_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyNombreOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:background="@color/colorGraySilver"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtNombreOrigin"
+                style="@style/Text.Label"
+                android:textSize="@dimen/font_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:text="@string/giro_not_found" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyDocumentNumberDestination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:background="@color/colorGraySilver"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtDocumentNumberDestination"
+                style="@style/Text.Label"
+                android:textSize="@dimen/font_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:text="@string/giro_not_found" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyNombreDestination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:background="@color/colorGraySilver"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtNombreDestination"
+                style="@style/Text.Label"
+                android:textSize="@dimen/font_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyAgencia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_weight="1"
+            android:background="@color/colorGraySilver"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtAgency"
+                style="@style/Text.Label"
+                android:textSize="@dimen/font_12"
+                android:lineSpacingExtra="@dimen/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Item compact sale point  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitleReference"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/item_giro_consult_reference"
+            android:textColor="@color/colorGrayLight" />
+
+        <TextView
+            android:id="@+id/txtTitleDocumentNumberOrigin"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_giro_consult_document_origin"
+            android:textColor="@color/colorGrayLight" />
+
+        <TextView
+            android:id="@+id/txtTitleDocumentNumberDestination"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_giro_consult_document_destination"
+            android:textColor="@color/colorGrayLight" />
+
+        <TextView
+            android:id="@+id/txtTitleValue"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/item_giro_consult_value"
+            android:textColor="@color/colorGrayLight" />
+
+        <TextView
+            android:id="@+id/txtTitleNombreOrigin"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_giro_consult_name"
+            android:textColor="@color/colorGrayLight" />
+
+        <TextView
+            android:id="@+id/txtTitleNombreDestination"
+            style="@style/Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_giro_consult_name"
+            android:textColor="@color/colorGrayLight" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

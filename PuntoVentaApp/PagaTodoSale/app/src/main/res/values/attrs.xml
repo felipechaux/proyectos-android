@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DayLotteryComponentView">
+        <attr name="isSelectCurrentDay" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="LotteryComponentView">
+        <attr name="lotteryLoadType" format="enum">
+            <enum name="CHANCE" value="0"></enum>
+            <enum name="SUPERCHANCE" value="1"></enum>
+            <enum name="PAGAMILLONARIO" value="2"></enum>
+            <enum name="SUPERASTRO" value="3"></enum>
+        </attr>
+        <attr name="isCheckSelection" format="boolean" />
+        <attr name="maxNumberSelection" format="integer" />
+        <attr name="columnNumber" format="integer"></attr>
+    </declare-styleable>
+</resources>

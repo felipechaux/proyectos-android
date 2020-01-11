@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.colpensionesbeps.ColpensionesBepsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/mainToolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:text="@string/text_title_colpensiones_beps"
+            style="@style/Text.Title5.Margin"
+            android:id="@+id/lblTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainToolbar"/>
+
+        <LinearLayout android:id="@+id/containerClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lblTitle"
+            android:background="@color/colorGrayLight1"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:src="@drawable/ic_trash"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btn_clear"
+                android:layout_marginEnd="@dimen/dimen_16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_first_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTitle"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelPackages"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:text="@string/text_title_document_type"
+                    style="@style/Text.Label"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSpinnerPackages"
+                        android:layout_marginEnd="@dimen/dimen_12"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:padding="4dp"
+                        android:background="@drawable/txt_background_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spinnerDocumentType"
+                            app:ms_padding_left="@dimen/dimen_8"
+                            app:ms_padding_right="@dimen/dimen_8"
+                            app:ms_padding_bottom="@dimen/zero"
+                            app:ms_padding_top="@dimen/zero"
+                            app:ms_arrow_tint="@color/colorRedButton"
+                            android:hint="@string/placeholder_select_document_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_42"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/labelErrorDocument"
+                        android:visibility="gone"
+                        android:layout_gravity="end"
+                        android:text="@string/message_error_select_document_type"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_12"
+                        style="@style/Text.Error.Label"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:text="@string/text_title_document_number"
+                    style="@style/Text.Label"/>
+                <EditText
+                    android:id="@+id/txtDocument"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/placeholder_enter_document"
+                    tools:ignore="Autofill"
+                    android:imeOptions="actionNext"
+                    style="@style/EditText.Field.Document"/>
+                <TextView
+                    android:id="@+id/labelErrorTextDocument"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/message_error_enter_number_document"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    style="@style/Text.Error.Label"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:text="@string/text_title_birthdate_day_month"
+                    style="@style/Text.Label"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtBirthdate"
+                        android:layout_marginStart="@dimen/dimen_12"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:hint="@string/placeholder_enter_birthday"
+                        tools:ignore="Autofill"
+                        android:gravity="center|start"
+                        style="@style/EditText.Field.Phone"/>
+
+                    <ImageButton
+                        android:id="@+id/imgCalendar"
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/dimen_24"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:src="@drawable/ic_calendar_red"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitCenter"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/labelErrorBirthdate"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/message_error_enter_reference_number"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    style="@style/Text.Error.Label"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_first_fields"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:text="@string/text_title_input_value"
+                    style="@style/Text.Label"/>
+
+                <EditText
+                    android:id="@+id/txtInputValue"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/placeholder_enter_input_value"
+                    tools:ignore="Autofill"
+                    android:imeOptions="actionNext"
+                    style="@style/EditText.Field.Phone"/>
+
+                <TextView
+                    android:id="@+id/labelErrorTextInputValue"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/message_error_enter_input_value"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    style="@style/Text.Error.Label"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:text="@string/text_title_confirmation_input_value"
+                    style="@style/Text.Label"/>
+                <EditText
+                    android:id="@+id/txtConfirmInputValue"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:longClickable="false"
+                    android:hint="@string/placeholder_confirm_input_value"
+                    tools:ignore="Autofill"
+                    android:imeOptions="actionNext"
+                    style="@style/EditText.Field.Phone"/>
+                <TextView
+                    android:id="@+id/labelErrorConfirmInputValue"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/message_error_confirm_input_value"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_12"
+                    style="@style/Text.Error.Label"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:text="@string/text_title_phone_number"
+                    style="@style/Text.Label"/>
+
+                <EditText
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_marginStart="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/placeholder_phone_number"
+                    tools:ignore="Autofill"
+                    android:imeOptions="actionDone"
+                    style="@style/EditText.Field.Phone"/>
+
+                <TextView
+                    android:id="@+id/labelErrorPhoneNumber"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/message_error_enter_phone_number"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    style="@style/Text.Error.Label"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:layout_width="@dimen/dimen_500"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            layout="@layout/layout_buttons_back_next"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

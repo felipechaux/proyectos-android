@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16">
+
+        <TextView
+            android:id="@+id/lblDateTitle"
+            android:text="@string/text_label_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Text.Body.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:text="@string/text_label_date"
+            style="@style/Text.Caption2"
+            app:layout_constraintStart_toEndOf="@+id/lblDateTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblHourTitle"
+            android:text="@string/text_label_hour_recharge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDateTitle"
+            style="@style/Text.Body.Label"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblHour"
+            android:text="@string/text_label_hour_recharge"
+            style="@style/Text.Caption2"
+            app:layout_constraintStart_toEndOf="@+id/lblHourTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblDate"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblValueTitle"
+            android:text="@string/text_label_value_recharge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblHourTitle"
+            style="@style/Text.Body.Label"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblValue"
+            android:text="@string/text_label_value_recharge"
+            style="@style/Text.Caption2"
+            app:layout_constraintStart_toEndOf="@+id/lblValueTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblHour"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblStatusTitle"
+            android:text="@string/text_label_status_recharge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblValueTitle"
+            style="@style/Text.Body.Label"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblStatus"
+            android:text="@string/text_label_status_recharge"
+            style="@style/Text.Caption2"
+            app:layout_constraintStart_toEndOf="@+id/lblStatusTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblValue"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblNumberReferenceTitle"
+            android:text="@string/text_label_numreference_recharge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblStatusTitle"
+            style="@style/Text.Body.Label"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lblNumberReference"
+            android:text="@string/text_label_numreference_recharge"
+            style="@style/Text.Caption2"
+            app:layout_constraintStart_toEndOf="@+id/lblNumberReferenceTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblStatus"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

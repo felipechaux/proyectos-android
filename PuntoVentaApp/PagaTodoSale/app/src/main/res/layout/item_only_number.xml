@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <co.com.pagatodo.core.util.EditTextNoCopyPaste
+        android:id="@+id/etNumber"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:inputType="number"
+        android:background="@drawable/edittext_with_rounded_border"
+        android:layout_width="@dimen/zero"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_10"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".65"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnRandom3"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnRandom3"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:src="@drawable/ic_random_3"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/etNumber"
+        app:layout_constraintRight_toLeftOf="@id/btnRandom4"/>
+
+    <ImageView
+        android:id="@+id/btnRandom4"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:src="@drawable/ic_random_4"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnRandom3"
+        app:layout_constraintRight_toLeftOf="@id/btnDelete"/>
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:scaleType="fitCenter"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/btnRandom4"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

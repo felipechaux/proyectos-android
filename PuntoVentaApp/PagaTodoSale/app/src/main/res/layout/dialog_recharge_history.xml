@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_16"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingBottom="@dimen/dimen_24">
+
+    <TextView android:id="@+id/tv_title_date_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text.Caption2"
+        android:text="@string/text_label_date_recharge"/>
+
+    <TextView android:id="@+id/tv_date_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        style="@style/Text.Body.Label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_date_recharge"
+        android:text="@string/text_label_date_recharge"/>
+
+    <TextView android:id="@+id/tv_title_hour_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_date_recharge"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Caption2"
+        android:text="@string/text_label_hour_recharge"/>
+
+    <TextView android:id="@+id/tv_hour_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Body.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_recharge"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_hour_recharge"
+        android:text="@string/text_label_hour_recharge"/>
+
+
+    <TextView android:id="@+id/tv_title_value_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_hour_recharge"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Caption2"
+        android:text="@string/text_label_value_recharge"/>
+
+    <TextView android:id="@+id/tv_value_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Body.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hour_recharge"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_value_recharge"
+        android:text="@string/text_label_value_recharge"/>
+
+
+    <TextView android:id="@+id/tv_title_status_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_value_recharge"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Caption2"
+        android:text="@string/text_label_status_recharge"/>
+
+    <TextView android:id="@+id/tv_status_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Body.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_value_recharge"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_status_recharge"
+        android:text="@string/text_label_status_recharge"/>
+
+
+    <TextView android:id="@+id/tv_title_numreference_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_status_recharge"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Caption2"
+        android:text="@string/text_label_numreference_recharge"/>
+
+    <TextView android:id="@+id/tv_numreference_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        style="@style/Text.Body.Label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status_recharge"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_numreference_recharge"
+        android:text="@string/text_label_numreference_recharge"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="co.com.pagatodo.core.views.snr.SnrActivity">
+
+    <LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+        <include
+			layout="@layout/main_toolbar"
+			android:id="@+id/mainToolbar" />
+
+        <LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/dimen_24">
+
+            <TextView
+				android:id="@+id/lblTitle"
+				android:text="@string/snr_title"
+				style="@style/Text.Title5"
+				android:layout_marginBottom="@dimen/dimen_24"/>
+
+            <LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:weightSum="3">
+
+                <LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/dimen_24"
+					android:layout_weight="1">
+
+                    <TextView
+						android:text="@string/snr_concept"
+						style="@style/Text.Label"
+						android:textSize="@dimen/dimen_16" />
+
+                    <LinearLayout
+						android:id="@+id/layoutSnrConcept"
+						android:padding="2dp"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:background="@drawable/txt_background_active"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<com.jaredrummler.materialspinner.MaterialSpinner
+								android:id="@+id/spinnerSnrConcept"
+								android:layout_width="match_parent"
+								android:layout_height="@dimen/dimen_42"
+								android:hint="@string/snr_placeholder_concept"
+								app:ms_arrow_tint="@color/colorRedButton"
+								app:ms_padding_left="@dimen/dimen_16"
+								app:ms_padding_right="@dimen/dimen_16"/>
+
+                    </LinearLayout>
+
+                    <TextView
+						android:id="@+id/labelSnrErrorConcept"
+						android:visibility="gone"
+						android:layout_gravity="end"
+						android:hint="@string/snr_placeholder_concept"
+						android:layout_marginTop="@dimen/dimen_8"
+						style="@style/Text.Error.Label"
+						android:textSize="@dimen/dimen_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/dimen_24"
+					android:layout_weight="1">
+
+                    <TextView
+						android:text="@string/snr_office"
+						style="@style/Text.Label"
+						android:textSize="@dimen/dimen_16" />
+
+					<LinearLayout
+						android:id="@+id/layoutSnrOffice"
+						android:padding="2dp"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:background="@drawable/txt_background_active"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<com.jaredrummler.materialspinner.MaterialSpinner
+								android:id="@+id/spinnerSnrOffice"
+								android:layout_width="match_parent"
+								android:layout_height="@dimen/dimen_42"
+								android:hint="@string/snr_placeholder_office"
+								app:ms_arrow_tint="@color/colorRedButton"
+								app:ms_padding_left="@dimen/dimen_16"
+								app:ms_padding_right="@dimen/dimen_16" />
+
+                    </LinearLayout>
+
+                    <TextView
+						android:id="@+id/labelSnrErrorOffice"
+						android:visibility="gone"
+						android:layout_gravity="end"
+						android:text="@string/snr_placeholder_office"
+						android:layout_marginTop="@dimen/dimen_8"
+						android:layout_marginEnd="@dimen/dimen_16"
+						style="@style/Text.Error.Label"
+						android:textSize="@dimen/dimen_16"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+
+                    <TextView
+						android:text="@string/snr_rerollment_number"
+						style="@style/Text.Label"
+						android:textSize="@dimen/dimen_16" />
+
+                    <EditText
+						android:id="@+id/txtSnrRerollmentNumber"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:hint="@string/snr_placeholder_rerollment_number"
+						android:inputType="number"
+						tools:ignore="Autofill"
+						style="@style/StyleEditText"
+						android:paddingStart="@dimen/dimen_16"
+						android:paddingEnd="@dimen/dimen_16"/>
+
+                    <TextView
+						android:id="@+id/labelSnrErrorRerollmentNumber"
+						android:visibility="gone"
+						android:layout_gravity="end"
+						android:text="@string/snr_placeholder_rerollment_number"
+						android:layout_marginTop="@dimen/dimen_8"
+						style="@style/Text.Error.Label"
+						android:textSize="@dimen/dimen_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:weightSum="3">
+
+                <LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/dimen_24"
+					android:layout_weight="1">
+
+                    <TextView
+						android:id="@+id/labelSnrCollectedValue"
+						android:layout_marginTop="@dimen/dimen_24"
+						android:text="@string/snr_collected_value"
+						style="@style/Text.Label"
+						android:textSize="@dimen/dimen_16" />
+
+					<EditText
+						android:id="@+id/txtSnrCollectedValue"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:hint="@string/snr_placeholder_collected_value"
+						tools:ignore="Autofill"
+						style="@style/EditText.Field.Phone"
+						android:paddingStart="@dimen/dimen_16"
+						android:paddingEnd="@dimen/dimen_16"/>
+
+                     <TextView
+						 android:id="@+id/labelSnrErrorCollectedValue"
+						 android:visibility="gone"
+						 android:layout_gravity="end"
+						 android:text="@string/snr_placeholder_collected_value"
+						 android:layout_marginTop="@dimen/dimen_8"
+						 style="@style/Text.Error.Label"
+						 android:textSize="@dimen/dimen_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/dimen_24"
+					android:layout_weight="1">
+
+                    <TextView
+						android:layout_marginTop="@dimen/dimen_24"
+						android:text="@string/snr_collected_value_confirm"
+						style="@style/Text.Label"
+						android:textSize="@dimen/dimen_16" />
+
+                    <EditText
+						android:id="@+id/txtSnrCollectedValueConfirm"
+						android:layout_marginTop="@dimen/dimen_16"
+						android:hint="@string/snr_placeholder_collected_value_confirm"
+						tools:ignore="Autofill"
+						style="@style/EditText.Field.Phone"
+						android:paddingStart="@dimen/dimen_16"
+						android:paddingEnd="@dimen/dimen_16"/>
+
+                    <TextView
+						android:id="@+id/labelSnrErrorCollectedValueConfirm"
+						android:visibility="gone"
+						android:layout_gravity="end"
+						android:text="@string/snr_placeholder_collected_value_confirm"
+						android:layout_marginTop="@dimen/dimen_8"
+						style="@style/Text.Error.Label"
+						android:textSize="@dimen/dimen_16"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+				android:layout_width="@dimen/dimen_500"
+				android:layout_height="match_parent"
+				android:layout_gravity="right"
+				android:orientation="horizontal"
+				android:gravity="bottom"
+				android:layout_weight="1">
+
+                <include layout="@layout/layout_buttons_back_next"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

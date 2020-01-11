@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/dialog_giro_close_box_init" />
+
+            <TextView
+                android:id="@+id/lblCloseBoxInit"
+                style="@style/Text.Label"
+                android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_close_box_income" />
+
+            <TextView
+                android:id="@+id/blCloseBoxIncome"
+                style="@style/Text.Label"
+                android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/dialog_giro_close_box_egress" />
+
+            <TextView
+                android:id="@+id/lblCloseBoxEgress"
+                style="@style/Text.Label"
+                android:textColor="@color/colorGrayBlue"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:orientation="horizontal">
+
+
+                <LinearLayout
+                        android:layout_marginStart="@dimen/dimen_18"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorGrayBackground"
+                    android:weightSum="7">
+
+                    <TextView
+                            android:id="@+id/txtColsubsidioRecaudoSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_12"
+                            android:gravity="center"
+                            android:text="@string/item_colsubsidio_recaudo_select"
+                            android:textAllCaps="true"
+                            style="@style/Text.Body"
+                            android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                            android:id="@+id/txtColsubsidioRecaudoReference"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_12"
+                            android:gravity="center"
+                            android:text="@string/item_colsubsidio_recaudo_reference"
+                            android:textAllCaps="true"
+                            style="@style/Text.Body"
+                            android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                            android:id="@+id/txtColsubsidioRecaudoObligation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_12"
+                            android:gravity="center"
+                            android:text="@string/item_colsubsidio_recaudo_obligation"
+                            android:textAllCaps="true"
+                            style="@style/Text.Body"
+                            android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                            android:id="@+id/txtColsubsidioRecaudoDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_12"
+                            android:gravity="center"
+                            android:text="@string/item_colsubsidio_recaudo_description"
+                            android:textAllCaps="true"
+                            style="@style/Text.Body"
+                            android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                            android:id="@+id/txtColsubsidioRecaudoExpirateDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_12"
+                            android:gravity="center"
+                            android:text="@string/item_colsubsidio_recaudo_expiration_date"
+                            android:textAllCaps="true"
+                            style="@style/Text.Body"
+                            android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+                    <TextView
+                            android:id="@+id/txtColsubsidioRecaudoStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_12"
+                            android:gravity="center"
+                            android:text="@string/item_colsubsidio_recaudo_status"
+                            android:textAllCaps="true"
+                            style="@style/Text.Body"
+                            android:layout_weight="1"/>
+
+                    <View style="@style/Divider_vertical"/>
+
+
+
+                    <TextView
+                            android:id="@+id/txtColsubsidioRecaudoFeeValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_12"
+                            android:gravity="center"
+                            style="@style/Text.Body"
+                            android:text="@string/item_colsubsidio_recaudo_fee_value"
+                            android:textAllCaps="true"
+                            android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>

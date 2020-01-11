@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/dimen_24"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_24"
+    android:paddingBottom="@dimen/dimen_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvProcedureType"
+        android:text="@string/registraduria_modal_collection_procedure_type"
+        tools:ignore="MissingConstraints"
+        style="@style/Text.Subtitle.Ticket"/>
+    <TextView
+        android:id="@+id/lblProcedureType"
+        android:layout_marginStart="12dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toEndOf="@+id/tvProcedureType"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/tvIdentificationNumber"
+        android:text="@string/registraduria_modal_collection_id_number"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tvProcedureType"
+        style="@style/Text.Subtitle.Ticket"/>
+    <TextView
+        android:id="@+id/lblIdentificationNumber"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvProcedureType"
+        app:layout_constraintStart_toEndOf="@+id/tvIdentificationNumber"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:text="@string/registraduria_modal_collection_username"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdentificationNumber"
+        style="@style/Text.Subtitle.Ticket" />
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdentificationNumber"
+        app:layout_constraintStart_toEndOf="@+id/tvUsername"
+        style="@style/Text.Content.Ticket"/>
+
+    <TextView
+        android:id="@+id/tvProcedureValue"
+        android:text="@string/registraduria_modal_collection_procedure_value"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        style="@style/Text.Subtitle.Ticket"/>
+    <TextView
+        android:id="@+id/lblProcedureValue"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        app:layout_constraintStart_toEndOf="@+id/tvProcedureValue"
+        style="@style/Text.Content.Ticket"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="co.com.pagatodo.core.views.recharge.RechargeHistoryActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar"/>
+
+    <LinearLayout
+        android:id="@+id/layoutForm"
+        android:orientation="vertical"
+        android:layout_below="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:text="@string/text_title_recharge"
+            style="@style/Text.Title5.Margin"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/text_number_recharge"
+            style="@style/Text.Label"/>
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/txtNumberRecharge"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:hint="@string/placeholder_number_to_recharge"
+            tools:ignore="Autofill"
+            android:imeOptions="actionDone"
+            style="@style/EditText.Field.Phone"/>
+        <TextView
+            android:id="@+id/labelErrorNumber"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:text="@string/message_error_number_empty_recharge_history"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            style="@style/Text.Error.Label"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/text_date_recharge"
+            style="@style/Text.Label"/>
+        <TextView
+            android:id="@+id/txtDateRecharge"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:drawableEnd="@drawable/ic_calendar_red"
+            android:drawablePadding="@dimen/dimen_8"
+            android:gravity="center|start"
+            android:hint="@string/placeholder_filter_date"
+            tools:ignore="Autofill"
+            style="@style/StyleEditText"/>
+        <TextView
+            android:id="@+id/labelErrorDate"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:text="@string/placeholder_filter_date"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            style="@style/Text.Error.Label"/>
+
+        <View android:id="@+id/lineDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:visibility="gone"
+            android:background="@color/colorGrayLight1"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItems"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180"/>
+
+        <Button
+            android:id="@+id/btnConsult"
+            android:text="@string/text_btn_consult"
+            style="@style/StyleConfirmButton"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

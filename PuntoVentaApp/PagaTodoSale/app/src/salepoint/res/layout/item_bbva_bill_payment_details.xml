@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- first layout -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle"
+        android:weightSum="4">
+
+        <!-- start billed service -->
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_width="wrap_content"
+            android:background="@color/colorGraySilver"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvBilledService"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                tools:text="-"/>
+
+        </LinearLayout>
+        <!-- end billed service -->
+
+        <!-- start amount to be paid -->
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_width="wrap_content"
+            android:background="@color/colorGraySilver"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvAmountPaid"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                tools:text="-"/>
+
+        </LinearLayout>
+        <!-- end amount to be paid  -->
+
+        <!-- start expiration date -->
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_width="wrap_content"
+            android:background="@color/colorGraySilver"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvExpirationDate"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                tools:text="-"/>
+
+        </LinearLayout>
+        <!-- end expiration date -->
+
+        <!-- start maximum payment date -->
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_width="wrap_content"
+            android:background="@color/colorGraySilver"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/tvMaximumPaymentDate"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                tools:text="-"/>
+
+        </LinearLayout>
+        <!-- end maximum payment date -->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_dialog_fare_send_city_destination" />
+
+        <TextView
+            android:id="@+id/lblCityDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_not_found" />
+
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_dialog_fare_send_document_number_destination" />
+
+        <TextView
+            android:id="@+id/lblDocumentNumberDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_not_found" />
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_dialog_fare_send_amound" />
+
+        <TextView
+            android:id="@+id/lblSendAmound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_not_found" />
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_dialog_fare_send_freight_value" />
+
+        <TextView
+            android:id="@+id/lblSendFreightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/giro_not_found" />
+
+        <TextView
+                style="@style/Text.Label"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_dialog_fare_send_others" />
+
+        <TextView
+                android:id="@+id/lblSendOthersValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/giro_not_found" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

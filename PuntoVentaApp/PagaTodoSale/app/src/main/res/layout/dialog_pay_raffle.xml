@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dimen_24"
+    android:paddingEnd="@dimen/dimen_16"
+    android:paddingTop="@dimen/dimen_24">
+
+    <TextView android:id="@+id/title_dialog_raffle_name"
+              android:text="@string/title_view_raffles_name"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView android:id="@+id/text_dialog_raffle_name"
+              android:text="@string/title_view_raffles_number"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintStart_toEndOf="@+id/title_dialog_raffle_name"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/font_13"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView android:id="@+id/text_dialog_raffle_number"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/title_view_raffles_number"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/text_dialog_raffle_name"/>
+
+    <TextView android:id="@+id/dialog_raffle_number"
+              android:text="@string/title_view_raffles_number"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintLeft_toRightOf="@+id/text_dialog_raffle_number"
+              app:layout_constraintTop_toBottomOf="@+id/text_dialog_raffle_name"/>
+
+    <TextView android:id="@+id/text_dialog_raffle_lottery"
+              android:text="@string/title_view_raffles_lottery"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/text_dialog_raffle_number"/>
+
+    <TextView android:id="@+id/dialog_raffle_lottery"
+              android:text="@string/title_view_raffles_lottery"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintLeft_toRightOf="@+id/text_dialog_raffle_lottery"
+              app:layout_constraintTop_toBottomOf="@+id/dialog_raffle_number"/>
+
+    <TextView android:id="@+id/text_dialog_raffle_date_draw"
+        android:text="@string/title_view_raffles_date_draw"
+        style="@style/Text.Subtitle.Ticket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dialog_raffle_lottery"/>
+
+    <TextView android:id="@+id/dialog_raffle_date_draw"
+        android:text="@string/title_view_raffles_date_draw"
+        style="@style/Text.Content.Ticket"
+        app:layout_constraintBottom_toBottomOf="@+id/text_dialog_raffle_date_draw"
+        app:layout_constraintLeft_toRightOf="@+id/text_dialog_raffle_date_draw"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_raffle_lottery"/>
+
+    <TextView android:id="@+id/text_dialog_raffle_value"
+              android:text="@string/view_raffles_price"
+              style="@style/Text.Subtitle.Ticket"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/text_dialog_raffle_date_draw"/>
+
+    <TextView android:id="@+id/dialog_raffle_value"
+              android:text="@string/view_raffles_price"
+              style="@style/Text.Content.Ticket"
+              app:layout_constraintBottom_toBottomOf="@+id/text_dialog_raffle_value"
+              app:layout_constraintLeft_toRightOf="@+id/text_dialog_raffle_value"
+              app:layout_constraintTop_toBottomOf="@+id/dialog_raffle_date_draw"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

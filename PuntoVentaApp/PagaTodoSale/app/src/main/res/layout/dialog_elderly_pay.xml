@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dimen_24"
+        android:paddingTop="@dimen/dimen_24"
+        android:paddingEnd="@dimen/dimen_16">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                style="@style/Text.Subtitle.Ticket"
+                android:text="@string/dialog_elderly_id" />
+
+        <TextView
+                android:id="@+id/dialog_id"
+                style="@style/Text.Content.Ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/giro_not_found"
+                android:textSize="@dimen/font_13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+
+                style="@style/Text.Subtitle.Ticket"
+                android:text="@string/dialog_elderly_name" />
+
+        <TextView
+                android:id="@+id/dialog_name"
+                style="@style/Text.Content.Ticket"
+                android:text="@string/giro_not_found" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+
+                style="@style/Text.Subtitle.Ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_elderly_reference" />
+
+        <TextView
+                android:id="@+id/dialog_references"
+                style="@style/Text.Content.Ticket"
+                android:text="@string/giro_not_found" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                style="@style/Text.Subtitle.Ticket"
+                android:text="@string/dialog_elderly_date" />
+
+        <TextView
+                android:id="@+id/dialog_date"
+                style="@style/Text.Content.Ticket"
+                android:text="@string/giro_not_found" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                style="@style/Text.Subtitle.Ticket"
+                android:text="@string/dialog_elderly_value" />
+
+        <TextView
+                android:id="@+id/dialog_value"
+                style="@style/Text.Content.Ticket"
+                android:text="@string/giro_not_found" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

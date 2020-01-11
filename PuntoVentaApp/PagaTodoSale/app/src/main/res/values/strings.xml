@@ -1,0 +1,1863 @@
+<resources>
+
+    <string name="app_name">Punto de Venta</string>
+    <string name="version">Versión:</string>
+    <string name="info_version">\2019 - Paga Todo</string>
+    <string name="footer_version">\Todos los Derechos Reservados.</string>
+    <string name="action_bag">Bag</string>
+
+    <!-- View Titles -->
+    <string name="chance_title">Chance</string>
+    <string name="login_title">Apuestas Gelsa</string>
+    <string name="maxichance_title">Maxi Chance</string>
+    <string name="superchance_title">Súper Chance</string>
+    <string name="reportsales_title">Reporte de Ventas</string>
+    <string name="currentbox_title">Cuadre Actual</string>
+    <string name="recharge_title">Recargas y Paquetes</string>
+    <string name="stub_title">Selección de Colilla</string>
+    <string name="recharge_history_title">Consulta Recargas</string>
+    <string name="recharge_history_title_pdv">Consulta de recargas</string>
+    <string name="history_wallet">Consultar Cartera</string>
+    <string name="change_password">CAMBIAR CONTRASEÑA</string>
+    <string name="pay_millionaire_title">Paga Millonario</string>
+    <string name="paymillionaire_menu_title">Paga Millonario</string>
+    <string name="device_menu_title">Dispositivo</string>
+    <string name="baloto_winners_menu_title">Baloto ganadores</string>
+    <string name="advisor_menu_title">Asesor</string>
+    <string name="query_menu_title">Consultas y premios</string>
+    <string name="sporting_menu_title">Las Deportivas</string>
+    <string name="lottery_result_title">Resultado Loterías y Sorteos</string>
+    <string name="lottery_result_title_secos">Resultados secos loteria</string>
+    <string name="chance_menu_title">Chance</string>
+    <string name="chance_placeholder_suggested">$ Valor a apostar</string>
+    <string name="betplay_menu_title">BetPlay</string>
+    <string name="baloto_menu_title">Baloto</string>
+    <string name="sports_menu_title">Las Deportivas</string>
+    <string name="superastro_menu_title">SUPER astro</string>
+    <string name="betplay_title">BetPlay</string>
+    <string name="betplay_recharge_title">BetPlay Recarga</string>
+    <string name="betplay_reprint_title">BetPlay Reimpresión</string>
+    <string name="betplay_collect_title">BetPlay Cobro-Retiro</string>
+    <string name="betplay_pin_title">BetPlay Generar PIN</string>
+    <string name="betplay_quick_bet_title">BetPlay Apuesta Rápida</string>
+    <string name="baloto_result_title">Baloto resultados</string>
+    <string name="revenge_result_title">Revancha resultados</string>
+    <string name="superastro_title">SUPER astro</string>
+    <string name="league_14_title">Liga 14</string>
+    <string name="megagoal_title">MegaGol</string>
+    <string name="home_menu_title">Menú Principal</string>
+    <string name="lottery_title">Loterías</string>
+    <string name="virtual_lottery_title">Lotería Virtual</string>
+    <string name="physical_lottery_title">Lotería Física</string>
+    <string name="title_view_raffles">Rifas</string>
+    <string name="title_view_baloto">Baloto</string>
+    <string name="title_view_baloto_history">Histórico Baloto</string>
+    <string name="title_view_baloto_result_draw">Resultados por sorteo</string>
+    <string name="megagol_title">MegaGol</string>
+    <string name="promotionals_menu_title">Promocionales</string>
+    <string name="dataphone_title_in_session">Información del datáfono</string>
+    <string name="device_title_in_session">Información del dispositivo</string>
+    <string name="dataphone_title">Información</string>
+    <string name="reset_password">Cambio de clave</string>
+    <string name="reset_passwor_title">Cambiar Contraseña</string>
+    <string name="wallet_title">Cartera</string>
+    <string name="query_winners_title">Consultar ganadores</string>
+    <string name="lotteries_result_title">Resultado de loterías</string>
+    <string name="accumulated_baloto_title">Baloto acumulado</string>
+    <string name="accumulated_baloto_subtitle">Acumulados</string>
+    <string name="title_virtual_wallet">Recarga de Mi Saldo app Paga Todo</string>
+    <string name="colpensiones_beps_title">Colpensiones BEPS</string>
+    <string name="reprit_colpensiones_beps_title">Reimpresión Colpensiones BEPS</string>
+    <string name="pay_bills">Pago de facturas</string>
+
+    <!-- Labels -->
+    <string name="text_modalities">Modalidades</string>
+    <string name="text_bet_equal">Apostado:</string>
+    <string name="text_iva_equal">IVA:</string>
+    <string name="text_iva_empty">$0</string>
+    <string name="text_paid_equal">Pagado:</string>
+    <string name="text_suggested_equal">Sugerido:</string>
+    <string name="text_draw_date_equal">Fecha de Sorteo:</string>
+    <string name="text_lottery_result_select">Seleccionar Lotería:</string>
+    <string name="text_lottery_result_seco_select">Selecciona Seco:</string>
+    <string name="text_aleatorio">Aleatorio</string>
+    <string name="text_repeat">Repetir última apuesta</string>
+    <string name="text_generate_random_numbers">Aleatorio</string>
+    <string name="text_title_recharge">Digita los siguientes datos</string>
+    <string name="text_title_reprint_betplay">Reimpresión BetPlay</string>
+    <string name="text_title_collect_betplay">Cobro / Retiro </string>
+    <string name="text_title_generate_pin_betplay">Generar PIN para retiro</string>
+    <string name="text_title_quick_bet_betplay">Generar Apuesta Rápida</string>
+    <string name="text_subtitle_collect_betplay">Confirma la siguiente información para realizar el retiro</string>
+    <string name="text_title_maxichance">Juego</string>
+    <string name="text_title_lotteries">Loterías</string>
+    <string name="text_operator">Operador</string>
+    <string name="text_package">Paquete (opcional)</string>
+    <string name="text_number">Número</string>
+    <string name="text_title_baloto">Baloto</string>
+    <string name="text_winner_ticket">Tiquete ganador</string>
+    <string name="text_award_value">Valor premio</string>
+    <string name="text_title_colpensiones_beps">Recaudo - Colpensiones BEPS</string>
+    <string name="text_title_document_type">Tipo de documento</string>
+    <string name="text_title_document_number">Número de documento</string>
+    <string name="text_title_birthdate_day_month">Día / Mes nacimiento</string>
+    <string name="text_title_input_value">Valor aporte</string>
+    <string name="text_title_confirmation_input_value">Confirmar valor aporte</string>
+    <string name="text_title_phone_number">Número telefónico</string>
+    <string name="text_title_reprint_colpensiones_beps">Reimpresión Colpensiones BEPS</string>
+    <string name="text_title_transaction_type">Tipo de transacción</string>
+    <string name="text_title_transaction_number">Número transacción</string>
+
+    <string name="text_title_device_printers">Selecciona las impresoras</string>
+    <string name="text_label_select_printer">Selecciona una impresora</string>
+    <string name="text_jsa_printer">Impresora para JSA</string>
+    <string name="text_other_product_printer">Impresora otros productos</string>
+    <string name="text_agreements">Convenios</string>
+    <string name="text_bar_code">Referencia</string>
+    <string name="text_user_code">Código de usuario</string>
+    <string name="text_client_number">Número de cliente</string>
+    <string name="text_account_number">Número de cuenta</string>
+    <string name="text_cc">Cédula de ciudadanía</string>
+    <string name="text_ref_payment">Referencia de pago</string>
+
+    <string name="text_select_internal_print">Impresora Interna</string>
+    <string name="text_draw_number">N° sorteo:</string>
+    <string name="text_draw_date">Fecha sorteo:</string>
+    <string name="text_game_result">Resultado juego:</string>
+    <string name="text_label_draw_number">Sorteo</string>
+    <string name="text_label_draw_date">Fecha</string>
+    <string name="text_label_game_result">Resultado</string>
+    <string name="text_label_draw_not_fount">-</string>
+    <string name="text_label_div">DIV</string>
+    <string name="text_label_winners">N° GANADORES</string>
+    <string name="text_number_phone">Número de teléfono</string>
+    <string name="text_advisor_code">Código asesor</string>
+    <string name="text_check_date">Fecha consulta</string>
+    <string name="text_enter_number">Digita el número de juego</string>
+    <string name="text_enter_number_init">Digita el rango inicial</string>
+    <string name="text_enter_number_final">Digita el rango final</string>
+    <string name="text_confirm_number">Confirmar número de teléfono</string>
+    <string name="text_confirm_echarge_number">Confirmar número</string>
+    <string name="text_recharge_value">Valor recarga</string>
+    <string name="text_recharge_value_other">Ingresa otro valor </string>
+    <string name="text_confirm_recharge_value">Confirmar valor recargar</string>
+    <string name="text_recharge_value_confirm">Confirmar valor</string>
+    <string name="text_number_recharge">Número celular</string>
+    <string name="text_date_recharge">Fecha de recarga</string>
+    <string name="text_current_password">Contraseña actual</string>
+    <string name="text_new_password">Nueva contraseña</string>
+    <string name="text_confirm_new_password">Confirmar nueva contraseña</string>
+    <string name="text_number_item">Número</string>
+    <string name="text_enter_number_item">Número</string>
+    <string name="text_state_item">Estado</string>
+    <string name="text_value_item">Valor</string>
+    <string name="text_value_item_with_sign">Valor</string>
+    <string name="text_close_x">X</string>
+    <string name="text_select">Seleccionar</string>
+    <string name="text_serie">Serie</string>
+    <string name="text_lottery_name">Loteria / Sorteos</string>
+    <string name="text_lottery">Loteria:</string>
+    <string name="text_select_modality">Seleccione una modalidad</string>
+    <string name="text_error_login">No se pudo autenticar, por favor vuelva a intentarlo</string>
+    <string name="text_error_request">Se ha presentado un error en la petición, por favor vuelva a intentar</string>
+    <string name="text_error_fingerprint">Error al capturar la huella</string>
+    <string name="text_error_fingerprint_origin">La huella del usuario origen es obligatoria</string>
+
+    <string name="text_total_value_equal">Valor Total:</string>
+    <string name="text_numberid_betplay">Número de Documento</string>
+    <string name="text_collect_value_betplay">Número de ID</string>
+    <string name="text_generated_pin_betplay">PIN generado</string>
+    <string name="text_numberid_confirm_betplay">Confirmar número de Documento</string>
+    <string name="text_draw">Sorteo</string>
+    <string name="text_draw_zodiac">Sorteos</string>
+    <string name="text_games">Juego</string>
+    <string name="text_label_sign">Signo:</string>
+    <string name="text_label_value">Valor:</string>
+    <string name="text_label_number">Número:</string>
+    <string name="text_lotteries">Loterías:</string>
+    <string name="text_bet">Apostado:</string>
+    <string name="text_number_three">3</string>
+    <string name="text_total_pay">Total Pagado:</string>
+    <string name="text_stub">Colilla:</string>
+    <string name="text_label_date_draw">Día sorteo:</string>
+    <string name="text_label_game">Juego:</string>
+    <string name="text_label_grid">Grilla:</string>
+    <string name="text_label_total_pay">Total Pagado:</string>
+    <string name="text_title_baloto_dialog_draw">Baloto</string>
+    <string name="text_title_baloto_revenge_dialog_draw">Baloto - Revancha</string>
+    <string name="text_title_baloto_dialog_draw_addonplayed">Revancha</string>
+    <string name="text_label_title_fractions">Cantidad de fracciones</string>
+    <string name="text_label_draw">Sorteo:</string>
+    <string name="text_label_serie">Serie:</string>
+    <string name="text_label_number_bet">Número apuesta:</string>
+    <string name="text_label_fractions">Fracciones:</string>
+    <string name="text_label_award">Premio Mayor:</string>
+    <string name="text_label_fractions_availables">Fracciones disponibles:</string>
+    <string name="text_label_date">Fecha:</string>
+    <string name="text_lottery_confirm">Lotería:</string>
+    <string name="text_number_game_confirm">Número de juego:</string>
+    <string name="text_serie_confirm">Serie:</string>
+    <string name="text_quantity_fractions_confirm">Cantidad de fracciones:</string>
+    <string name="text_title_communication">Información de comunicación</string>
+    <string name="text_title_information_imei">Información IMEI</string>
+    <string name="text_title_information_branch_office">Información sucursal</string>
+    <string name="text_subtitle_reset_password">La cantidad mínima y máxima de caracteres debe ser de (5) y únicamente
+        numérico.
+    </string>
+    <string name="text_paymillionaire_title_accumulated">Acumulados</string>
+    <string name="text_paymillionaire_label_1">3 Cifras</string>
+    <string name="text_paymillionaire_label_2">Acumulado del día para 3 cifras:</string>
+    <string name="text_paymillionaire_label_3">DOBLE ACIERTO (2 Números + 2 Loterías)\nPremio paramutual
+        acumulado.\n\nACIERTO ÚNICO (1 Número + 1 Lotería)\nPaga $300 x Peso apostado (C/Número)
+    </string>
+    <string name="text_paymillionaire_label_5">4 Cifras</string>
+    <string name="text_paymillionaire_label_6">Acumulado del día para 4 cifras:</string>
+    <string name="text_paymillionaire_label_7">DOBLE ACIERTO (2 Números + 2 Loterías)\nPremio paramutual
+        acumulado.\n\nACIERTO ÚNICO (1 Número + 1 Lotería)\nPaga $3.000 x Peso apostado (C/Número)
+    </string>
+    <string name="text_label_baloto">Baloto</string>
+    <string name="text_label_baloto_revenge">Baloto Revancha</string>
+    <string name="text_label_baloto_accumulated">Acumulado multimillonario:</string>
+    <string name="text_label_baloto_date_draw">Fecha sorteo:</string>
+    <string name="text_label_baloto_value">Valor:</string>
+    <string name="text_label_date_recharge">Fecha:</string>
+    <string name="text_label_hour_recharge">Hora:</string>
+    <string name="text_label_value_recharge">Valor de recarga:</string>
+    <string name="text_label_status_recharge">Estado recarga:</string>
+    <string name="text_label_numreference_recharge">Nº Referencia:</string>
+    <string name="text_label_empty_recharge">No se encontraron recargas</string>
+    <string name="text_label_serie_number">N° de serie del Baloto</string>
+    <string name="unique_serial">Serial único</string>
+    <string name="enter_seria_unique">Digita el número serial único</string>
+    <string name="text_recharge_virtual_wallet">Recarga de Mi Saldo</string>
+    <string name="text_pin_number">Número de PIN</string>
+    <string name="text_label_pin_number">Número de PIN:</string>
+    <string name="text_label_recharge_value">Valor recarga:</string>
+    <string name="title_dialog_pay_virtual_wallet">Tiquete Recarga de Mi Saldo</string>
+
+    <string name="title_dialog_pay_title_colpensiones">Tiquete Colpensiones - BEPS</string>
+    <string name="title_dialog_pay_document_number">Número de documento:</string>
+    <string name="title_dialog_pay_phone_number">Número telefónico:</string>
+    <string name="title_dialog_pay_value">Valor aporte:</string>
+    <string name="text_success_transaction">Transacción exitosa</string>
+
+    <string name="text_label_billed_service_no_semi">Servicio facturado</string>
+    <string name="text_label_user_code_no_semi">Código de usuario</string>
+    <string name="text_label_user_name_no_semi">Nombre de usuario</string>
+    <string name="text_label_bill_number_no_semi">Número de factura</string>
+    <string name="text_label_bill_date_no_semi">Fecha de vencimiento</string>
+    <string name="text_label_bill_description_no_semi">Descripción</string>
+    <string name="text_label_bill_value_no_semi">Valor de factura</string>
+    <string name="text_label_value_to_pay_no_semi">Valor a pagar</string>
+    <string name="text_label_bill_state_no_semi">Estado</string>
+    <string name="text_label_bill_action_no_semi">Acción</string>
+
+    <string name="text_label_billed_service">Servicio facturado:</string>
+    <string name="text_label_user_code">Código de usuario:</string>
+    <string name="text_label_user_name">Nombre de usuario:</string>
+    <string name="text_label_bill_number">Número de factura:</string>
+    <string name="text_label_bill_date">Vencimiento:</string>
+    <string name="text_label_bill_description">Descripción:</string>
+    <string name="text_label_bill_value">Valor factura:</string>
+    <string name="text_label_value_to_pay">Valor a pagar:</string>
+    <string name="text_label_bill_state">Estado:</string>
+    <string name="text_label_bill_action">Acción:</string>
+
+    <string name="text_label_colsubsidio_recaudo_description">Descripción:</string>
+    <string name="text_label_colsubsidio_recaudo_user_name">Nombre de usuario:</string>
+    <string name="text_label_colsubsidio_recaudo_bill_number">Número de factura:</string>
+    <string name="text_label_colsubsidio_recaudo_bill_value">Valor factura:</string>
+    <string name="text_label_colsubsidio_recaudo_IVA">IVA:</string>
+    <string name="text_label_colsubsidio_recaudo_total_paid">Total Pagado:</string>
+
+    <string name="text_label_colsubsidio_retiro_document_number">Número de documento:</string>
+    <string name="text_label_colsubsidio_retiro_retirement_value">Valor retiro:</string>
+
+    <string name="text_label_colsubsidio_retiro_retirement_redeban_option_one">1. Presione el botón verde en el datáfono.</string>
+    <string name="text_label_colsubsidio_retiro_retirement_redeban_option_two">2. Siga las instrucciones del datáfono.</string>
+
+
+    <!-- Home Menu -->
+    <string name="main_menu_title_products">Productos y Servicios</string>
+    <string name="main_menu_title_consults">Consultas y Premios</string>
+    <string name="main_menu_title_adviser">Asesor</string>
+    <string name="main_menu_title_notifications">Notificaciones</string>
+    <string name="main_menu_title_contact">Contacto</string>
+    <string name="main_menu_title_device">Info Dispositivo</string>
+    <string name="main_menu_title_logout">Cerrar Sesión</string>
+    <string name="home_menu_title_chance">Chance</string>
+    <string name="home_menu_title_recharge">Recargas y Paquetes</string>
+    <string name="home_menu_title_superastro">SUPER astro</string>
+    <string name="home_menu_title_pay_millonaire">Paga Millonario</string>
+    <string name="home_menu_title_lottery_virtual">Lotería Virtual</string>
+    <string name="home_menu_title_lottery">Lotería Física</string>
+    <string name="home_menu_title_lottery_sale">Venta</string>
+    <string name="home_menu_title_lottery_available">Fracciones disponibles</string>
+    <string name="home_menu_title_sportings">Las Deportivas</string>
+    <string name="home_menu_title_lottery_betplay">BetPlay</string>
+    <string name="home_menu_title_lottery_raffles">Rifas</string>
+    <string name="home_menu_title_lottery_querys">Consultas</string>
+    <string name="home_menu_title_lottery_baloto">Baloto</string>
+    <string name="home_menu_title_promotionals">Promocionales</string>
+    <string name="home_menu_title_logout">Cerrar Sesión</string>
+    <string name="home_menu_chance_title_bett_new">Nueva apuesta</string>
+    <string name="home_menu_chance_traditional">Chance tradicional</string>
+    <string name="home_menu_chance_paymillionaire">Paga Millonario</string>
+    <string name="home_menu_chance_games">Juegos Chance</string>
+    <string name="home_menu_chance_title_award_baloto">Pago de premio</string>
+    <string name="home_menu_chance_title_bett_replay">Repetir apuesta</string>
+    <string name="home_menu_betplay_title_recharge">Recargar</string>
+    <string name="home_menu_betplay_title_reprint">Reimprimir</string>
+    <string name="home_menu_betplay_title_generate_pin">Generar PIN</string>
+    <string name="home_menu_betplay_title_collect_take_out">Cobro / Retiro</string>
+    <string name="home_menu_betplay_title_fast_bet">Apuesta Rápida</string>
+    <string name="home_menu_promotionals_title_maxichance">Maxi Chance</string>
+    <string name="home_menu_promotionals_title_superchance">Súper Chance</string>
+    <string name="home_menu_title_colpensiones_beps">BEPS\nColpensiones</string>
+    <string name="home_menu_title_reprint_colpensiones_beps">Reimpresión Colpensiones BEPS</string>
+    <string name="menu_device_info">Información del datáfono</string>
+    <string name="menu_device_info_pos">Información del dispositivo</string>
+    <string name="menu_device_printers">Impresoras del dispositivo</string>
+    <string name="menu_pay_u_collecting">Recaudo PAYU</string>
+    <string name="menu_pay_u_reprint">Recaudo PAYU Reimpresión</string>
+    <string name="menu_advisor_current_box">Cuadre actual</string>
+    <string name="menu_advisor_sale_report">Reporte de ventas</string>
+    <string name="menu_advisor_password_change">Cambio de clave</string>
+    <string name="menu_advisor_wallet">Cartera</string>
+    <string name="menu_query_lotteries_resulta_secos">Resultados secos loterias</string>
+    <string name="menu_query_lotteries_resulta_sorteos">Resultados loterias y sorteos</string>
+    <string name="menu_query_accumulated_millionarie">Paga Millonario acumulado</string>
+    <string name="menu_query_baloto_results">Baloto resultados</string>
+    <string name="menu_query_baloto_accumulated">Baloto acumulado</string>
+    <string name="menu_query_recharge_queries">Recargas consultas</string>
+    <string name="menu_query_winners">Consultar ganadores</string>
+    <string name="menu_query_baloto_winners_op">Ganadores Baloto</string>
+    <string name="menu_query_baloto_revenge_winners">Ganadores Baloto Revancha</string>
+    <string name="menu_super_astro_new_bet">Nueva apuesta</string>
+    <string name="menu_super_astro_replay_bet">Repetir apuesta</string>
+    <string name="home_menu_title_virtual_wallet">Recarga App Paga Todo</string>
+    <string name="home_menu_title_sitp">Recaudo Bogotá - Tu llave</string>
+    <string name="home_menu_title_bbva">BBVA</string>
+    <string name="home_menu_title_colsubsidio">Colsubsidio</string>
+    <string name="home_menu_title_snr">Recaudo SNR</string>
+    <string name="directory_name">webRechargerFiles</string>
+    <string name="result">result:</string>
+
+    <!-- Labels with parameters -->
+    <string name="text_label_parameter_baloto_date_draw">Fecha sorteo: %1$s</string>
+    <string name="text_label_parameter_baloto_value">Valor: $ %1$s</string>
+    <string name="text_label_parameter_operator">Operador:</string>
+    <string name="text_label_parameter_package">Paquete:-</string>
+    <string name="text_label_parameter_name_user">¡Hola,
+        <b>%1$s!</b>
+    </string>
+    <string name="text_label_parameter_version">Versión: %1$s</string>
+    <string name="text_label_parameter_number"><b>Número ID:</b>%1$s
+    </string>
+    <string name="text_label_parameter_price">Precio:</string>
+    <string name="text_label_parameter_document_number">Número de ID:</string>
+    <string name="text_label_parameter_to_pay">Valor a pagar:</string>
+    <string name="text_label_parameter_date">Día sorteo:</string>
+    <string name="text_label_parameter_lotteries">Loterías:</string>
+    <string name="text_label_parameter_numbers">Números:</string>
+    <string name="text_label_parameter_stub">Colilla:</string>
+    <string name="text_label_parameter_bet">Apostado:</string>
+    <string name="text_label_parameter_iva">IVA:</string>
+    <string name="text_label_parameter_value_pay">Total Pagado:</string>
+    <string name="text_label_parameter_value_total_pay"><b>Total Pagado:</b>%1$s
+    </string>
+    <string name="text_label_parameter_only_number"><b>Número:</b>%1$s
+    </string>
+    <string name="text_label_parameter_two_points">%1$s:</string>
+    <string name="text_label_parameter_total_value">Venta total: %1$s</string>
+    <string name="text_label_parameter_games">Juego (%1$d)</string>
+    <string name="text_label_parameter_coin">$%1$s</string>
+    <string name="text_label_parameter_coin_with_space">$ %1$s</string>
+    <string name="text_label_parameter_min_value">El valor mínimo de recarga es de $%1$s</string>
+    <string name="text_label_parameter_max_value">El valor máximo de recarga es de $%1$s</string>
+    <string name="text_label_parameter_apn">APN: %1$s</string>
+    <string name="text_label_parameter_imei">Imei terminal: %1$s</string>
+    <string name="text_label_parameter_sim_serial_number">Imei SimCard: %1$s</string>
+    <string name="text_title_information_print_device">Impresora</string>
+    <string name="text_label_parameter_select_print_device">Seleccionar impresora</string>
+    <string name="message_error_parameter_multiple_100">El valor debe ser un múltiplo de %1$s</string>
+    <string name="text_label_transaction_date">Fecha transacción:</string>
+    <string name="text_label_transaction_hour">Hora transacción:</string>
+    <string name="text_label_area">Zona:</string>
+    <string name="text_label_area_balance">Saldo zona:</string>
+    <string name="text_label_selling_area">Venta zona:</string>
+    <string name="text_label_collection_area">Recaudo zona:</string>
+    <string name="text_label_seller_sale">Venta del vendedor:</string>
+    <string name="text_label_seller_balance">Saldo del vendedor:</string>
+    <string name="text_label_seller_collection">Recaudo vendedor:</string>
+    <string name="text_label_parameter_advisor">Asesor: %1$s</string>
+    <string name="text_label_parameter_municipality">Municipio: %1$s</string>
+    <string name="text_label_parameter_office">Oficina: %1$s</string>
+    <string name="text_label_parameter_salepoint">Punto de venta: %1$s</string>
+    <string name="text_label_parameter_serie_1">Serie 1: %1$s</string>
+    <string name="text_label_parameter_serie_2">Serie 2: %1$s</string>
+    <string name="text_label_total_value_zero">Venta total: $0</string>
+    <string name="text_label_raffle_date">Día sorteo</string>
+    <string name="text_label_lotteries">Loterías</string>
+    <string name="text_label_lottery">Lotería de %1$s</string>
+    <string name="text_label_stub">Colilla</string>
+    <string name="text_label_bet">Apostado</string>
+    <string name="text_label_iva_uppercase">IVA</string>
+    <string name="text_label_total_value">Total</string>
+    <string name="text_label_version">V %1$s</string>
+    <string name="text_label_not_aplicate">N/A</string>
+    <string name="text_label_number_serie">Número de serie:</string>
+    <string name="text_label_value_pay_prize">Valor a cancelar:</string>
+    <string name="text_label_success_recharge_virtual_wallet">Se realizó con exito la recarga de Mi Saldo con el PIN:
+        %1$s
+    </string>
+    <string name="text_label_balance_card">Saldo en la tarjeta:</string>
+    <string name="text_label_sam_balance">Saldo en el dispositivo:</string>
+    <string name="text_label_new_balance_card">Nuevo saldo en la tarjeta:</string>
+    <string name="text_label_back_value">Valor reversado:</string>
+    <string name="text_label_card_number">Tarjeta Nº:</string>
+    <string name="text_label_value_reload">Valor recarga:</string>
+
+    <!-- Titles Dialogs -->
+    <string name="title_paymillionaire_modes">"SELECCIONE LA MODALIDAD"</string>
+    <string name="title_ticket_baloto">Tiquete Baloto</string>
+    <string name="title_dialog_error">Error</string>
+    <string name="title_failed_transaction">Transacción fallida</string>
+    <string name="title_pending_transaction">Transacción pendiente</string>
+    <string name="title_dialog_current_stub">Colilla actual</string>
+    <string name="title_dialog_success_changed">Cambio exitoso</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_adviser">Asesor</string>
+    <string name="placeholder_password">Contraseña</string>
+    <string name="placeholder_operator">Selecciona un operador</string>
+    <string name="recharge_placeholder_value">Selecciona un valor</string>
+    <string name="recharge_placeholder_value_other">Otro Valor</string>
+    <string name="placeholder_package">Selecciona un paquete</string>
+    <string name="placeholder_select_document_type">Selecciona un tipo de documento</string>
+    <string name="placeholder_zodiac">Signo</string>
+    <string name="placeholder_series">Selecciona una serie</string>
+    <string name="placeholder_fractions">Selecciona la cantidad de fracciones</string>
+    <string name="placeholder_value">Valor</string>
+    <string name="placeholder_lotteries_of_day">Loterías del día</string>
+    <string name="placeholder_lotteries_available">Loterías disponibles</string>
+    <string name="placeholder_number">Número de teléfono a recargar</string>
+    <string name="placeholder_recharge_number">Número a recargar</string>
+    <string name="placeholder_number_to_recharge">Digita el número recargado</string>
+    <string name="placeholder_number_recharge">Número de teléfono de recarga</string>
+    <string name="placeholder_confirm_number">Confirmar número a recargar</string>
+    <string name="placeholder_recharge_value_spinner">Selecciona valor a recargar</string>
+    <string name="placeholder_recharge_value">Selecciona valor a recargar</string>
+    <string name="placeholder_recharge_value_confirm">$ Confirmar valor a recargar</string>
+    <string name="placeholder_confirm_recharge_value">Confirmar el valor a recargar</string>
+    <string name="placeholder_current_password">Digita la contraseña actual</string>
+    <string name="placeholder_new_password">Digita la nueva contraseña</string>
+    <string name="placeholder_confirm_new_password">Confirma la nueva contraseña</string>
+    <string name="placeholder_numberid">Digita el número de cédula</string>
+    <string name="placeholder_collect_value">Digita el número de cédula</string>
+    <string name="placeholder_generated_pin">Digita el PIN</string>
+    <string name="placeholder_numberid_confirm">Confirma el número de cédula</string>
+    <string name="placeholder_value_recharge">Valor a recargar</string>
+    <string name="placeholder_value_recharge_confirm">Confirmar valor a recargar</string>
+    <string name="placeholder_lotteries_search">Buscar lotería</string>
+    <string name="placeholder_draw_search">Buscar por sorteo</string>
+    <string name="placeholder_number_game">Digita el número de juego</string>
+    <string name="placeholder_n_goles">Nº Goles</string>
+    <string name="placeholder_select_a_date">Seleccionar fecha de sorteo</string>
+    <string name="placeholder_filter_by_date">Filtrar por fecha</string>
+    <string name="placeholder_check_date">Digita la fecha a consultar</string>
+    <string name="placeholder_filter_date">Digita la fecha de recarga</string>
+    <string name="placeholder_lottery_result_select_one">Selecciona una Lotería</string>
+    <string name="placeholder_enter_pin">Digita el número de PIN</string>
+    <string name="placeholder_enter_document">Digita el número de documento</string>
+    <string name="placeholder_enter_birthday">Selecciona el día y mes de nacimiento</string>
+    <string name="placeholder_enter_input_value">Digita el valor de aporte</string>
+    <string name="placeholder_confirm_input_value">Confirma el valor de aporte</string>
+    <string name="placeholder_phone_number">Digita número celular/fijo</string>
+    <string name="placeholder_transaction_type">Selecciona el tipo de transacción</string>
+    <string name="placeholder_transaction_number">Digita el número de transacción</string>
+    <string name="placeholder_select_agreement">Selecciona un convenio</string>
+    <string name="placeholder_number_cod">Digitar número/Cod</string>
+
+    <!-- Buttons -->
+    <string name="text_btn_login">INGRESAR</string>
+    <string name="text_btn_cancel">CANCELAR</string>
+    <string name="text_btn_update">ACTUALIZAR</string>
+    <string name="text_btn_pay">PAGAR</string>
+    <string name="text_btn_accept">ACEPTAR</string>
+    <string name="text_btn_send_giro">ENVIAR GIRO</string>
+    <string name="text_btn_back">&#60; ATRÁS</string>
+    <string name="text_btn_next">&#62; SIGUIENTE</string>
+    <string name="text_btn_charge">&#62; COBRAR</string>
+    <string name="text_btn_save">&#62; GUARDAR</string>
+    <string name="text_btn_pay_2">&#62; PAGAR</string>
+    <string name="text_btn_consult">CONSULTAR</string>
+    <string name="text_btn_search">BUSCAR</string>
+    <string name="text_btn_pay_bet">PROCESAR APUESTA</string>
+    <string name="text_btn_print">IMPRIMIR</string>
+    <string name="text_btn_reprint">REIMPRIMIR</string>
+    <string name="text_btn_close_box">CERRAR CAJA</string>
+    <string name="text_btn_reprint_arrow">&#62; REIMPRIMIR</string>
+    <string name="text_btn_delete">ELIMINAR</string>
+    <string name="text_btn_exit">SALIR</string>
+    <string name="text_btn_add_game">AÑADIR JUEGO</string>
+    <string name="text_btn_clear">LIMPIAR</string>
+    <string name="text_btn_generate">GENERAR</string>
+    <string name="text_btn_query_id">CONSULTAR ID</string>
+    <string name="text_btn_consult2">Consultar</string>
+    <string name="text_btn_filter">Filtrar</string>
+    <string name="text_btn_validate">Validar</string>
+    <string name="text_btn_confirm">CONFIRMAR</string>
+    <string name="text_btn_retirement">RETIRAR</string>
+
+    <!-- Wallet -->
+    <string name="text_wallet_seller">Asesor:</string>
+    <string name="text_wallet_date">Fecha:</string>
+
+    <!-- Collecting PayU-->
+    <string name="text_label_payu_collecting">Recaudos PAYU</string>
+    <string name="text_label_payu_reprint">Recaudos PAYU - Reimpresión</string>
+    <string name="text_ref_number">Número de referencia</string>
+    <string name="text_btn_query_ref">Consultar</string>
+    <string name="text_payment_info">Información del pago</string>
+    <string name="text_label_ref">Referencia</string>
+    <string name="text_label_username">Nombre del usuario</string>
+    <string name="text_label_user_document">Documento del usuario</string>
+    <string name="text_label_value_to_pay_payu">Valor a pagar</string>
+    <string name="text_label_clean_data">Limpiar datos</string>
+    <string name="placeholder_ref_number">Digita el número de referencia del pago</string>
+    <string name="message_error_ref_number">Digita el número de referencia</string>
+    <string name="message_error_check_ref_number">Consulta primero el número de referencia digitado</string>
+    <string name="title_dialog_pay_u_collecting">Tiquete Recaudo PAYU</string>
+    <string name="text_label_ticket_ref">Referencia:</string>
+    <string name="text_label_ticket_username">Nombre de usuario:</string>
+    <string name="text_label_ticket_user_document">Documento de usuario:</string>
+    <string name="text_label_ticket_value_to_pay">Valor pago:</string>
+    <string name="title_success_pay_u_collecting">Recaudo exitoso</string>
+    <string name="message_dialog_success_pay_u_collecting">El pago se ha realizado exitosamente por valor de %1$s
+    </string>
+    <string name="home_menu_title_pay_u_collecting">Recaudo PAYU</string>
+
+    <string name="pay_u_title_confirm_reprint">Confirmar reimpresión</string>
+    <string name="pay_u_confirm_reprint">¿Esta seguro de realizar la reimpresión?</string>
+
+    <!-- Virtual SOAT -->
+    <string name="virtual_soat_title">SOAT Virtual</string>
+    <string name="home_menu_title_virtual_soat">SOAT Virtual</string>
+    <string name="text_title_virtual_soat">Consulta de SOAT</string>
+    <string name="text_document_type">Tipo de documento</string>
+    <string name="text_document_number">Número de documento</string>
+    <string name="text_phone_number">Número de teléfono</string>
+    <string name="text_vehicle_type">Tipo de vehículo</string>
+    <string name="text_vehicle_license_plate">Placa del vehículo</string>
+    <string name="placeholder_document_type">Selecciona el tipo de documento</string>
+    <string name="placeholder_vehicle_type">Selecciona el tipo de vehículo</string>
+    <string name="placeholder_document_number">Digita el número de documento</string>
+    <string name="placeholder_enter_phone_number">Digita el número de teléfono</string>
+    <string name="placeholder_vehicle_license_plate">Digita la placa de vehículo</string>
+    <string name="ticket_title_soat_virtual">Tiquete SOAT Virtual</string>
+    <string name="ticket_text_vehicle_license_plate">Placa del vehículo:</string>
+    <string name="ticket_text_vehicle_owner">Propietario del vehículo:</string>
+    <string name="ticket_text_document_number">Número de documento:</string>
+    <string name="ticket_text_cell_phone_number">Número de celular:</string>
+    <string name="ticket_text_vehicle_brand">Marca del vehículo:</string>
+    <string name="ticket_text_vehicle_color">Color del vehículo:</string>
+    <string name="ticket_text_begin_date_soat">Fecha de inicio de vigencia:</string>
+    <string name="ticket_text_soat_value">Valor SOAT:</string>
+    <string name="text_label_success_virtual_soat_pay">El pago del SOAT se realizó con éxito</string>
+
+    <!-- Messages -->
+    <string name="message_no_network">Hemos detectado que no estás conectado a internet, por favor revisa la conexión de
+        tu equipo
+    </string>
+    <string name="message_dialog_request">Enviando solicitud…</string>
+    <string name="message_dialog_title_recharge_success">Recarga realizada</string>
+    <string name="message_dialog_body_recharge_success">Recarga realizada al número %1$d exitosa.</string>
+    <string name="message_dialog_login">Iniciando sesión...</string>
+    <string name="message_dialog_login_auth">Autenticando usuario ...</string>
+    <string name="message_dialog_load_data">Cargando información…</string>
+    <string name="message_dialog_init_device">Inizializando dongle…</string>
+    <string name="message_dialog_generate_random">Generando número aleatorio...</string>
+    <string name="message_toast_data_not_found">Sin datos por el momento.</string>
+    <string name="message_error">Error</string>
+    <string name="message_error_operator">Debes seleccionar un operador.</string>
+    <string name="message_error_number_recharge">Digita un número de recarga.</string>
+    <string name="message_error_confirm_number_recharge">Digita la confirmación del número de recarga.</string>
+    <string name="message_error_date_recharge">Digita una fecha de recarga.</string>
+    <string name="message_error_number_recharge_not_match">El número de recarga no coincide con el número
+        deconfirmación.
+    </string>
+    <string name="message_error_value_of_recharge">Digita el valor a recargar.</string>
+    <string name="message_error_confirm_value_of_recharge">Confirma el valor a recargar.</string>
+    <string name="message_no_results_found">No se encontraron resultados</string>
+    <string name="title_message_error_lottery_selected">Seleccionar lotería</string>
+    <string name="message_error_lottery_selected">Elige al menos una lotería para continuar.</string>
+    <string name="message_error_min_max_bet">La apuesta debe ser mayor a {{min}}</string>
+    <string name="message_error_min_max_bet_chance">La apuesta debe ser mayor a {{min}} y menor a {{max}}</string>
+    <string name="title_message_error_min_max_modality">Valor por modalidad</string>
+    <string name="message_error_min_max_modality">El valor para tu modalidad debe ser mínimo de {{min}} pesos Máximo {{max}} pesos</string>
+    <string name="message_error_min_and_max_modalities_in_chance">Hay valores que no están comprendidos entre losmínimos y máximos permitidos.</string>
+    <string name="message_error_super_chance_lotteries_selected">El maximo de loterías que puede seleccionar son %1$d</string>
+    <string name="message_error_min_super_chance_lotteries_selected">Debe seleccionar al menos %1$d lotería</string>
+    <string name="message_error_super_chance_limit_number">El número de dígitos para la apuesta debe ser de %1$d
+    </string>
+    <string name="message_error_super_chance_limit_value">El valor de apuesta total debe ser igual o mayor a $%1$d
+    </string>
+    <string name="message_error_super_chance_limit_max_value">El valor de apuesta máximo debe ser igual o menor a $%1$d
+    </string>
+    <string name="message_error_chance_min_characters_field">El número de dígitos debe ser mínimo %1$s</string>
+    <string name="message_error_chance_max_characters_field">El número de dígitos debe ser máximo %1$s</string>
+    <string name="message_error_chance_not_games">Debe agregar al menos un número para jugar</string>
+    <string name="message_error_chance_min_lotteries">El número de loterías a seleccionar debe ser %1$s</string>
+    <string name="message_error_chance_max_lotteries">El número máximo de loterías a seleccionar es %1$s</string>
+    <string name="message_error_chance_number_two1">Sólo se pueden ingresar pata y/o uña cuando es un número de 2 cifras
+    </string>
+    <string name="message_error_chance_number_two2">Para números de 2 cifras se debe apostar en Pata y/o Uña</string>
+    <string name="message_error_chance_number_three1">No se pueden ingresar valores de pata y/o uña cuando es un número de 3 cifras y no lleva directo</string>
+    <string name="title_message_error_chance_number_three2">Apuesta de 3 cifras</string>
+    <string name="message_error_chance_number_three2">Para realizar una apuesta en la modalidad UÑA, tu cliente también debe apostar y añadir un valor en la modalidad DIRECTO</string>
+    <string name="message_error_chance_not_valid">Juego de Chance no valido para el número de cifras: 1:uña, 2:pata y uña, 3: combinado, pata y uña, 4: directo, combinado</string>
+    <string name="message_error_chance_number_four1">No se pueden ingresar valores de pata y/o uña cuando es un número de 4 cifras</string>
+    <string name="message_error_chance_number_four2">Debe apostar en Directo y/o Combinado</string>
+    <string name="message_success_bet">Apuesta Exitosa</string>
+    <string name="message_error_bet">"No se pudo realizar la apuesta"</string>
+    <string name="message_error_transaction">No se pudo realizar la transacción</string>
+    <string name="message_all_input_required">Debe ingresar todas las apuestas</string>
+    <string name="message_error_min_digits_paymillionaire">Los números deben ser de 3 o 4 cifras</string>
+    <string name="message_error_number_loteries">Número de loterías incorrecto. Debe jugar %1$d loterías.</string>
+    <string name="title_message_error_duplicate_number">Juego repetido</string>
+    <string name="message_error_duplicate_number">Ya tienes un juego con este mismo número, por favor cámbialo por otro.</string>
+    <string name="message_error_selected_modality">Debe seleccionar la modalidad</string>
+    <string name="message_error_only_three_and_four_digits">Sólo se permiten números de 3 y 4 cifras.</string>
+    <string name="message_error_numbers_must_have_same_number_digits">Todos los números deben tener la misma cantidad de
+        Cifras.
+    </string>
+    <string name="message_error_select_operator">Selecciona un operador</string>
+    <string name="message_error_number_empty_recharge">Digita el número a recargar</string>
+    <string name="message_error_number_empty_recharge_history">Digita el número recargado</string>
+    <string name="message_error_date_empty_recharge">Digita la fecha a consultar</string>
+    <string name="message_error_number_bad_format">Digita un número valido de recarga</string>
+    <string name="message_error_number_bad_limit">El número de télefono debe ser igual a 10 dígitos</string>
+    <string name="message_error_number_bad_limit_parameter">El número de télefono debe ser igual a %1$s dígitos</string>
+    <string name="message_error_number_confirm_empty">Confirma el número a recargar</string>
+    <string name="message_error_number_confirm">Los números a recargar no coinciden</string>
+    <string name="message_error_value_recharge">Digita el valor a recargar</string>
+    <string name="message_error_value_recharge_confirm">Confirma el valor a recargar</string>
+    <string name="message_error_numberid">Digita el número de cédula</string>
+    <string name="message_error_collect_value">Digita el valor a retirar</string>
+    <string name="message_error_pin">Digita el número de PIN</string>
+    <string name="message_error_numberid_confirm">Confirma el número de cédula</string>
+    <string name="message_error_value_confirm_empty">Confirma el valor a recargar</string>
+    <string name="message_error_value_not_equal">Los valores no coinciden</string>
+    <string name="message_error_numberid_not_equal">Los números de cédula no coinciden</string>
+    <string name="message_error_recharge_failed">Recarga fallida.</string>
+    <string name="message_success_recharge">Recarga exitosa.</string>
+    <string name="message_success_recharge_print_success">Impresión exitosa.</string>
+    <string name="message_success_recharge_print">¿Desea imprimir tiquete de la recarga?</string>
+    <string name="message_error_number_empty">Digita el número</string>
+    <string name="message_error_value_empty">Digita el valor</string>
+    <string name="message_error_select_zodiac">Selecciona un signo</string>
+    <string name="message_error_items_game_empty">Debe llenar todos los campos para los juegos añadidos</string>
+    <string name="message_error_number_no_valid">Digita un número de 4 cifras</string>
+    <string name="message_error_value_no_validate">Valor de apuesta inválido</string>
+    <string name="message_error_value_minimum_bet">El valor mínimo de apuesta es $%1$d</string>
+    <string name="message_error_value_maximum_bet">El valor máximo de apuesta es $%1$d</string>
+    <string name="message_error_parameters_maxichance">Error al obtener los parametros para Maxichance</string>
+    <string name="message_error_multiple_100">El valor debe ser un múltiplo de 100</string>
+    <string name="message_error_empty_field">Campo vacío</string>
+    <string name="message_error_not_found">No existen liquidaciones…</string>
+    <string name="message_error_value_recharge_zero">El monto de recarga debe ser mayor a 0</string>
+    <string name="message_error_value_recharge_minvalue">El monto de recarga debe ser mayor o igual a $%1$s</string>
+    <string name="title_message_error_chance_number_empty">Número de juego</string>
+    <string name="message_error_chance_number_empty">Indica al menos un número para continuar.</string>
+    <string name="message_error_check_number_lottery">Error al consultar el número.</string>
+    <string name="message_error_number_empty_game">Digita el número de juego</string>
+    <string name="message_error_number_empty_game_physics_lottery">Ingresa el número de juego</string>
+    <string name="message_error_number_limit_game">El número de juego debe tener cuatro (4) cifras.</string>
+    <string name="message_error_pay">Error al realizar el pago.</string>
+    <string name="message_error_select_serie">Debe seleccionar una serie</string>
+    <string name="message_error_select_fraction">Debe seleccionar una fracción</string>
+    <string name="title_message_error_chance_bet_empty">Valor de la apuesta</string>
+    <string name="message_error_chance_bet_empty">Ingresa el valor a apostar, para al menos una modalidad.</string>
+    <string name="message_error_nail_1">Sólo se puede ingresar uña cuando es un número de una cifra</string>
+    <string name="message_error_document_invalid">Usuario no existente</string>
+    <string name="message_error_network">No se pudo establecer conexión con el servidor, por favor vuelva a intentarlo.
+    </string>
+    <string name="message_error_title_chance_suggest">Nuevo valor de apuesta</string>
+    <string name="message_error_chance_suggest">El valor mínimo de la apuesta no debe ser el inferior al valor ya
+        apostado.
+    </string>
+    <string name="message_error_user_empty">Debe ingresar un asesor</string>
+    <string name="message_error_password_empty">Debe ingresar una contraseña</string>
+    <string name="message_error_lottery_code_empty">Digita el código de la Lotería</string>
+    <string name="message_error_lottery_code_valid">Digita un código valido</string>
+    <string name="title_message_not_repeat_bet">No hay apuestas recientes</string>
+    <string name="message_not_repeat_bet">No encontramos apuestas anteriores, por favor ingresa una nueva apuesta.</string>
+    <string name="message_error_current_password_empty">Debe ingresar la contraseña actual</string>
+    <string name="message_error_new_password_empty">Debe ingresar la nueva contraseña</string>
+    <string name="message_error_confirmation_password_empty">Debe ingresar la confirmación de la contraseña</string>
+    <string name="message_error_stub">Error actualizando estado de la papelería</string>
+    <string name="message_error_passwords">Digita la contraseña actual</string>
+    <string name="message_error_passwords_characters">La contraseña debe contener 5 caracteres</string>
+    <string name="message_error_passwords_new">Digita la nueva contraseña</string>
+    <string name="message_error_passwords_new_confirm">Confirma la nueva contraseña</string>
+    <string name="message_error_passwords_not_working">Las contraseñas no coinciden</string>
+    <string name="message_error_server_not_connection">No se pudo establecer conexión con el servidor, por favor vuelva
+        a intentarlo.
+    </string>
+    <string name="message_error_pending_failed_transaction">No fue posible realizar la venta por un fallo de
+        comunicación, por favor intenta de nuevo.
+    </string>
+    <string name="message_error_pending_retry_transaction">Usted tiene una transacción pendiente, se intentará reenviar
+        nuevamente la solicitud.
+    </string>
+    <string name="message_error_sale">No es posible realizar la venta por un fallo de comunicación, su transacción ha
+        quedado en estado pendiente, por favor intente de nuevo.
+    </string>
+    <string name="message_error_pending_transaction_other_user">Existe una transacción pendiente hecha por otro usuario.
+        Se procederá a borrar los datos guardados anteriormente.
+    </string>
+    <string name="message_error_save_stub">No se pudo guardar la colilla anterior, por favor vuelva a intentarlo.
+    </string>
+    <string name="message_error_save_current_stub">No se pudo guardar la colilla, por favor vuelva a intentarlo.
+    </string>
+    <string name="message_error_input_stub">Debe ingresar las series de las colillas.</string>
+    <string name="message_error_stub_inconsistency">Error de inconsistencia en la colilla, por favor llame al Contact
+        Center
+    </string>
+    <string name="message_error_results_empty">No existen resultados por el momento.</string>
+    <string name="message_error_no_sim">No disponible</string>
+    <string name="message_error_title_paper_not_found">No hay papel</string>
+    <string name="message_error_paper_not_found">Por favor verifica la papelería.</string>
+    <string name="message_error_connect_print">Por favor verifica la conexión con la impresora.</string>
+    <string name="message_error_title_pint_bluetooth_error">No hay conexión</string>
+    <string name="message_error_bluetooth_connection_error">No fue posible conectarse con la impresora.</string>
+    <string name="message_error_serie_number_empty">Digita el número de serie</string>
+    <string name="message_error_serie_number_format">Digita correctamente el número de serie</string>
+    <string name="message_error_select_agreement">Selecciona un convenio</string>
+    <string name="message_error_digit_number_cod">Digita el número o código</string>
+    <string name="message_error_title_print_device">Error de impresión</string>
+    <string name="message_error_print_device">Se ha presentado un error en la impresión por favor comunícate con el call
+        center.
+    </string>
+    <string name="message_error_enter_pin">Digita el número de PIN</string>
+    <string name="message_error_title_not_internet_connection">Sin conexión a internet.</string>
+    <string name="message_error_not_internet_connection">Hemos detectado que no estás conectado a internet, por favor
+        revisa la conexión de tu equipo
+    </string>
+    <string name="message_error_bluetooth_disabled">Bluetooth deshabilitado</string>
+    <string name="title_select_device">Seleccione un dispositivo</string>
+    <string name="message_error_connection_bluetooth">No fue posible conectarse con la impresora, verifique que se
+        encuentre encendida y que este emparejada con el dispositivo.
+    </string>
+    <string name="message_error_paired_device">No se encontraron dispositivos emparejados.</string>
+    <string name="message_success_recharge_virtual_wallet">Recarga exitosa</string>
+    <string name="message_success_virtual_soat_payment">Pago exitoso</string>
+    <string name="message_error_select_document_type">Selecciona un tipo de documento</string>
+    <string name="message_error_enter_number_document">Digita el número de documento</string>
+    <string name="message_error_enter_reference_number">Digita el número de referencia</string>
+    <string name="message_error_enter_input_value">Digita el valor de aporte</string>
+    <string name="message_error_confirm_input_value">Confirma el valor de aporte</string>
+    <string name="message_error_enter_phone_number">Digita el número telefónico</string>
+    <string name="message_error_enter_voucher_number">Digita el número de comprobante</string>
+    <string name="message_error_enter_transction_number">Digita el número de transacción</string>
+    <string name="message_dialog_success_changed">Las impresoras han sido configuradas exitosamente.</string>
+    <string name="message_error_not_updated_stubs">No se pudo actualizar colilla, por favor, intente de nuevo</string>
+    <string name="message_error_lotteris">No hay Loterías disponibles</string>
+    <string name="message_error_reverse_value">No fue posible realizar el reverso. Por favor verifica que la tarjeta
+        este debidamente puesta en el lector o que no haya problemas de conexión.
+    </string>
+
+
+    <string name="title_error_server_connection">Error en la conexión al servidor</string>
+    <string name="message_error_server_connection">Por favor intente de nuevo</string>
+
+    <string name="title_dialog_repeat_bet">Repetir última apuesta</string>
+    <string name="message_dialog_repeat_bet">Al seleccionar esta opción en la pantalla se cargará la última venta
+        realizada, con la que podrás repetir la apuesta.
+    </string>
+
+    <string name="title_dialog_empty_lotteries">No cuentas con Loterías asociadas</string>
+    <string name="message_dialog_empty_lotteries">Por favor consulte nuevamente el producto en unos minutos. Si el
+        problema persiste comunícate con el Contac Center.
+    </string>
+
+    <string name="title_dialog_select_bet">Seleccionar sorteo</string>
+    <string name="message_dialog_select_bet">Por favor selecciona un sorteo antes de continuar</string>
+
+    <!-- Others texts -->
+    <string name="name_column_product_code">productCode</string>
+    <string name="name_column_minimum_value">VALOR_MINIMO_TIQUETE</string>
+    <string name="name_column_maximum_value">VALOR_MAXIMO_TIQUETE</string>
+    <string name="name_column_maximum_lotterys">CANTIDAD_MAXIMA_LOTERIAS</string>
+    <string name="name_column_maximum_bets">CANTIDAD_MAXIMA_APUESTAS</string>
+    <string name="name_column_minimum_value_bets">VALOR_MINIMO_APUESTA</string>
+    <string name="name_column_maximun_value_bets">VALOR_MAXIMO_APUESTA</string>
+    <string name="name_column_values">VALORES</string>
+    <string name="name_column_zodiacs_signs">SIGNOS</string>
+    <string name="name_column_header">TIQUETE_HEADER</string>
+    <string name="name_column_footer">TIQUETE_FOOTER</string>
+
+    <string name="name_column_header_megagoal">TIQUETE_HEADER_MEGAGOL</string>
+    <string name="name_column_footer_megagoal">TIQUETE_FOOTER_MEGAGOL</string>
+    <string name="name_column_header_league">TIQUETE_HEADER_LIGA</string>
+    <string name="name_column_footer_league">TIQUETE_FOOTER_LIGA</string>
+
+
+    <string name="name_column_ticket_product_mega">TIQUETE_PRODUCTO_MEGA</string>
+    <string name="name_column_product">TIQUETE_PRODUCTO</string>
+    <string name="name_column_product_contract">TIQUETE_PRODUCTO_CONTRATO</string>
+    <string name="name_column_plan_prize">TIQUETE_PLAN_PREMIO</string>
+    <string name="name_column_header_recharge">TIQUETE_HEADER_RECARGA_SALDO</string>
+    <string name="name_column_body_recharge">TIQUETE_BODY_RECARGA_SALDO</string>
+    <string name="name_column_header_colpensiones_beps">RECAUDO_HEADER</string>
+    <string name="colpensiones_beps_min_value">VALOR_MINIMO_APORTE</string>
+    <string name="name_column_footer_colpensiones_beps">RECAUDO_FOOTER</string>
+    <string name="name_column_transaction_types_colpensiones_beps">TIPOS_TRANSACCION</string>
+    <!-- Change the value of these three lines -->
+    <string name="name_column_header_virtual_soat">RECAUDO_HEADER</string>
+    <string name="name_column_footer_virtual_soat">RECAUDO_FOOTER</string>
+    <string name="name_column_transaction_types_virtual_soat">TIPOS_TRANSACCION</string>
+
+    <!-- Products code -->
+    <string name="name_code_product_recharge">06</string>
+    <string name="name_code_product_virtual_lottery">811</string>
+    <string name="name_code_product_physical_lottery">857</string>
+
+    <!-- Error Code -->
+    <string name="code_error_betplay_document_not_found">012</string>
+    <string name="code_error_betplay_provider_not_response">018</string>
+
+    <string name="message_error_empty_s_balota">Digita el número de la S. Balota</string>
+    <string name="message_error_complete_all_fields">Digita 5 números</string>
+    <string name="message_error_complete_s_balota">Digita la Súper Balota</string>
+    <string name="message_error_numbers_repeat">Números repetidos</string>
+    <string name="message_error_number_two_digits">Digita un número de 2 cifras</string>
+    <string name="message_error_out_of_range_low">El número es menor al límite permitido</string>
+    <string name="message_error_out_of_range_high">El número supera el límite permitido</string>
+    <string name="message_error_out_of_range_s">La ultima balota debe ser mayor o igual a %1$s y menor o igual %2$s
+    </string>
+    <string name="message_success_change_password">La contraseña ha sido modificada exitosamente.</string>
+    <string name="message_error_user_not_valid">Número de ID no válido para realizar apuesta rápida.</string>
+
+    <!-- Series -->
+    <string name="placeholder_stub">Digita la Colilla</string>
+    <string name="serie_one">Serie 1</string>
+    <string name="serie_two">Serie 2</string>
+    <string name="enter_serie_one">Digita la serie 1</string>
+    <string name="enter_serie_two">Digita la serie 2</string>
+    <string name="modality_one">Modalidad</string>
+    <string name="modality_two">Serie 2</string>
+
+    <!-- Items Menu -->
+    <string name="item_menu_reprint_bill">Reimprimir factura</string>
+    <string name="item_menu_g14">Liga 14</string>
+    <string name="item_menu_megagol">MegaGol</string>
+
+    <string name="item_menu_colpensiones_beps_collection">Recaudo</string>
+    <string name="item_menu_colpensiones_beps_reprint">Reimpresión</string>
+
+    <!-- Raffles -->
+    <string name="text_verify_disponibility">Consultar Disponibilidad</string>
+    <string name="text_generate_random_number">Aleatorio</string>
+    <string name="text_generate_range_number">Rango</string>
+
+    <string name="text_title_raffles">Seleccionar Rifa</string>
+    <string name="text_buy_numbers_raffles">Número Vendidos</string>
+    <string name="title_view_print_raffles">IMPRIMIR RIFA</string>
+    <string name="title_view_raffles_prize">Premio:</string>
+    <string name="title_view_raffles_id">ID:</string>
+    <string name="title_view_raffles_lottery_plurar">Loterías:</string>
+    <string name="title_view_raffles_lottery">Lotería:</string>
+    <string name="title_view_raffles_date_draw">Fecha del sorteo:</string>
+    <string name="title_view_raffle_date_draw">Fecha de sorteo</string>
+    <string name="title_view_raffles_price">Precio</string>
+    <string name="view_raffles_price">Precio:</string>
+    <string name="title_view_raffles_description">Descripción:</string>
+    <string name="view_raffles_number">Juego</string>
+    <string name="title_view_raffles_name">Nombre rifa:</string>
+    <string name="title_view_raffles_number">Número de juego:</string>
+    <string name="title_view_raffles_number_size">Cifras</string>
+    <string name="title_game">Juego</string>
+    <string name="title_game_number">Número de juego</string>
+    <string name="title_lotteries">Loterías</string>
+    <string name="title_lotteries_available">Loterías disponibles</string>
+    <string name="text_raffles_validation_empty_number">Debe digitar un número</string>
+    <string name="text_raffles_validation_id">Seleccione una rifa de la lista.</string>
+    <string name="text_select_lottery">Seleccione una lotería de la lista.</string>
+    <string name="text_raffles_available_number">El número se encuentra disponible.</string>
+    <string name="text_raffles_not_available_number">El número no se encuentra disponible.</string>
+    <string name="text_raffles_error_random_number">No fue posible generar el número aleatorio.</string>
+    <string name="text_raffles_number_register_success">Venta realizada con éxito.</string>
+    <string name="text_pay_bill_success">Pago realizado con éxito.</string>
+    <string name="text_raffles_number_register_error">No fue posible realizar la venta.</string>
+    <string name="text_raffles_validation_count">El número debe tener la misma cantidad de cifras que la rifa
+        seleccionada.
+    </string>
+    <string name="text_raffles_list_error">No fue posible cargar las rifas</string>
+    <string name="text_warning_change_paymillionaire_modalitiy">Al cambiar de modalidad se perderán los datos, desea
+        continuar?
+    </string>
+    <string name="text_confirm_game">Confirmar juego</string>
+    <string name="text_grid">Grilla</string>
+    <string name="text_date_close">Cierre de venta</string>
+    <string name="text_accumulated">Acumulado</string>
+    <string name="text_local">Local</string>
+    <string name="text_visitor">Visitante</string>
+    <string name="text_vs">vs</string>
+    <string name="text_market">Marcador</string>
+    <string name="text_win">Gana</string>
+    <string name="text_win_local">L</string>
+    <string name="text_win_visitor">V</string>
+    <string name="text_summary_tie">E</string>
+    <string name="text_ticket_information">Información de tiquete</string>
+
+    <string name="text_print_baloto_title">BALOTO REVANCHA</string>
+    <string name="text_print_baloto_subtitle">PAGUE</string>
+    <string name="text_print_baloto_number">NUMERO:</string>
+    <string name="text_print_baloto_prize">PREMIO:</string>
+    <string name="text_print_imp_ret">IMP A RET:</string>
+    <string name="text_print_baloto_pay">PAGUE:</string>
+    <string name="text_print_baloto_terminal">TERM:</string>
+    <string name="text_print_baloto_pto_vta">PTO VTA:</string>
+    <string name="text_print_baloto_number_authorizer">NO. AUTORIZACION</string>
+    <string name="text_print_baloto_stub">COLILLA:</string>
+    <string name="text_print_baloto_seller_code">ASESOR:</string>
+
+    <string name="title_winner_client">Cliente ganador</string>
+    <string name="title_prize_payed">Premio pagado</string>
+    <string name="title_prize_restriction">Premio con restricción</string>
+    <string name="title_prize_expired">Premio expirado</string>
+    <string name="title_stub_not_found">Colilla no encontrada</string>
+    <string name="title_stub_not_winner">Colilla no premiada</string>
+
+    <string name="text_winner_client">La colilla ingresada registra como ganadora, por favor informa a tu cliente que
+        puede acercarse a un punto de venta cercano para reclamar el premio.
+    </string>
+    <string name="text_prize_payed">La colilla ingresada ya se encuentra pagada, si tu cliente tiene dudas por favor
+        pídele acercarse a un punto de venta para mayor información.
+    </string>
+    <string name="text_prize_restriction">La colilla ingresada registra como ganadora, por favor infor-ma a tu cliente
+        que es necesario acercarse a un punto de venta para validar el premio.
+    </string>
+    <string name="text_prize_expired">La colilla ingresada registra como vencida.Sí tu cliente tiene dudas pídele que
+        por favor se comunique con nuestras líneas de atención al cliente.
+    </string>
+    <string name="text_stub_not_found">Los números de serie ingresados no corresponden a una colilla valida, por favor
+        verifica la información nuevamente.
+    </string>
+    <string name="text_stub_not_winner">La colilla ingresada registra como no ganadora.</string>
+    <string name="text_raffle_available">Rifa disponible:</string>
+
+    <string name="text_print_success_transaccion">TRANSACCION EXITOSA</string>
+    <string name="text_print_rejected_transaccion">TRANSACCION RECHAZADA</string>
+    <string name="text_print_original">-ORIGINAL-</string>
+    <string name="text_print_reprint">-REIMPRESION-</string>
+    <string name="text_print_reason_rejection">Causa del rechazo:</string>
+
+    <!-- Dialogs -->
+    <string name="title_confirm_paymillionaire">Tiquete Paga Millonario</string>
+    <string name="raffle_dialog_raffle_ticket">Tiquete Rifa</string>
+    <string name="text_chance_ticket">Tiquete Chance</string>
+    <string name="text_title_recharge_dialog">Tiquete Recargas</string>
+    <string name="text_title_maxichance_dialog">Tiquete Maxi Chance</string>
+    <string name="text_title_superchance_dialog">Tiquete Súper Chance</string>
+    <string name="title_confirm_recharge_betplay">Tiquete BetPlay</string>
+    <string name="title_confirm_quickbet_betplay">Tiquete BetPlay Apuesta rápida</string>
+    <string name="title_confirm_recharge_league14">Tiquete Liga 14</string>
+    <string name="title_confirm_recharge_megagoal">Tiquete MegaGol</string>
+    <string name="text_title_superastro_dialog">Tiquete SUPER astro</string>
+    <string name="text_title_physical_lottery_dialog">Tiquete Lotería Física</string>
+    <string name="text_title_virtual_lottery_dialog">Tiquete Lotería Virtual</string>
+    <string name="recharge_dialog_title">Resultado de consulta</string>
+    <string name="title_incomplete_game_dialog">Juego incompleto</string>
+    <string name="title_ticket_pay_prize">Tiquete Pago de premios</string>
+    <string name="title_ticket_pay_bills">Tiquete Pago de facturas</string>
+    <string name="title_ticket_pay_colsubsidio_collection">Tiquete Colsubsidio - Recaudo</string>
+    <string name="title_ticket_pay_colsubsidio_retirement">Tiquete Colsubsidio - Retiro</string>
+    <string name="title_ticket_colsubsidio_retirement_redeban">Instrucciones para datáfono</string>
+    <string name="text_title_incomplete_game_dialog">Revisa que todos tus juegos estén completos antes de continuar.
+    </string>
+    <string name="text_load_data">Cargando información …</string>
+    <string name="dialog_draw_date">Día sorteo:</string>
+    <string name="dialog_baloto_draw">Sorteo:</string>
+    <string name="dialog_baloto_modality">Modalidad:</string>
+    <string name="dialog_baloto_total_value">Total Pagado:</string>
+    <string name="dialog_baloto_br">BR/</string>
+    <string name="dialog_baloto_b">B/</string>
+    <string name="dialog_baloto_au">AU</string>
+    <string name="text_title_session_not_found">Sesión Expirada</string>
+    <string name="text_message_session_not_found">Su sesión ha expirado, por favor vuelva a ingresar sus credenciales!
+    </string>
+    <string name="text_title_close_activity">¿Estás seguro?</string>
+    <string name="text_message_close_activity">Deberás iniciar sesión de nuevo.</string>
+    <string name="title_number">Número</string>
+    <string name="title_modality_direct">Directo</string>
+    <string name="title_modality_combined">Comb.</string>
+    <string name="title_modality_paw">Pata</string>
+    <string name="title_modality_nail">Uña</string>
+    <string name="text_title_dialog_message">Información</string>
+    <string name="dialog_wallet_title">Resultado consulta cartera</string>
+    <string name="text_label_sb">SB:&#x20;&#x20;</string>
+    <string name="text_dash">-</string>
+    <string name="text_label_tot">Tot</string>
+    <string name="title_success_change_password">Cambio exitoso</string>
+    <string name="title_success_collection">Recaudo exitoso</string>
+    <string name="title_success_collection_value_1">Aporte exitoso a</string>
+    <string name="title_succes_collections_value_2">por valor de</string>
+    <string name="title_confirm_reprint">Confirmar reimpresión</string>
+    <string name="text_confirm_reprint">¿Esta seguro de realizar la reimpresión?</string>
+
+    <string name="title_success_reprint">Reimpresión exitosa</string>
+    <string name="message_success_reprint">La última transacción ha sido reimpresa con exito.</string>
+    <string name="message_success_quick_bet">La apuesta rápida fue realizada con exito.</string>
+    <string name="message_success_collect_betplay">El PIN se ha generado exitosamente.</string>
+    <string name="message_success_collect_betplay_check_out">El cobro se ha generado exitosamente.</string>
+
+    <!-- Permissions -->
+    <string name="title_permission_read_phone_state">Permitir acceso</string>
+    <string name="message_permission_needed_read_phone_state">La app necesita acceso a la información del dispositivo.
+        Presiona "permitir" en el siguiente diálogo.
+    </string>
+    <string name="message_permission_not_granted_read_phone_state">Para continuar, debes activar el acceso a la
+        información del dispositivo en Configuraciones > Aplicaciones > PagaTodo > Permisos
+    </string>
+
+    <!-- Digits -->
+    <string name="digits_only_words">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="digits_only_numbers">1234567890</string>
+    <string name="digits_words_and_numbers">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="digits_words_and_numbers_uppercase">1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Print -->
+    <string name="print_stub_equal">COLILLA:</string>
+    <string name="print_unique_serie_equal">SER. UNICO:</string>
+    <string name="print_unique_serie_equal_pdv">Serial Unico:</string>
+    <string name="print_check_equal">CHEQUEO:</string>
+    <string name="print_check_equal_pdv">Chequeo:</string>
+    <string name="print_seller_equal_upper">ASESORA:</string>
+    <string name="print_fractions_slopes">Fracciones pendientes</string>
+    <string name="print_seller_equal_uppercamelcase">Asesora:</string>
+    <string name="print_seller">Asesor:</string>
+    <string name="print_lottery_pdv">SORTEO:</string>
+    <string name="print_lottery_price_fraction">Valor Fraccion:</string>
+    <string name="print_lottery_date_pdv">Fecha Sorteo:</string>
+    <string name="print_lottery_fraction_value">VALOR FRACCION:</string>
+    <string name="print_raffle_date_equal">FECHA DE SORTEO:</string>
+    <string name="print_raffle_date_equal_pdv">F.SORTEO:</string>
+    <string name="print_header_chance_games">"No            Dir          Pat        Com     Uña"</string>
+    <string name="print_header_maxi_chance_games">"No                 Dir          Pat        Com     Uña"</string>
+    <string name="print_header_chance_games_pdv">"NUMERO DIRECTO COMBI PATA UNA"</string>
+    <string name="print_header_superchance_games">"No              Valor"</string>
+    <string name="print_header_paymillionaire_numbers">NÚMERO</string>
+    <string name="print_header_paymillionaire_numbers_pdv">Número</string>
+    <string name="print_bet_equal">Ap:</string>
+    <string name="print_bets_equal">Apos:</string>
+    <string name="print_bets_equal_pdv">Apostado:</string>
+    <string name="print_pay_equal">Paga:</string>
+    <string name="print_pay_equal_pdv">Pagado:</string>
+    <string name="print_over_equal">Encime:</string>
+    <string name="print_over_equal_enc">Enc:</string>
+    <string name="print_terms_of_contract">Contrato concesión 68 de 2016</string>
+    <string name="print_phone_pdv">LOT. BOGOTA TEL - PBX: 3351535</string>
+    <string name="print_phone">LOTERÍA DE BOGOTA TEL: 3351535</string>
+    <string name="print_paymillionaire">PAGA MILLONARIO</string>
+    <string name="print_accumulated_equal">Acumulado:</string>
+    <string name="print_net_equal">Neto:</string>
+    <string name="print_lottery_equal">LOTERIA:</string>
+    <string name="print_maxichance_name">MAXICHANCE</string>
+    <string name="print_superchance_name">Superchance</string>
+    <string name="print_currentbox_label">CUADRE ACTUAL</string>
+    <string name="print_date_label">Fecha Imp:</string>
+    <string name="print_time_label">Hora Imp:</string>
+    <string name="print_version_label">Versión: 70Z</string>
+    <string name="print_machine_label">M:</string>
+    <string name="print_saletotal_label">TOTAL VENTA:</string>
+    <string name="print_saletotal_label_pdv">TOTAL:</string>
+    <string name="print_date_draws_baloto">SORTEOX</string>
+    <string name="print_date_draws_baloto_s">S</string>
+    <string name="print_betplay_recharge">RECARGA BETPLAY</string>
+    <string name="print_betplay_collect">RETIRO BETPLAY</string>
+    <string name="print_betplay_retirement">RETIRO BETPLAY</string>
+    <string name="print_document_text">Documento</string>
+    <string name="print_recharge_value">Valor Recarga</string>
+    <string name="print_number_serie">NUMERO SERIE</string>
+    <string name="print_time_draw">Hora Sorteo</string>
+    <string name="print_guarded_super_health">Vigilado Supersalud</string>
+    <string name="print_awards_plan_valid">Plan de Premios Vigente</string>
+    <string name="print_awards_plan_valid_pdv">Según plan de premios vigente</string>
+    <string name="print_awards_plan_pdv">PLAN DE PREMIO</string>
+    <string name="print_header_superastro">"NUME VALOR ASTRO"</string>
+    <string name="print_header_superastro_pdv">"NUMERO VALOR ASTRO"</string>
+    <string name="print_bet2_equal">Apost:</string>
+    <string name="print_ases_and_maq">"Ases: {{ases}} Maq: {{maq}}"</string>
+    <string name="print_sales_point_abr_equal">Punto de Vta:</string>
+    <string name="print_date_equal">Fecha:</string>
+    <string name="print_draw_date_equal">Fecha Sort.:</string>
+    <string name="print_draw_date_equal_pdv">F.S:</string>
+    <string name="print_serie">Serie</string>
+    <string name="print_draw_text">Sorteo</string>
+    <string name="print_title_baloto">BALOTO REVANCHA</string>
+    <string name="print_pay_baloto">PAGUE</string>
+    <string name="print_super_baloto">SUPER BALOTA</string>
+    <string name="print_baloto_number">NÜMERO:</string>
+    <string name="print_baloto_award">PREMIO:</string>
+    <string name="print_baloto_tax">IMP A RET:</string>
+    <string name="print_baloto_pay">PAGUE:</string>
+    <string name="print_baloto_term">TERM:</string>
+    <string name="print_baloto_sale_point">PTO VTA:</string>
+    <string name="print_baloto_autorization_number">NO. AUTORIZACIÓN:</string>
+    <string name="print_baloto_value">BAL</string>
+    <string name="print_baloto_revenge_value">REV</string>
+    <string name="print_baloto_without_iva_total">TOTAL SIN IVA</string>
+    <string name="print_baloto_keep_playing">!SIGUES JUGANDO!</string>
+    <string name="print_baloto_num">NUMERO:</string>
+    <string name="print_baloto_num_pdv">NUMERO:</string>
+    <string name="print_baloto_seller">VEND:</string>
+    <string name="print_baloto_title">BALOTO REVANCHA</string>
+    <string name="print_retry_icon">&#60;C&#62;</string>
+    <string name="print_original_text">-ORIGINAL-</string>
+    <string name="print_reprint_text">-REIMPRESIÓN-</string>
+
+    <!-- Baloto -->
+    <string name="baloto_text_title">Juego</string>
+    <string name="baloto_text_number_draw">Cantidad de fechas a jugar</string>
+    <string name="baloto_text_panel">Panel</string>
+    <string name="baloto_text_number">Número</string>
+    <string name="baloto_text_numbers">Números</string>
+    <string name="baloto_text_s">S. Balota</string>
+    <string name="baloto_text_button_add">Añadir juego</string>
+    <string name="baloto_text_automatic">Automático</string>
+    <string name="baloto_text_rematch">Revancha</string>
+    <string name="baloto_text_validation_number_min">El número debe ser mayor a 0</string>
+    <string name="baloto_text_validation_number_max">El número debe ser menor o igual a 43</string>
+    <string name="baloto_text_validation_number_max_s">El número debe ser menor o igual a 16</string>
+    <string name="baloto_text_info">Números: %1$d - %2$d / S. Balota: %3$d - %4$d / B: $%5$s - B+R: $%6$s</string>
+    <string name="baloto_text_empty_validation">Ningún campo debe estar vacío</string>
+
+    <!-- Transaction sequences -->
+    <string name="transaction_sequences_5">5</string>
+    <string name="transaction_sequences_7">7</string>
+    <string name="transaction_sequences_24">24</string>
+    <string name="transaction_sequences_51">51</string>
+
+    <!-- String Bundles -->
+    <string name="bundle_lottery">lottery</string>
+    <string name="bundle_is_virtual">isVirtual</string>
+    <string name="bundle_is_currentbox">isCurrentbox</string>
+    <string name="bundle_in_session">isSession</string>
+    <string name="bundle_is_baloto">isBaloto</string>
+    <string name="bundle_model_lottery">modelLottery</string>
+
+    <!--SUNMI-->
+    <!-- TODO:// Refactor-->
+    <string name="toast_1">Transaction print,use the AIDL mode!</string>
+    <string name="toast_2">The service has been disconnected!</string>
+    <string name="toast_3">Bluetooth device is unavailable</string>
+    <string name="toast_4">Bluetooth device not detected. Please open Bluetooth!</string>
+    <string name="toast_5">Not Found InnterPrinter!</string>
+    <string name="toast_6">Bluetooth connect failed!</string>
+    <string name="toast_7">Only a single Qr code is printed for the AIDL mode</string>
+    <string name="toast_8">Now QrCode size must be less than 7!</string>
+    <string name="toast_9">Please set the printer as black label mode!</string>
+    <string name="toast_10">SERVICIO_DESCONECTADO</string>
+
+
+    <string name="text_btn_consult_2">&#62; CONSULTAR</string>
+    <string name="text_btn_pay_arrow">&#62; PAGAR</string>
+
+
+    <!-- GIROS-->
+    <string name="home_menu_title_giros">Giros</string>
+    <string name="item_menu_giro_send">Envío de Giros</string>
+    <string name="item_menu_giro_payment">Pago de Giro</string>
+    <string name="item_menu_giro_consult">Consultar Giro</string>
+    <string name="item_menu_giro_users">Crear / editar usuario</string>
+    <string name="item_menu_giro_reprint">Reimprimir</string>
+    <string name="item_menu_giro_movement">Movimientos</string>
+    <string name="item_menu_giro_authorizations">Autorizaciones</string>
+    <string name="item_menu_giro_request">Consultar solicitudes realizadas</string>
+    <string name="item_menu_giro_close_box">Cerrar Caja</string>
+    <string name="item_menu_giro_modify_notes">Modificar notas</string>
+
+    <!-- GIROS BANNER-->
+    <string name="giro_banner_adviser">Asesor</string>
+    <string name="giro_banner_agency">Agencia</string>
+    <string name="giro_banner_opening_balance">Saldo inicial turno</string>
+    <string name="giro_banner_income">Ingresos turno</string>
+    <string name="giro_banner_expenses">Egresos turno</string>
+    <string name="giro_banner_close_box">CERRAR CAJA</string>
+
+    <!-- GIROS USERS-->
+    <string name="giro_users_title">Información del usuario</string>
+    <string name="giro_users_type_identification">Tipo de identificación</string>
+    <string name="giro_users_placeholder_type_identification">Selecciona el tipo de identificación</string>
+    <string name="giro_users_document_number">Número de documento</string>
+    <string name="giro_users_placeholder_document_number">Digita el número de documento</string>
+    <string name="giro_users_type_person">Tipo de persona</string>
+    <string name="giro_users_placeholder_type_person">Selecciona el tipo de persona</string>
+    <string name="giro_users_names">Nombres</string>
+    <string name="giro_users_placeholder_names">Digita los nombres del usuario</string>
+    <string name="giro_users_first_surname">Primer apellido</string>
+    <string name="giro_users_placeholder_first_surname">Digita el primer apellido del usuario</string>
+    <string name="giro_users_second_surname">Segundo apellido</string>
+    <string name="giro_users_placeholder_second_surname">Digita el segundo apellido del usuario</string>
+    <string name="giro_users_number">Número celular</string>
+    <string name="giro_users_phone">Número teléfono</string>
+    <string name="giro_users_placeholder_number">Digita el número de celular</string>
+    <string name="giro_users_placeholder_phone">Digita el número de teléfono</string>
+    <string name="giro_users_email">Correo electrónico</string>
+    <string name="giro_users_placeholder_email">Digita el correo electrónico</string>
+    <string name="giro_users_social_stratum">Estrato</string>
+    <string name="giro_users_placeholder_social_stratum">Selecciona el estrato</string>
+    <string name="giro_users_address">Dirección residencia</string>
+    <string name="giro_users_placeholder_address">Digita la dirección de residencia</string>
+    <string name="giro_users_city">Ciudad de residencia</string>
+    <string name="giro_users_placeholder_city">Digita la ciudad de residencia</string>
+    <string name="giro_users_economy_activity">Actividad económica</string>
+    <string name="giro_users_placeholder_economy_activity">Selecciona la actividad económica</string>
+    <string name="giro_users_date_birth">Fecha de nacimiento</string>
+    <string name="giro_users_placeholder_date_birth">Selecciona la fecha de nacimiento</string>
+    <string name="giro_users_date_expedition">Fecha expedición</string>
+    <string name="giro_users_placeholder_date_expedition">Selecciona la fecha de expedición</string>
+    <string name="giro_users_country_expedition">País expedición</string>
+    <string name="giro_users_placeholder_country_expedition">Digita el país de expedición</string>
+    <string name="giro_users_city_expedition">Ciudad expedición</string>
+    <string name="giro_users_placeholder_city_expedition">Digita la ciudad de expedición</string>
+    <string name="giro_users_date_entry_country">Fecha entrada al país</string>
+    <string name="giro_users_placeholder_date_entry_country">Selecciona la fecha de entrada al país</string>
+    <string name="giro_users_date_expire_passport">Fecha venc. pasaporte</string>
+    <string name="giro_users_placeholder_date_expire_passport">Selecciona la fecha de vencimiento</string>
+    <string name="giro_users_error_city_expedition_invalid">Ciudad de expedición inválida</string>
+    <string name="giro_users_error_country_expedition_invalid">País de expedición inválido</string>
+    <string name="giro_users_error_city_invalid">Ciudad de residencia inválida</string>
+    <string name="giro_users_error_document_number">Digita el número de documento</string>
+    <string name="giro_users_error_names">Digita los nombres del usuario</string>
+    <string name="giro_users_error_first_surname">Digita el primer apellido del usuario</string>
+    <string name="giro_users_error_second_name">Digita el segundo apellido del usuario</string>
+    <string name="giro_users_error_number">Digita el número de celular</string>
+    <string name="giro_users_error_phone">Digita el número de teléfono</string>
+    <string name="giro_users_error_email">Digita el correo electrónico</string>
+    <string name="giro_users_error_social_stratum">Selecciona el estrato</string>
+    <string name="giro_users_error_type_person">Seleccione el tipo de persona</string>
+    <string name="giro_users_error_address">Digita la dirección de residencia</string>
+    <string name="giro_users_error_city">Digita la ciudad de residencia</string>
+    <string name="giro_users_error_date_birth">Seleccionar la fecha de nacimiento</string>
+    <string name="giro_users_error_date_expedition">Selecciona la fecha de expedición</string>
+    <string name="giro_users_error_country_expedition">Digite el país de expedición</string>
+    <string name="giro_users_error_city_expedition">Digite la ciudad de expedición</string>
+    <string name="giro_users_error_email_invalid">El correo electrónico es inválido</string>
+    <string name="giro_user_disabled">Usuario no habilitado</string>
+    <string name="giro_create_third_success_title">Usuario registrado</string>
+    <string name="giro_create_third_success_message">El usuario ha sido registrado exitosamente.</string>
+    <string name="giro_enroler_third_success_message">El usuario ha sido enrolado exitosamente.</string>
+    <string name="giro_users_check_all_lotteries">Seleccionar todas</string>
+    <string name="giro_update_third_success_title">Usuario modificado</string>
+    <string name="giro_update_third_success_message">El usuario ha sido modificado exitosamente.</string>
+
+    <!-- GIROS SEND-->
+    <string name="giro_send_text_title">Envío de Giros</string>
+    <string name="giro_send_placeholder_amount_send">Digita el monto a enviar</string>
+    <string name="giro_send_amount_send">Monto a enviar</string>
+    <string name="giro_send_city">Municipio - Departamento </string>
+    <string name="giro_send_placeholder_city_destination">Digita la ciudad/municipio</string>
+    <string name="giro_send_text_agency_destination">Agencia destino</string>
+    <string name="giro_send_agency_destination">Agencia destino</string>
+    <string name="giro_send_placeholder_agency_destination">Seleccione la agencia</string>
+    <string name="giro_send_freight">Incluir flete</string>
+    <string name="giro_send_document_type_origin">Tipo de documento</string>
+    <string name="giro_send_document_number_origin">Número documento</string>
+    <string name="giro_send_placeholder_document_number">Digita el número de documento</string>
+    <string name="giro_send_user_names_origin">Nombres usuario</string>
+    <string name="giro_send_placeholder_user_names_origin">Nombre del remitente</string>
+    <string name="giro_send_document_type_destination">Tipo de documento</string>
+    <string name="giro_send_document_number_destination">Número documento</string>
+    <string name="giro_send_placeholder_documeACEPTARnt_number_destination">Digita el número de documento</string>
+    <string name="giro_send_user_names_destination">Nombres usuario</string>
+    <string name="giro_send_placeholder_user_names_destination">Nombre del destinatario</string>
+    <string name="text_btn_calculate">CALCULAR COSTOS</string>
+    <string name="giro_send_shipping_value">Valor envío</string>
+    <string name="giro_not_found">-</string>
+    <string name="giro_send_freight_value">Valor flete</string>
+    <string name="giro_send_others">Otros (xxxxxxxx)</string>
+    <string name="giro_send_total_value">Valor total</string>
+    <string name="giro_send_unusual_operations">Operaciones inusuales</string>
+    <string name="giro_send_placeholder_unusual_operations">Selecciona el tipo</string>
+    <string name="giro_send_observations">Observaciones</string>
+    <string name="giro_send_placeholder_observations">Digita tus notas</string>
+    <string name="giro_send_error_amount_send">Se necesita un valor</string>
+    <string name="giro_send_error_amount_send_value">El valor no puede ser menor a 5000</string>
+    <string name="giro_send_error_city_destination">Digita la ciudad de destino</string>
+    <string name="giro_send_error_agency_destination">Selecciona la agencia de destino</string>
+    <string name="giro_send_error_document_number_origin">Remitente obligatorio</string>
+    <string name="giro_send_error_document_number_destination">Destinatario obligatorio</string>
+    <string name="giro_send_dialog_btn_create_user">CREAR USUARIO</string>
+    <string name="giro_send_dialog_msm_create_user">El usuario que acabas de ingresar no se encuentra registrado, por
+        favor procede a realizar el registro.
+    </string>
+    <string name="giro_send_dialog_title_create_user">Usuario no encontrado</string>
+    <string name="giro_send_success_title">Giro Exitoso</string>
+    <string name="giro_send_success_message">El giro ha sido enviado de manera exitosa</string>
+    <string name="giro_send_calculate_concepts">Calculando conceptos</string>
+    <string name="giro_send_load_agency">Cargando agencias ...</string>
+    <string name="giro_send_search_third">Consultando tercero ...</string>
+    <string name="giro_send_edit_user">Editar usuario</string>
+    <string name="giro_send_validate">Se debe calcular el valor del giro antes de pagar.</string>
+
+
+    <!-- GIROS  DIALOG-->
+    <string name="giro_dialog_calculate_amount_received">Monto recibido:</string>
+    <string name="giro_dialog_calculate_placeholder_amount_received">Digite el monto recibido</string>
+    <string name="giro_dialog_calculate_amount_back">Monto a devolver:</string>
+    <string name="giro_dialog_calculate_value_total">Valor total del giro:</string>
+    <string name="giro_dialog_fare_send_city_destination">Ciudad/Municipio destino:</string>
+    <string name="giro_dialog_fare_send_document_number_destination">Número documento (destino):</string>
+    <string name="giro_dialog_fare_send_amound">Monto a enviar:</string>
+    <string name="giro_dialog_fare_send_freight_value">Valor flete:</string>
+
+    <string name="dialog_giro_fare_send_title">Tiquete envío de Giros</string>
+    <string name="dialog_giro_consul_pay_title">Pagar giro</string>
+    <string name="dialog_giro_consul_pay_msm">¿Desea realizar el pago de este Giro?</string>
+    <string name="dialog_giro_calculate_title">Calcular cambio</string>
+    <string name="giro_dialog_calculate_error_amount">Monto no válido</string>
+    <!-- GIROS payment-->
+    <string name="giro_payment_reference_number">Número de referencia</string>
+    <string name="giro_payment_placeholder_reference_number">Digita el número de referencia</string>
+    <string name="giro_payment_giro_Information">Información del Giro</string>
+    <string name="giro_payment_giro_agency_origin">Agencia de origen</string>
+    <string name="giro_payment_giro_concepts">Conceptos</string>
+    <string name="giro_payment_origin">(Origen)</string>
+    <string name="giro_payment_document_number">Número de documento</string>
+    <string name="giro_payment_name_user">Nombres usuario</string>
+    <string name="giro_payment_destination">(Destino)</string>
+    <string name="giro_payment_department">Departamento</string>
+    <string name="giro_payment_city">Ciudad/Municipio destino</string>
+    <string name="giro_payment_giro_agency">Agencia</string>
+    <string name="giro_payment_code">Código</string>
+    <string name="giro_payment_concept">Concepto</string>
+    <string name="giro_payment_value">Valor</string>
+    <string name="giro_payment_total">Total</string>
+    <string name="giro_payment_ensure">Asegurar giro</string>
+    <string name="giro_payment_send_email">Enviar factura al correo</string>
+    <string name="giro_payment_unusual_operations">Operaciones inusuales</string>
+    <string name="giro_payment_placeholder_unusual_operations">Selecciona el tipo</string>
+    <string name="giro_paymenr_placeholder_observations">Observaciones</string>
+    <string name="giro_payment_observations">Digita tus comentarios</string>
+    <string name="giro_payment_notes">Notas</string>
+    <string name="giro_payment_placeholder_notes">Digita tus notas</string>
+    <string name="giro_payment_defauld_amount">$0</string>
+    <string name="giro_payment_success_title">Pago Exitoso</string>
+    <string name="giro_payment_success_message">El giro ha sido pagado de manera exitosa</string>
+    <string name="giro_payment_error_refence">Referencia obligatoria</string>
+    <string name="giro_payment_success_message_mail">El giro ha sido pagado de manera exitosa y enviado al e-mail
+    </string>
+
+    <string name="dialog_giro_fare_pay_title">Tiquete pago de Giros</string>
+    <string name="dialog_giro_fare_pay_beneficiary">Beneficiario:</string>
+    <string name="dialog_giro_fare_pay_document_number">Nº Documento:</string>
+    <string name="dialog_giro_fare_pay_email">Correo Eléctronico:</string>
+    <string name="dialog_giro_fare_pay_giro_value">Valor a pagar:</string>
+    <string name="dialog_giro_fare_pay_safe_value">Valor seguro:</string>
+    <string name="dialog_giro_fare_pay_total_value">Valor total:</string>
+
+
+    <string name="dialog_giro_close_box_init">Saldo inicial del día o turno</string>
+    <string name="dialog_giro_close_box_income">Valor ingresos del día o turno</string>
+    <string name="dialog_giro_close_box_egress">Valor egresos del día o turno </string>
+
+    <!-- GIROS CONSULT-->
+    <string name="giro_consult_start_date">Fecha inicial de consulta</string>
+    <string name="giro_consult_end_date">Fecha final de consulta</string>
+    <string name="giro_consult_document_type">Tipo de documento</string>
+    <string name="giro_consult_type_user">Tipo de usuario</string>
+    <string name="giro_consult_document_number">Número documento</string>
+    <string name="giro_consult_reference">PIN (Número de referencia)</string>
+    <string name="giro_consul_placeholder_document_number_origin">Número de documento</string>
+    <string name="giro_consult_placeholder_reference_number">Número de referencia</string>
+    <string name="giro_consult_concepts">Giros pendientes de pago</string>
+    <string name="giro_consult_concepts_sub">Selecciona el Giro a pagar.</string>
+
+    <string name="giro_consult_error_date_start">Selecciona la fecha inicial"</string>
+    <string name="giro_consult_error_date_end">Selecciona la fecha final</string>
+    <string name="giro_consult_error_dacument_number">Digita el número de documento</string>
+    <string name="giro_consult_error_reference_number">Digita el número de referencia</string>
+    <string name="giro_consult_error_date">La fecha inicial no puede superar la fecha final</string>
+
+    <string name="text_btn_pay_giro">&#62; ENVIAR</string>
+    <string name="item_giro_consult_reference">Referencia</string>
+    <string name="item_giro_consult_document_origin">Origen Terc.</string>
+    <string name="item_giro_consult_document_destination">Destino Terc.</string>
+    <string name="item_giro_consult_value">Valor</string>
+    <string name="item_giro_consult_name">Nombre</string>
+    <string name="item_giro_consult_agency">Agencia</string>
+
+    <!-- GIROS MOVEMENT -->
+    <string name="giro_movement_title">Movimientos</string>
+    <string name="giro_movement_label_date">Fecha de consulta</string>
+    <string name="giro_movement_placeholder_date">Selecciona la fecha de consulta</string>
+    <string name="giro_movement_label_total_day">xx/xx/xx</string>
+    <string name="giro_movement_label">Total caja para el día:</string>
+    <string name="giro_movement_label_sp">Total caja </string>
+    <string name="giro_movement_text_daily_summary_beginning_balance">Saldo inicial</string>
+    <string name="giro_movement_text_daily_summary_earnings">Ingresos</string>
+    <string name="giro_movement_text_daily_summary_expenses">Egresos</string>
+    <string name="giro_movement_text_daily_summary_final_balance">Saldo Final</string>
+    <string name="giro_movement_text_daily_summary_details_refence">Referencia (PIN)</string>
+    <string name="giro_movement_text_daily_summary_details_concept">Concepto</string>
+    <string name="giro_movement_text_daily_summary_details_entry">Ingreso</string>
+    <string name="giro_movement_text_daily_summary_details_egress">Egreso</string>
+    <string name="giro_movement_text_daily_summary_details_date">Fecha</string>
+    <string name="giro_movement_text_daily_summary_details_hour">Hora</string>
+    <string name="giro_movement_amount_default">$ 000.000</string>
+    <string name="giro_movement_reference">Referencia (PIN)</string>
+    <string name="giro_movement_concept">Concepto</string>
+    <string name="giro_movement_entry">Ingreso</string>
+    <string name="giro_movement_egress">Egreso</string>
+    <string name="giro_movement_date">Fecha</string>
+    <string name="giro_movement_hour">Hora</string>
+    <string name="giro_movement_text_title">Consultar Movimientos</string>
+
+
+    <!-- COLSUBSIDIO -->
+    <string name="colsubsidio_ret_title">Colsubsidio Retiro</string>
+    <string name="colsubsidio_ret_document_number">Número de documento</string>
+    <string name="colsubsidio_ret_placeholder_document_number">Digite el número de documento</string>
+    <string name="colsubsidio_ret_value">Valor retiro</string>
+    <string name="colsubsidio_ret_confirm">Confirmar valor retiro</string>
+    <string name="colsubsidio_ret_re_placeholder_document_number">Digite el valor del retiro</string>
+    <string name="colsubsidio_ret_re_placeholder_document_number_confirm">Confirma valor retiro</string>
+    <string name="colsubsidio_retirement_document_number">Número de documento</string>
+    <string name="colsubsidio_retirement_value_retirement">Digita el valor a retirar</string>
+    <string name="colsubsidio_retirement_valor_no_case">Confirmar el valor a retirar</string>
+    <string name="colsubsidio_retirement_valor_no_case_not_working">Los valores no coinciden</string>
+
+
+    <!-- MENU COLSUBSIDIO -->
+    <string name="item_menu_colsubsidio_collection">Recaudo</string>
+    <string name="item_menu_colsubsidio_retirement">Retiro</string>
+
+
+    <!-- SITP RECHARGE-->
+    <string name="sitp_recharge_title">Recaudo Bogotá - Tu llave</string>
+    <string name="sitp_recharge_recharge">Recargar</string>
+    <string name="sitp_recharge_recharge_confirm">Confirmar recarga</string>
+    <string name="sitp_recharge_title_operation">Por favor acerque la tarjeta al lector para realizar cualquiera de las
+        siguientes operaciones.
+    </string>
+    <string name="sitp_recharge_card_balance">Saldo Tarjeta</string>
+    <string name="sitp_recharge_back_recharge">Reversar recarga</string>
+    <string name="sitp_recharge_device_balance">Saldo Dispositivo</string>
+    <string name="sitp_recharge_placeholder_recharge">Digita el valor a recargar</string>
+    <string name="sitp_recharge_placeholder_recharge_confirm">Confirma el valor a recargar</string>
+    <string name="sitp_recharge_placeholder_recharge_coincide">Los valores a recargar no coinciden</string>
+    <string name="sitp_recharge_info_balance">Información saldo</string>
+    <string name="sitp_recharge_sell_card">Vender Tarjeta</string>
+    <string name="sitp_processing">procesando ...</string>
+    <string name="barra">/</string>
+    <string name="sms_directorio">El directorio </string>
+    <string name="sms_directorio_existe"> ya existe.</string>
+    <string name="sms_directorio_no_existe">  no existe.</string>
+
+
+
+    <!-- SNR -->
+    <string name="snr_title">Recaudo - Súper Notariado y Registro</string>
+    <string name="snr_concept">Concepto</string>
+    <string name="snr_office">Oficina SNR</string>
+    <string name="snr_rerollment_number">Número de matrícula 002</string>
+    <string name="snr_collected_value">Valor recaudo</string>
+    <string name="snr_collected_value_confirm">Confirmar valor recaudo</string>
+    <string name="snr_placeholder_concept">Selecciona el concepto</string>
+    <string name="snr_placeholder_office">Selecciona una oficina</string>
+    <string name="snr_placeholder_rerollment_number">Digita el número de matrícula</string>
+    <string name="snr_placeholder_collected_value">Digita el valor del recaudo</string>
+    <string name="snr_placeholder_collected_value_confirm">Confirma el valor del recaudo</string>
+
+    <!-- COLSUBSIDIO RECAUDO -->
+
+    <string name="colsubsidio_recaudo_title">Colsubsidio Recaudo</string>
+    <string name="colsubsidio_recaudo_document_type">Tipo de documento</string>
+    <string name="colsubsidio_recaudo_document_number">Número de documento</string>
+    <string name="colsubsidio_recaudo_placeholder_document_number">Digita el número de documento</string>
+    <string name="colsubsidio_recaudo_placeholder_document_type">Seleccione un tipo de documento</string>
+    <string name="colsubsidio_recaudo_reference_number">Número de referencia</string>
+    <string name="colsubsidio_recaudo_placeholder_reference_number">Digita el número de referencia</string>
+    <string name="colsubsidio_client_data_title">Datos cliente</string>
+    <string name="colsubsidio_recaudo_obligations">Obligaciones</string>
+    <string name="item_colsubsidio_recaudo_select">SELECCIONAR</string>
+    <string name="item_colsubsidio_recaudo_reference">REFERENCIA</string>
+    <string name="item_colsubsidio_recaudo_obligation">TIPO OBLIGACIÓN</string>
+    <string name="item_colsubsidio_recaudo_description">DESCRIPCIÓN</string>
+    <string name="item_colsubsidio_recaudo_expiration_date">FECHA DE VENCIMIENTO</string>
+    <string name="item_colsubsidio_recaudo_status">ESTADO</string>
+    <string name="item_colsubsidio_recaudo_fee_value">VALOR CUOTA</string>
+    <string name="item_colsubsidio_recaudo_clean">LIMPIAR</string>
+    <string name="colsubsidio_payment_title">Pago</string>
+    <string name="colsubsidio_payment_text">Valor a pagar</string>
+    <string name="colsubsidio_recaudo_placeholder_payment_value">Digite el valor a pagar</string>
+    <string name="colsubsidio_recaudo_pay_full_fee">Pagar total cuota</string>
+
+
+    <!-- ADULTO MAYOR -->
+    <string name="home_menu_title_elderly">Colombia Mayor</string>
+    <string name="elderly_enroll_title">Registro y enrolamiento</string>
+    <string name="elderly_enroll_reprint_title">Reimpresión</string>
+    <string name="elderly_pay_title">Pago de subsidio</string>
+    <string name="elderly_auth_title">Pago de Colombia Mayor</string>
+    <string name="elderly_general_title">Colombia Mayor</string>
+    <string name="elderly_enrollment_title">Enrolamiento de usuario Colombia Mayor</string>
+    <string name="text_elderly_enrollment_document_type">Tipo de documento</string>
+    <string name="text_elderly_enrollment_document_number">Número de documento</string>
+    <string name="elderly_enrollment_placeholder_document_number_origin">Digita el número de documento</string>
+    <string name="text_btn_consult_3">Consultar</string>
+    <string name="text_label_clean">Limpiar</string>
+    <string name="elderly_create_third_success_title">Usuario registrado</string>
+    <string name="elderly_create_third_success_message">El usuario ha sido registrado exitosamente, Ingrese las huellas</string>
+    <string name="elderly_save_fingerprint_success_title">Huellas registradas</string>
+    <string name="elderly_save_fingerprint_success_message">Las huellas han sido registradas exitosamente, Ingrese la cédula</string>
+    <string name="elderly_save_id_success_title">Cédula registrada</string>
+    <string name="elderly_save_id_success_message">La cédula ha sido registrada exitosamente, El usuario ha sido enrolado exitosamente</string>
+    <string name="elderly_enrollment_payment_data_title">Datos para el pago</string>
+    <string name="elderly_select_option">Selecciona una opción</string>
+    <string name="elderly_option_holder">Titular</string>
+    <string name="elderly_option_auth">Autorizado</string>
+    <string name="elderly_document_typeB">Tipo de documento beneficiario</string>
+    <string name="elderly_document_numberB">Número de documento beneficiario</string>
+    <string name="elderly_name_user">Nombre usuario</string>
+    <string name="elderly_name_result">Nombre(s)</string>
+    <string name="elderly_lastname_result">Apellidos</string>
+    <string name="elderly_subsidy_result">Ref Subsidio</string>
+    <string name="elderly_value_result">Valor</string>
+    <string name="elderly_period_result">Periodo de Pago</string>
+    <string name="elderly_document_typeA">Tipo de documento autorizado</string>
+    <string name="elderly_document_numberA">Número de documento autorizado</string>
+    <string name="elderly_placeholder_document_number">Digita el número de documento</string>
+    <string name="elderly_is_curator">Es curador</string>
+    <string name="elderly_subsidy_reference">Referencia de subsidio</string>
+    <string name="elderly_data_beneficiary_title">Datos del beneficiario</string>
+    <string name="alderly_terminal_no_auth">Terminal no autorizada</string>
+    <string name="elderly_create_user">Creando usuario ...</string>
+    <string name="elderly_error_data">Se deben registrar los datos</string>
+    <string name="elderly_error_document">Debe subir cédula</string>
+    <string name="elderly_error_camera">Se debe tener instalada una aplicación de cámara</string>
+
+
+    <!-- GIROS AUTORIZACION -->
+    <string name="giro_authorization_type_request">Tipo de solicitud</string>
+    <string name="giro_authorization_placeholder_type_request">Selecciona el tipo de solicitud</string>
+    <string name="giro_authorization_title">Información para solicitud</string>
+    <string name="giro_authorization_document_type">Tipo de documento</string>
+    <string name="giro_authorization_document_number">Número de documento</string>
+    <string name="giro_authorization_placeholder_document_number">Digita el número de documento</string>
+    <string name="giro_authorization_error_document_number">Digita el número de documento</string>
+    <string name="giro_authorization_user_names">Nombre usuario</string>
+    <string name="giro_authorization_reason_request">Motivo solicitud</string>
+    <string name="giro_authorization_reason_request_placeholder">Selecciona el motivo de la solicitud</string>
+    <string name="giro_authorization_attach_document">Adjuntar documento</string>
+    <string name="giro_authorization_document_name">Nombre del documento</string>
+    <string name="giro_authorization_delete">Eliminar</string>
+    <string name="giro_authorization_notes">Notas del asesor para autorización</string>
+    <string name="giro_authorization_category">Categoría solicitud</string>
+    <string name="giro_authorization_reference_number">Número de referencia Giro</string>
+    <string name="giro_authorization_reference_number_placeholder">Digita el número de referencia</string>
+    <string name="giro_authorization_status_giro">Estado del Giro</string>
+    <string name="giro_authorization_error_reference_number">Referencia no válida</string>
+    <string name="giro_authorization_notes_adviser">Notas del asesor para autorización</string>
+    <string name="giro_authorization_new_beneficiary">Información nuevo destinatario</string>
+    <string name="giro_authorization_title_sp">Autorización de transacción</string>
+    <string name="giro_authorization_clear">Limpiar</string>
+
+    <!-- GIROS MODIFICAR NOTAS -->
+    <string name="giro_modify_notes_title">Modificar notas</string>
+    <string name="giro_modify_notes_reference_number">Número de referencia</string>
+    <string name="giro_modify_notes_placeholder_reference_number">Digita el número de referencia</string>
+    <string name="giro_modify_notes_giro_information">Información del Giro</string>
+    <string name="giro_modify_notes_document_number">Nº de documento</string>
+    <string name="giro_modify_notes_origin">(Origen)</string>
+    <string name="giro_modify_notes_destination">Destino</string>
+    <string name="giro_modify_notes_name_user">Nombres usuario</string>
+    <string name="giro_modify_notes_value">Valor</string>
+    <string name="giro_modify_notes_date">Fecha</string>
+    <string name="giro_modify_notes_hour">Hora</string>
+    <string name="giro_modify_notes_agency_origin">Agencia de origen</string>
+    <string name="giro_modify_notes_department">Departamento</string>
+    <string name="giro_modify_notes_city">Ciudad/Municipio destino</string>
+    <string name="giro_modify_notes_agency">Agencia</string>
+    <string name="giro_modify_notes_previus_notes">Notas anteriores</string>
+    <string name="giro_modify_notes_new_notes">Nueva notas</string>
+    <string name="giro_modify_notes_placeholder_new_notes">Digita tu nueva nota</string>
+    <string name="giro_modify_notes_success_title">Nota guardada</string>
+
+    <!-- GIROS REIMPRIMIR -->
+    <string name="giro_reprint_notes_title">Reimprimir factura</string>
+    <string name="giro_reprint_type_bill">Tipo de factura</string>
+    <string name="giro_reprint_placeholder_type_bill">Selecciona el tipo de factura</string>
+    <string name="giro_reprint_reference_number">PIN (Referencia)</string>
+    <string name="giro_reprint_placeholder_reference_number">Digita el número PIN</string>
+    <string name="giro_reprint_error_refence">Pin obligatorio</string>
+    <string name="giro_reprint_error_type_bill">Tipo de factura obligatorio</string>
+    <string name="giro_reprint_dialog_title">Reimpresión Giro</string>
+    <string name="giro_reprint_dialog_msm">La reimpresión del giro fue exitosa.</string>
+
+
+    <!-- GIROS SOLICITUDES -->
+    <string name="giro_check_request_title">Consultar solicitudes realizadas</string>
+    <string name="giro_check_request_reference">Referencia</string>
+    <string name="giro_check_request_type">Tipo de solicitud</string>
+    <string name="giro_check_request_status">Estado</string>
+    <string name="giro_check_request_detail">Detalle</string>
+    <string name="giro_check_request_print">Imprimir</string>
+    <string name="giro_check_request_sub_itle">Solicitudes</string>
+
+
+    <string name="dialog_giro_check_request_title">Detalle de solicitud</string>
+    <string name="dialog_giro_check_request_id">ID</string>
+    <string name="dialog_giro_check_request_reference">Referencia:</string>
+    <string name="dialog_giro_check_request_type_request">Tipo Solicitud:</string>
+    <string name="dialog_giro_check_request_catalogue">Categoria de solicitud :</string>
+    <string name="dialog_giro_check_request_status">Estado:</string>
+    <string name="dialog_giro_check_request_third"> Tercero:</string>
+    <string name="dialog_giro_check_request_observation">Observaciones del Call Center:</string>
+
+
+    <!-- BBVA MENU -->
+    <string name="item_menu_bbva_bill_payment">Pago de facturas</string>
+    <string name="item_menu_bbva_deposits">Depósitos a cuentas </string>
+    <string name="item_menu_bbva_payment_of_obligations">Pago de obligaciones</string>
+    <string name="item_menu_bbva_withdrawal">Retiro y consulta de saldo</string>
+    <string name="item_menu_bbva_close_the_box">Cierre de caja</string>
+    <string name="item_menu_bbva_reprint_last_transaction">Reimpresión última transacción</string>
+
+    <!-- BBVA -->
+    <string name="bbva_pay_modal_title">Tiquete BBVA - Pago Facturas</string>
+    <string name="bbva_pay_obligation_modal_title">Tiquete BBVA - Pago obligaciones</string>
+    <string name="bbva_bill_payment_title_pay">Pago de facturas</string>
+    <string name="bbva_bill_payment_bill_type">Tipo de factura</string>
+    <string name="bbva_bill_payment_bill_data">Datos de la factura</string>
+    <string name="bbva_bill_payment_place">Ciudad / Múnicipio</string>
+    <string name="bbva_bill_payment_agreement">Convenio</string>
+    <string name="bbva_bill_payment_reference_number">Número de referencia</string>
+    <string name="bbva_bill_payment_value_bill">Valor factura</string>
+    <string name="bbva_bill_payment_billed_service">SERVICIO FACTURADO</string>
+    <string name="bbva_bill_payment_value_pay">VALOR A PAGAR</string>
+    <string name="bbva_bill_payment_expiration_date">FECHA DE VENCIMIENTO</string>
+    <string name="bbva_bill_payment_most_pay_date">FECHA MAXIMA DE PAGO</string>
+    <string name="bbva_bill_payment_default_text">-</string>
+    <string name="bbva_bill_payment_place_placeholder">Digita la Ciudad / Múnicipio</string>
+    <string name="bbva_bill_payment_bill_type_placeholder">Selecciona el tipo de factura</string>
+    <string name="bbva_bill_payment_agreement_placeholder">Digita el convenio</string>
+    <string name="bbva_bill_payment_reference_number_placeholder">Digita el número de referencia</string>
+    <string name="bbva_bill_payment_bill_value_placeholder">Digita el valor de la factura</string>
+
+    <!-- BBVA OBLIGATIONS -->
+
+    <string name="bbva_obligations_placeholder_reference_number">Digita la referencia de pago</string>
+    <string name="bbva_obligations_label_reference_number">N° Referencia de pago</string>
+    <string name="bbva_obligations_title">Pago de obligaciones Tarjeta crédito / Prestamos</string>
+    <string name="bbva_obligations_placeholder_payment_value">Digita el valor del pago</string>
+    <string name="bbva_obligations_label_payment_value">Valor del pago/recaudo</string>
+    <string name="bbva_obligations_label_confirm_payment_value">Confirmar valor del pago/recaudo</string>
+    <string name="bbva_obligations_placeholder_confirm_payment_value">Confirma el valor del pago</string>
+    <string name="bbva_obligations_bill_type">Tipo de factura: </string>
+    <string name="bbva_obligations_agreement">Convenio: </string>
+    <string name="bbva_obligations_reference_number">Número de referencia: </string>
+    <string name="text_label_total_bill_value">Valor total factura: </string>
+    <string name="bbva_payment_success_title">Pago Exitoso</string>
+    <string name="bbva_obligations_bill_type_option">Seleccione tipo de factura</string>
+
+    <!-- BBVA DEPOSITS -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bbva_deposits_title">Depósitos a cuentas</string>
+    <string name="bbva_deposits_label_destiny_account_type">Tipo de cuenta destino</string>
+    <string name="bbva_deposits_placeholder_account_type">Seleccione el tipo de cuenta</string>
+    <string name="bbva_deposits_label_destiny_account_number">Número de cuenta destino</string>
+    <string name="bbva_deposits_placeholder_account_number">Digita el número de cuenta destino</string>
+    <string name="bbva_deposits_label_deposit_value">Valor depósito</string>
+    <string name="bbva_deposits_placeholder_deposit_value">Digita el valor a depositar</string>
+    <string name="bbva_deposits_label_confirm_deposit_value">Confirmar valor depósito</string>
+    <string name="bbva_deposits_placeholder_confirm_deposit_value">Confirma el valor a depositar</string>
+    <string name="bbva_bill_total_value">Valor factura a pagar</string>
+    <string name="bbva_title_bill_calculate_change">Calcular cambio</string>
+    <string name="bbva_deposits_debit_payment">Tarjeta débito</string>
+    <string name="bbva_deposits_cash_payment">Efectivo</string>
+    <string name="bbva_bill_payment_success">La factura ha sido pagada de manera exitosa</string>
+    <string name="bbva_deposits_text_transfer">Tipo de transferencia</string>
+    <string name="bbva_deposits_text_destiny_account_number">Número cuenta destino</string>
+    <string name="bbva_deposits_text_deposit_value">Valor del depósito</string>
+    <string name="bbva_deposits_transaction_success_title">Transacción exitosa</string>
+    <string name="bbva_deposits_transaction_declined_title">Transacción declinada</string>
+    <string name="bbva_deposits_transaction_status_title">Estado de la transacción</string>
+    <string name="bbva_deposits_reprint_ticket_title">Reimprimir tiquete</string>
+    <string name="bbva_deposits_transaction_success_message">El depósito ha sido realizado de manera exitosa.</string>
+    <string name="bbva_deposits_transaction_declined_message">El depósito no fue realizado de manera exitosa.</string>
+    <string name="bbva_deposits_transaction_status_message">La transacción no ha sido confirmada por datáfono.</string>
+    <string name="bbva_deposits_reprint_ticket_message">¿Desea imprimir nuevamente la última transacción?</string>
+    <string name="bbva_withdrawal_title">Retiro y consulta de saldo</string>
+    <string name="bbva_withdrawal_category_label">Categoría</string>
+    <string name="bbva_withdrawal_category_placeholder">Selecciona una categoría</string>
+    <string name="bbva_withdrawal_type_label">Tipo de retiro</string>
+    <string name="bbva_withdrawal_type_placeholder">Selecciona el tipo de retiro</string>
+    <string name="bbva_withdrawal_no_debit_document_number_label">Número de documento</string>
+    <string name="bbva_withdrawal_no_debit_document_number_placeholder">Digita el número de documento</string>
+    <string name="bbva_withdrawal_no_debit_account_type_label">Tipo de cuenta</string>
+    <string name="bbva_withdrawal_no_debit_account_type_placeholder">Selecciona el tipo de cuenta</string>
+    <string name="bbva_withdrawal_no_debit_value_label">Valor retiro</string>
+    <string name="bbva_withdrawal_no_debit_value_placeholder">Digita el valor a retirar</string>
+    <string name="bbva_withdrawal_no_debit_value_confirm_label">Confirmar valor retiro</string>
+    <string name="bbva_withdrawal_no_debit_value_confirm_placeholder">Confirma el valor a retirar</string>
+    <string name="bbva_withdrawal_no_debit_value_confirm_no_coincidence">Los valores no coinciden</string>
+    <string name="bbva_withdrawal_modal_title">Tiquete BBVA - Retiro</string>
+    <string name="text_btn_make_withdrawal">HACER DEPÓSITO</string>
+    <string name="bbva_withdrawal_modal_success_title">Transacción exitosa</string>
+    <string name="bbva_withdrawal_modal_success_message">El retiro se ha realizado de manera exitosa.</string>
+    <string name="bbva_withdrawal_modal_declined_title">Transacción declinada</string>
+    <string name="bbva_withdrawal_modal_declined_message">El retiro no fue realizado de manera exitosa.</string>
+    <string name="bbva_withdrawal_modal_reprint_title">Reimprimir tiquete</string>
+    <string name="bbva_withdrawal_modal_reprint_message">¿Desea imprimir nuevamente la última transacción?</string>
+    <string name="bbva_withdrawal_modal_status_title">Estado de la transacción</string>
+    <string name="bbva_withdrawal_modal_status_message">La transacción no ha sido confirmada por datáfono.</string>
+    <string name="bbva_reprint_last_transaction_title">Reimpresión última transacción BBVA</string>
+    <string name="bbva_reprint_last_transaction_date">Fecha de la transacción:</string>
+    <string name="bbva_reprint_last_transaction_type">Tipo de transacción:</string>
+    <string name="bbva_reprint_last_transaction_value">Valor de la transacción:</string>
+    <string name="bbva_reprint_last_transaction_voucher_number">Número de comprobante:</string>
+    <string name="bbva_reprint_last_transaction_box">Box:</string>
+    <string name="bbva_reprint_last_transaction_user">Usuario:</string>
+    <string name="bbva_reprint_last_transaction_terminal">Terminal:</string>
+    <string name="bbva_reprint_last_transaction_id">ID de transacción:</string>
+    <string name="bbva_reprint_last_transaction_modal_message">¿Desea imprimir nuevamente la última transacción?</string>
+    <string name="bbva_reprint_last_transaction_modal_title">Reimprimir tiquete</string>
+    <string name="bbva_close_box_start_message">Iniciando el cierre de caja...</string>
+    <string name="bbva_close_box_start_title">Cierre de caja</string>
+    <string name="bbva_close_box_modal_title">Cerrar caja</string>
+    <string name="bbva_close_box_modal_message">¿Desea realizar el cierre de la caja?</string>
+    <string name="bbva_close_box_status_modal_message">El cierre de caja se ha realizado correctamente.</string>
+
+    <string name="dialog_token_label">Digitar token</string>
+    <string name="dialog_token_placeholder">Digita el token</string>
+    <string name="dialog_token_title">Validación por token</string>
+
+    <string name="home_menu_title_registraduria_collection">Recaudo Registraduría</string>
+    <string name="registraduria_collection_document_type_procedure">Tipo de documento trámite</string>
+    <string name="registraduria_collection_document_type_procedure_placeholder">Selecciona el tipo de documento a tramitar</string>
+    <string name="registraduria_collection_other_type_procedure">Otros tipos de trámites:</string>
+    <string name="registraduria_collection_other_type_procedure_placeholder">Selecciona el trámite asociado</string>
+    <string name="registraduria_collection_document_number">Número de documento</string>
+    <string name="registraduria_collection_document_number_placeholder">Digita el número de documento</string>
+    <string name="registraduria_collection_document_number_confirm">Confirma el número de documento</string>
+    <string name="registraduria_collection_document_number_confirm_placeholder">Confirma el número de documento</string>
+    <string name="registraduria_collection_first_name">Primer nombre</string>
+    <string name="registraduria_collection_first_name_placeholder">Digita el primer nombre</string>
+    <string name="registraduria_collection_second_name">Segundo nombre (Si aplica)</string>
+    <string name="registraduria_collection_second_name_placeholder">Digita el segundo nombre</string>
+    <string name="registraduria_collection_first_surname">Primer apellido</string>
+    <string name="registraduria_collection_first_surname_placeholder">Digita el primer apellido</string>
+    <string name="registraduria_collection_particle">Partícula (Si aplica)</string>
+    <string name="registraduria_collection_particle_placeholder">Digita la partícula</string>
+    <string name="registraduria_collection_second_surname">Segundo apellido (Si aplica)</string>
+    <string name="registraduria_collection_second_surname_placeholder">Digita el segundo apellido</string>
+    <string name="registraduria_collection_cellphone_number">Número de celular (Si aplica)</string>
+    <string name="registraduria_collection_cellphone_number_placeholder">Digita el número de celular</string>
+    <string name="registraduria_collection_email">Correo electrónico (Si aplica)</string>
+    <string name="registraduria_collection_email_placeholder">Digita el correo electrónico</string>
+    <string name="registraduria_collection_email_format_placeholder">Correo electrónico no válido</string>
+    <string name="registraduria_collection_procedure_value">Valor trámite</string>
+    <string name="registraduria_collection_procedure_value_placeholder">Digita el valor del trámite</string>
+    <string name="registraduria_collection_procedure_value_confirm">Confirmar valor de trámite</string>
+    <string name="registraduria_collection_procedure_value_confirm_placeholder">Confirma el valor del trámite</string>
+    <string name="registraduria_reprint_sale_pin">PIN de venta</string>
+    <string name="registraduria_reprint_sale_pin_placeholder">Digita el PIN de venta</string>
+    <string name="item_menu_registraduria_collection">Recaudo</string>
+    <string name="item_menu_registraduria_reprint">Reimpresión</string>
+    <string name="registraduria_modal_collection_procedure_type">Tipo de trámite:</string>
+    <string name="registraduria_modal_collection_id_number">Número de identificación:</string>
+    <string name="registraduria_modal_collection_username">Nombre de usuario:</string>
+    <string name="registraduria_modal_collection_procedure_value">Valor de trámite:</string>
+    <string name="registraduria_modal_collection_title">Tiquete Recaudo Registraduría</string>
+    <string name="registraduria_modal_collection_modal_success_title">Recaudo exitoso</string>
+    <string name="registraduria_collection_procedure_value_not_match">Los valores no coinciden</string>
+    <string name="registraduria_collection_document_number_not_match">Los números de documento no coinciden</string>
+    <string name="registraduria_modal_reprint_collection_title">Confirmar reimpresión</string>
+    <string name="registraduria_modal_reprint_collection_message">¿Esta seguro de realizar la reimpresión?</string>
+    <string name="registraduria_collection_message_success">Recaudo exitoso</string>
+    <string name="registraduria_collection_message_success_body">El pago se ha realizado exitosamente
+        %1$s
+    </string>
+    <!-- Bill data registraduria -->
+    <string name="registraduria_collection_bill_header">GRUPO EMPRESARIAL EN LINEA S.A.</string>
+    <string name="registraduria_collection_bill_nit">NIT 830111257-3</string>
+    <string name="registraduria_collection_bill_title">REGISTRADURIA NACIONAL DEL ESTADO CIVIL</string>
+    <string name="registraduria_collection_bill_second_title">OTROS CEDULA</string>
+    <string name="registraduria_collection_bill_text_footer">VERIFIQUE QUE EL VALOR REIMPRESO EN EL RECIBO
+        CORRESPONDE AL VALOR ENTREGADO POR USTED.</string>
+    <string name="registraduria_collection_bill_text_original">-ORIGINAL-</string>
+    <string name="registraduria_collection_bill_text_reprint">-REIMPRESION-</string>
+    <string name="error_biometry">No se pudo leer la huella</string>
+    <string name="text_btn_send">&#62; ENVIAR</string>
+    <string name="text_sub_title_collect_betplay">Confirma la siguiente información para realizar el retiro.</string>
+    <string name="betplay_value_collect">Valor retiro</string>
+    <string name="betplay_value_collect_placeholder">Digita el valor a recargar</string>
+    <string name="betplay_generate_pin">PIN generado</string>
+    <string name="betplay_generate_pin_placeholder">Digita el PIN</string>
+    <string name="betplay_generate_pin_error">Digita el número de PIN</string>
+    <string name="betplay_value_collect_error">Digita el valor a retirar</string>
+    <string name="giro_authorization_title_ex_finger_print">Información del tercero</string>
+    <string name="giro_authorization_third_error">Tercero no encontrado</string>
+    <string name="giro_authorization_category_placeholder">Seleccione una categoría</string>
+    <string name="giro_default_state">- PENDIENTE</string>
+    <string name="giro_authorization_msm_document">Debe adjuntar los archivos de soporte</string>
+    <string name="item_giro_authorization_attach_document_title">Solicitudes</string>
+    <string name="giro_authorization_attach_error">El dispositivo no puede adjuntar archivos</string>
+    <string name="third_exonerate_true">El tercero ya esta exonerado</string>
+    <string name="giro_payment_error">Se debe consultar el giro antes de pagar.</string>
+    <string name="giro_dialog_fare_send_others">Otros</string>
+    <string name="giro_msm_reprint">¿Desea imprimir nuevamente?</string>
+
+    <string name="recharge_message_validate_values">El valor de la recarga debe ser mínimo de %1$s y máximo de %2$s</string>
+    <string name="title_ram_raffle">Consultar números disponibles</string>
+    <string name="summary_ram_raffle">Se consulta en rangos de 500 números máximo</string>
+    <string name="item_lottery_number">Número:</string>
+    <string name="item_lottery_number_title">Número</string>
+    <string name="item_lottery_jackpot">Premio Mayor:</string>
+    <string name="item_lottery_serie">Serie:</string>
+    <string name="item_lottery_serie_title">Serie</string>
+    <string name="item_lottery_quantity">Cantidad:</string>
+    <string name="lottery_result_select_date">Seleccione una fecha</string>
+    <string name="lottery_result_select_lottery">Seleccione una lotería</string>
+    <string name="giro_third_enroll">Debe enrolar al tercero</string>
+    <string name="apn_title_page">Por favor Seleccione APN</string>
+    <string name="text_btn_connect">&#62; Conectar</string>
+    <string name="apn_place_holder">Seleccione un APN</string>
+    <string name="apn_title">APN</string>
+    <string name="requires_white_stationery">Recuerda cambiar a papelería blanca</string>
+    <string name="requires_pre_print_stationery">Recuerda cambiar a papeleria pre impresa</string>
+    <string name="range_invalid">Rango no válido</string>
+    <string name="bbva_withdrawal_type_label_error">Debe seleccionar un tipo de retiro</string>
+    <string name="crear_editar_tercero">Crear/Editar tercero</string>
+    <string name="informaci_n_terceros">Información terceros</string>
+    <string name="payu_error_query_reprint">Referencia no encontrada </string>
+    <string name="payu_reprint_success">Reimpresión exitosa</string>
+    <string name="betplay_reprint_message">¿Desea realizar la reimpresion de la ultima transacción?</string>
+    <string name="elderly_pay_error_pointer_finger">No posee huellas registradas</string>
+    <string name="elderly_pay_load_sub_references">Consultando referencias de subsidios</string>
+    <string name="elderly_pay_place_holder_reference">Seleccione una referencia de pago</string>
+    <string name="elderly_pay_error_payment">Se debe seleccionar una referencia de pago</string>
+    <string name="dialog_elderly_id">Número de documento</string>
+    <string name="dialog_elderly_name">Nombre</string>
+    <string name="dialog_elderly_reference">Ref  Subsidio</string>
+    <string name="dialog_elderly_date">Periodo de pago</string>
+    <string name="dialog_elderly_value">Valor</string>
+    <string name="dialog_elderly_title">Tiquete Colombia Mayor</string>
+    <string name="elderly_reprint_title">Re-impresión Colombia Mayor</string>
+    <string name="elderly_reprint_document">Número de documento</string>
+    <string name="elderly_placeholder_document">Digita el número de documento</string>
+    <string name="elderly_reprint_message">¿Realmente desea re-imprimir?</string>
+    <string name="auth_error_parameters">Error al cargar los parametros</string>
+    <string name="pay_bill_error_search">La factura no existe</string>
+    <string name="pay_bills_value_pay_error">Valor a pagar no válido</string>
+    <string name="current_box_not_sale">No hay venta registrada</string>
+    <string name="msm_time_out">Tiempo de espera para la transacción agotado</string>
+
+
+</resources>

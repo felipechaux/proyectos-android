@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="co.com.pagatodo.core.views.bbva.BbvaWithdrawalAndBalanceFragment">
+
+    <!-- main layout -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <!-- container layout -->
+        <LinearLayout
+                android:id="@+id/layoutForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <!-- Title layout -->
+            <TextView
+                    style="@style/Text.Title5.Margin"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:text="@string/bbva_withdrawal_title" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="@dimen/dimen_450">
+
+
+                <!-- withdrawal type form layout -->
+                <LinearLayout
+                        android:id="@+id/layoutWithdrawalType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <!-- category -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_category_label" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:background="@drawable/txt_background_active"
+                                android:padding="2dp">
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                    android:id="@+id/spinnerWithdrawalCategory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dimen_42"
+                                    android:hint="@string/bbva_withdrawal_category_placeholder"
+                                    app:ms_arrow_tint="@color/colorRedButton"
+                                    app:ms_padding_bottom="@dimen/zero"
+                                    app:ms_padding_left="@dimen/dimen_8"
+                                    app:ms_padding_right="@dimen/dimen_8"
+                                    app:ms_padding_top="@dimen/zero" />
+
+                        </LinearLayout>
+
+                        <TextView
+                                android:id="@+id/labelErrorWithdrawalCategory"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_category_placeholder"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end category -->
+
+                    <!-- withdrawal type -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_type_label" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:background="@drawable/txt_background_active"
+                                android:padding="2dp">
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                    android:id="@+id/spinnerWithdrawalType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dimen_42"
+                                    android:hint="@string/bbva_withdrawal_type_placeholder"
+                                    app:ms_arrow_tint="@color/colorRedButton"
+                                    app:ms_padding_bottom="@dimen/zero"
+                                    app:ms_padding_left="@dimen/dimen_8"
+                                    app:ms_padding_right="@dimen/dimen_8"
+                                    app:ms_padding_top="@dimen/zero" />
+
+                        </LinearLayout>
+
+                        <TextView
+                                android:id="@+id/labelErrorWithdrawalType"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_type_placeholder"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end withdrawal type -->
+
+                </LinearLayout>
+                <!-- end withdrawal type form layout -->
+
+                <!-- Divider -->
+                <View
+                        android:id="@+id/divider"
+                        style="@style/Divider"
+                        android:visibility="gone"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+                <!-- no debit card layout -->
+                <LinearLayout
+                        android:id="@+id/noDebitCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                    <!-- no debit document number -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_document_number_label" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaNoDebitDocumentNumber"
+                                style="@style/StyleEditText"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_8"
+                                android:layout_weight="1"
+                                android:hint="@string/bbva_withdrawal_no_debit_document_number_placeholder"
+                                android:inputType="number"
+                                android:maxLength="16"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16"
+                                tools:ignore="Autofill" />
+
+                        <TextView
+                                android:id="@+id/labelErrorNoDebitDocumentNumber"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_document_number_placeholder"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end no debit document number -->
+
+                    <!-- no debit document type -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_account_type_label" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:background="@drawable/txt_background_active"
+                                android:padding="2dp">
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                    android:id="@+id/spinnerNoDebitAccountType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dimen_42"
+                                    android:hint="@string/bbva_withdrawal_no_debit_account_type_placeholder"
+                                    app:ms_arrow_tint="@color/colorRedButton"
+                                    app:ms_padding_bottom="@dimen/zero"
+                                    app:ms_padding_left="@dimen/dimen_8"
+                                    app:ms_padding_right="@dimen/dimen_8"
+                                    app:ms_padding_top="@dimen/zero" />
+
+                        </LinearLayout>
+
+                        <TextView
+                                android:id="@+id/labelErrorNoDebitAccountType"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_account_type_placeholder"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end no debit document type -->
+
+                    <!-- no debit withdrawal value -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_label" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaNoDebitWithdrawalValue"
+                                style="@style/StyleEditText"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_8"
+                                android:layout_weight="1"
+                                android:hint="@string/bbva_withdrawal_no_debit_value_placeholder"
+                                android:inputType="number"
+                                android:maxLength="25"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16"
+                                tools:ignore="Autofill" />
+
+                        <TextView
+                                android:id="@+id/labelErrorNoDebitWithdrawalValue"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_placeholder"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end no debit withdrawal value -->
+
+                    <!-- no debit withdrawal value confirm -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_confirm_label" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaNoDebitWithdrawalValueConfirm"
+                                style="@style/StyleEditText"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_8"
+                                android:layout_weight="1"
+                                android:hint="@string/bbva_withdrawal_no_debit_value_confirm_placeholder"
+                                android:inputType="number"
+                                android:maxLength="25"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16"
+                                tools:ignore="Autofill" />
+
+                        <TextView
+                                android:id="@+id/labelErrorNoDebitWithdrawalValueConfirm"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_confirm_placeholder"
+                                android:visibility="gone" />
+
+                        <TextView
+                                android:id="@+id/labelErrorNoDebitWithdrawalValueConfirmTwo"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_confirm_no_coincidence"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end no debit withdrawal value confirm -->
+
+                </LinearLayout>
+                <!-- end no debit card layout -->
+
+                <!-- with debit card -->
+                <LinearLayout
+                        android:id="@+id/withDebitCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                    <!-- no debit withdrawal value -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_label" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaWithDebitWithdrawalValue"
+                                style="@style/StyleEditText"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_8"
+                                android:layout_weight="1"
+                                android:hint="@string/bbva_withdrawal_no_debit_value_placeholder"
+                                android:inputType="number"
+                                android:maxLength="25"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16"
+                                tools:ignore="Autofill" />
+
+                        <TextView
+                                android:id="@+id/labelErrorWithDebitWithdrawalValue"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_placeholder"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end with debit withdrawal value -->
+
+                    <!-- no debit withdrawal value confirm -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                style="@style/Text.Label"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_confirm_label" />
+
+                        <EditText
+                                android:id="@+id/txtBbvaWithDebitWithdrawalValueConfirm"
+                                style="@style/StyleEditText"
+                                android:layout_marginStart="@dimen/dimen_16"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_8"
+                                android:layout_weight="1"
+                                android:hint="@string/bbva_withdrawal_no_debit_value_confirm_placeholder"
+                                android:inputType="number"
+                                android:maxLength="25"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:paddingEnd="@dimen/dimen_16"
+                                tools:ignore="Autofill" />
+
+                        <TextView
+                                android:id="@+id/labelErrorWithDebitWithdrawalValueConfirm"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_confirm_placeholder"
+                                android:visibility="gone" />
+
+                        <TextView
+                                android:id="@+id/labelErrorWithDebitWithdrawalValueConfirmTwo"
+                                style="@style/Text.Error.Label"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/dimen_8"
+                                android:layout_marginEnd="@dimen/dimen_16"
+                                android:text="@string/bbva_withdrawal_no_debit_value_confirm_no_coincidence"
+                                android:visibility="gone" />
+
+                    </LinearLayout>
+                    <!-- end with debit withdrawal value confirm -->
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"></LinearLayout>
+
+                </LinearLayout>
+                <!-- end with debit card layout -->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_36"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/dimen_16"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:weightSum="1">
+
+                <Button
+                        android:id="@+id/btnWithdrawalBack"
+                        style="@style/StyleCancelButton"
+                        android:layout_width="@dimen/dimen_200"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_8"
+                        android:text="@string/text_btn_back" />
+
+                <Button
+                        android:id="@+id/btnWithdrawalPay"
+                        style="@style/StyleConfirmButton"
+                        android:layout_width="@dimen/dimen_200"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        android:text="@string/text_btn_pay_2" />
+
+            </LinearLayout>
+
+        </LinearLayout> <!-- end container layout -->
+
+    </LinearLayout> <!-- end main layout -->
+
+</androidx.core.widget.NestedScrollView>

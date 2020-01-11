@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.com.pagatodo.core.views.wallet.WalletActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mainToolbar"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_marginTop="@dimen/dimen_start_device"
+        android:layout_marginStart="@dimen/dimen_start_device"
+        android:id="@+id/viewWalletForm">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_weight=".35"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/text_advisor_code"
+                style="@style/Text.Label"/>
+            <EditText
+                android:id="@+id/tvWalletNumberSeller"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:hint="@string/placeholder_number"
+                tools:ignore="Autofill"
+                android:enabled="false"
+                style="@style/EditText.Field.Phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_weight=".35"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:text="@string/text_check_date"
+                style="@style/Text.Label"/>
+            <TextView
+                android:id="@+id/tvWalletDate"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:drawableEnd="@drawable/ic_calendar_red"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center|start"
+                android:hint="@string/placeholder_check_date"
+                tools:ignore="Autofill"
+                style="@style/StyleEditText"/>
+            <TextView
+                android:id="@+id/labelErrorDateFilter"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:text="@string/message_error_date_empty_recharge"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                style="@style/Text.Error.Label"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layoutButtons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="@dimen/dimen_500"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_50"
+        layout="@layout/layout_buttons_back_next"/>
+</RelativeLayout>

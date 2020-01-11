@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/tvVersionNumber"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="V 1.0"
+              android:gravity="center"
+              android:layout_marginRight="@dimen/dimen_16"/>
+
+    <TextView android:id="@+id/tvTagCurrentStub"
+              android:textSize="18sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="COLILLA: "/>
+
+    <TextView android:id="@+id/tvCurrentStub"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              tools:text="DJLG   0003579"/>
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardResult"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dimen_4"
+        app:cardElevation="@dimen/dimen_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8">
+            <TextView
+                android:id="@+id/lblName"
+                style="@style/Text.Caption1"
+                android:text="@string/text_label_baloto" />
+            <TextView
+                android:id="@+id/lblTagNumber"
+                style="@style/Text.Caption3.colorGrayBlue"
+                android:layout_below="@+id/lblName"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:text="@string/text_number" />
+            <TextView
+                android:id="@+id/lblNumber"
+                style="@style/Text.Caption1"
+                android:layout_below="@+id/lblTagNumber"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:text="@string/app_name" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/lblName"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/Text.Caption3.colorGrayBlue"
+                            android:layout_width="wrap_content"
+                            android:text="@string/text_label_date" />
+                        <TextView
+                            android:id="@+id/lblDate"
+                            style="@style/Text.Caption2"
+                            android:textSize="@dimen/dimen_12"
+                            android:layout_width="wrap_content"
+                            android:text="@string/app_name" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/Text.Caption3.colorGrayBlue"
+                            android:layout_width="wrap_content"
+                            android:text="@string/text_label_draw" />
+                        <TextView
+                            android:id="@+id/lblDraw"
+                            style="@style/Text.Caption2"
+                            android:textSize="@dimen/dimen_12"
+                            android:layout_width="wrap_content"
+                            android:text="@string/app_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardResultRevenge"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dimen_4"
+        app:cardElevation="@dimen/dimen_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8">
+            <TextView
+                android:id="@+id/lblNameRevenge"
+                style="@style/Text.Caption1"
+                android:text="@string/text_label_baloto" />
+            <TextView
+                android:id="@+id/lblTagNumberRevenge"
+                style="@style/Text.Caption3.colorGrayBlue"
+                android:layout_below="@+id/lblNameRevenge"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_width="wrap_content"
+                android:text="@string/text_number" />
+            <TextView
+                android:id="@+id/lblNumberRevenge"
+                style="@style/Text.Caption1"
+                android:layout_below="@+id/lblTagNumberRevenge"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:text="@string/app_name" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/lblNameRevenge"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/Text.Caption3.colorGrayBlue"
+                            android:layout_width="wrap_content"
+                            android:text="@string/text_label_date" />
+                        <TextView
+                            android:id="@+id/lblDateRevenge"
+                            style="@style/Text.Caption2"
+                            android:textSize="@dimen/dimen_12"
+                            android:layout_width="wrap_content"
+                            android:text="@string/app_name" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/Text.Caption3.colorGrayBlue"
+                            android:layout_width="wrap_content"
+                            android:text="@string/text_label_draw" />
+                        <TextView
+                            android:id="@+id/lblDrawRevenge"
+                            style="@style/Text.Caption2"
+                            android:textSize="@dimen/dimen_12"
+                            android:layout_width="wrap_content"
+                            android:text="@string/app_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

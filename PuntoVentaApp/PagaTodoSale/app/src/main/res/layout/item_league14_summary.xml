@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dimen_16"
+    android:paddingEnd="@dimen/dimen_16"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/containerSummaryLeague14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/containerTitleSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:paddingStart="@dimen/dimen_2"
+            android:paddingEnd="@dimen/dimen_2"
+            android:paddingTop="@dimen/dimen_2"
+            android:paddingBottom="@dimen/dimen_4"
+            android:background="@drawable/rounded_background_gray_dark_2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="@dimen/font_13"
+                android:textColor="@color/colorWhite"
+                android:text="#"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="center"
+                android:textSize="@dimen/font_13"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="true"
+                android:text="@string/text_local"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_13"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:text="@string/text_vs"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:textSize="@dimen/font_13"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:text="@string/text_visitor"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:textSize="@dimen/font_13"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:text="@string/text_win"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/containerSummaryAdapter"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:id="@+id/titleNumberSummary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="@dimen/font_14"
+                android:background="@drawable/rounded_background_gray_ligth_3"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/dimen_2"
+                android:padding="@dimen/dimen_4"
+                android:text=""/>
+
+            <TextView android:id="@+id/titleLocalNameSummary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:gravity="center"
+                android:textSize="@dimen/font_14"
+                android:background="@drawable/rounded_background_gray_ligth_3"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/dimen_2"
+                android:padding="@dimen/dimen_4"
+                android:maxLines="2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_14"
+                android:background="@drawable/rounded_background_gray_ligth_3"
+                android:textColor="@color/colorGrayDark2"
+                android:layout_margin="@dimen/dimen_2"
+                android:padding="@dimen/dimen_4"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:text="@string/text_vs"/>
+
+            <TextView android:id="@+id/titleVisitantNameSummary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:gravity="center"
+                android:textSize="@dimen/font_14"
+                android:background="@drawable/rounded_background_gray_ligth_3"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/dimen_2"
+                android:padding="@dimen/dimen_4"
+                android:singleLine="false"
+                android:maxLines="2"/>
+
+            <TextView android:id="@+id/titleWinSummary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="@dimen/font_14"
+                android:background="@drawable/rounded_background_red_button"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/dimen_2"
+                android:padding="@dimen/dimen_4"
+                android:text="@string/text_win_local"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

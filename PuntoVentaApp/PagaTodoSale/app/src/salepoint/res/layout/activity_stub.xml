@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/dimen_24"
+    android:layout_marginEnd="@dimen/dimen_24"
+    tools:context=".views.stub.StubActivity">
+
+    <TextView
+        android:id="@+id/tvTitleInput"
+        android:text="@string/placeholder_stub"
+        style="@style/Text.Title5.Margin"
+        android:layout_marginStart="@dimen/zero"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layoutForm"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/etSerie1"
+            android:hint="@string/serie_one"
+            tools:ignore="Autofill"
+            android:layout_weight=".5"
+            android:layout_width="@dimen/zero"
+            android:digits="@string/digits_words_and_numbers_uppercase"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:inputType="textNoSuggestions|text"
+            android:imeOptions="actionNext"
+            style="@style/StyleEditText"/>
+        <co.com.pagatodo.core.util.EditTextNoCopyPaste
+            android:id="@+id/etSerie2"
+            android:hint="@string/serie_two"
+            tools:ignore="Autofill"
+            android:layout_weight=".5"
+            android:layout_width="@dimen/zero"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:imeOptions="actionDone"
+            style="@style/EditText.Field.Phone"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvStubs"
+            tools:listitem="@layout/item_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+    app:layout_constraintTop_toBottomOf="@id/layoutForm"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_buttons_back_next"
+    app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

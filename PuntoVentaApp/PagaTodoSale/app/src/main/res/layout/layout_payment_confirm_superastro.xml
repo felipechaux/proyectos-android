@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadeScrollbars="false"
+    android:padding="@dimen/dimen_24">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/text_label_draw"
+                style="@style/Text.Subtitle.Ticket" />
+            <TextView
+                android:id="@+id/lblLotteries"
+                style="@style/Text.Content.Ticket" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItemsSuperAstroConfirm"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/text_stub"
+                style="@style/Text.Subtitle.Ticket" />
+            <TextView
+                android:id="@+id/lblStuf"
+                style="@style/Text.Content.Ticket"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/text_bet"
+                style="@style/Text.Subtitle.Ticket" />
+            <TextView
+                android:id="@+id/lblBet"
+                style="@style/Text.Content.Ticket"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/text_iva_equal"
+                style="@style/Text.Subtitle.Ticket" />
+            <TextView
+                android:id="@+id/lblIva"
+                style="@style/Text.Content.Ticket"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/text_total_pay"
+                style="@style/Text.Subtitle.Ticket" />
+            <TextView
+                android:id="@+id/lblTotalValue"
+                style="@style/Text.Content.Ticket" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

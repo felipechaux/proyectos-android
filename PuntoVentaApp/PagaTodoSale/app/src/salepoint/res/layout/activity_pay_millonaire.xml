@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="co.com.pagatodo.core.views.paymillionaire.PayMillionaireActivity">
+
+    <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/mainToolbar"></include>
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                           android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/rootLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_8"
+                    android:background="@color/colorGrayLight"
+                    android:weightSum="3">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                    <LinearLayout
+                            android:id="@+id/viewSummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <include layout="@layout/layout_chance_summary"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent">
+                        </include>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:background="@color/colorGraySilver"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_4"
+                        android:gravity="center_vertical"
+                        android:weightSum="3">
+                    <TextView
+                            android:id="@+id/tvTagLottery"
+                            android:text="@string/placeholder_lotteries_of_day"
+                            style="@style/Text.Label"
+                            android:layout_marginStart="@dimen/dimen_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="2"/>
+
+                    <Button
+                            android:visibility="gone"
+                            android:id="@+id/btnClear"
+                            style="@style/StyleCancelButton"
+                            android:layout_width="@dimen/dimen_100"
+                            android:layout_height="@dimen/dimen_30"
+                            android:layout_marginStart="@dimen/dimen_16"
+                            android:layout_marginEnd="@dimen/dimen_8"
+                            android:text="@string/text_btn_clear" />
+
+                    <LinearLayout android:id="@+id/viewRandom"
+                                  android:orientation="horizontal"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="@dimen/dimen_30"
+                                  android:gravity="center"
+                                  android:layout_weight="1"
+                                  android:weightSum="3">
+
+                        <LinearLayout android:id="@+id/layoutRandom3"
+                                      android:orientation="horizontal"
+                                      android:gravity="center"
+                                      android:layout_width="@dimen/zero"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight="1">
+
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/layoutRandom4"
+                                      android:orientation="horizontal"
+                                      android:gravity="center"
+                                      android:layout_width="@dimen/zero"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight="1">
+
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/layoutRandom5"
+                                      android:orientation="horizontal"
+                                      android:gravity="center"
+                                      android:layout_width="@dimen/zero"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1">
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/text_aleatorio"
+                                      style="@style/Text.Label"/>
+
+                            <ImageView android:layout_width="@dimen/dimen_30"
+                                       android:layout_height="@dimen/dimen_30"
+                                       android:layout_marginStart="@dimen/dimen_8"
+                                       android:src="@drawable/ic_random_5"
+                                       android:scaleType="fitCenter"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                            android:id="@+id/btnClearSP"
+                            style="@style/StyleCancelButton"
+                            android:layout_width="@dimen/dimen_100"
+                            android:layout_height="@dimen/dimen_30"
+                            android:layout_marginStart="@dimen/dimen_16"
+                            android:layout_marginEnd="@dimen/dimen_8"
+                            android:text="@string/text_btn_clear" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                    <co.com.pagatodo.core.views.components.lottery.LotteryComponentView
+                            android:id="@+id/lotteryComponent"
+                            app:columnNumber="2"
+                            app:lotteryLoadType="PAGAMILLONARIO"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:layout_marginLeft="@dimen/dimen_50"
+                            android:layout_marginRight="@dimen/dimen_16"
+                            android:layout_weight="2">
+                    </co.com.pagatodo.core.views.components.lottery.LotteryComponentView>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:layout_marginEnd="@dimen/dimen_24"
+                            android:layout_weight="1"
+                            android:weightSum="3">
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2">
+
+                            <TextView
+                                    android:id="@+id/tvModality"
+                                    android:text="Modalidad"
+                                    style="@style/Text.Title5"
+                                    android:layout_marginBottom="@dimen/dimen_16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvModalities"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/dimen_16">
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                            <TextView
+                                    android:id="@+id/tvTagGames"
+                                    android:text="@string/text_games"
+                                    style="@style/Text.Title5"
+                                    android:layout_marginStart="@dimen/dimen_16"
+                                    android:layout_marginBottom="@dimen/dimen_16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvBet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/dimen_16"
+                                    android:layout_marginLeft="@dimen/dimen_16"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="@dimen/dimen_500"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dimen_24"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="@dimen/dimen_24"
+                        android:gravity="bottom"
+                        android:layout_weight="1">
+
+                    <include layout="@layout/layout_buttons_back_next"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

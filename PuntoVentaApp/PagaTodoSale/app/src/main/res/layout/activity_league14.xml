@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="co.com.pagatodo.core.views.sporting.league14.League14Activity">
+
+    <include layout="@layout/main_toolbar"
+        android:id="@+id/mainToolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollLeague"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout android:id="@+id/containerL14Games"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <include layout="@layout/layout_header_sportings"
+                             android:id="@+id/layoutHeader"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <include layout="@layout/layout_subheader_megagoals"
+                             android:id="@+id/layoutSubHeader"
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/dimen_50"
+                             android:layout_marginBottom="@dimen/dimen_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorGrayDark2"
+                        android:textSize="@dimen/font_20"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginBottom="@dimen/dimen_24"
+                        android:text="@string/title_game"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvLeague14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/containerL14Summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_confirm_game"
+                        android:layout_marginTop="@dimen/dimen_24"
+                        android:layout_marginBottom="@dimen/dimen_24"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        style="@style/Text.Title5"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvLeague14Summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/layout_buttons_back_next"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
