@@ -1,63 +1,63 @@
 
 public class AppNetflix {
 
-	private String titulo, genero, creador;
+    private String titulo, genero, creador;
 
-	public boolean visto;
+    public boolean visto;
 
-	private String duracion;
+    private String duracion;
 
-	public AppNetflix() {
-		this.genero = null;
-		this.visto = false;
-		this.duracion = "0:0";
-	}
-	
-
-	public AppNetflix(String titulo, String creador) {
-		this.titulo = titulo;
-		this.creador = creador;
-	}
-
-	public AppNetflix(String titulo, String genero, String creador, String duracion) {
-		this.titulo = titulo;
-		this.genero = genero;
-		this.creador = creador;
-		this.duracion = duracion;
-	}
+    public AppNetflix() {
+        this.genero = null;
+        this.visto = false;
+        this.duracion = "0:0";
+    }
 
 
-	public String getTitulo() {
-		return titulo;
-	}
+    public AppNetflix(String titulo, String creador) {
+        this.titulo = titulo;
+        this.creador = creador;
+    }
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
+    public AppNetflix(String titulo, String genero, String creador, String duracion) {
+        this.titulo = titulo;
+        this.genero = genero;
+        this.creador = creador;
+        this.duracion = duracion;
+    }
 
-	public String getGenero() {
-		return genero;
-	}
 
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
+    public String getTitulo() {
+        return titulo;
+    }
 
-	public String getCreador() {
-		return creador;
-	}
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
-	public void setCreador(String creador) {
-		this.creador = creador;
-	}
+    public String getGenero() {
+        return genero;
+    }
 
-	public String getDuracion() {
-		return duracion;
-	}
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
 
-	public void setDuracion(String duracion) {
-		this.duracion = duracion;
-	}
+    public String getCreador() {
+        return creador;
+    }
 
-	
+    public void setCreador(String creador) {
+        this.creador = creador;
+    }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+
+
 }

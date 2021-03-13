@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="179aff12-a025-4e1e-8a60-11c33883a8fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/bin/EjecutarNetflix.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaAndroid/bin/EjecutarNetflix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/bin/Pelicula.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaAndroid/bin/Pelicula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/bin/Serie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaAndroid/bin/Serie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/src/AppNetflix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaAndroid/src/AppNetflix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/src/EjecutarNetflix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaAndroid/src/EjecutarNetflix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/src/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaAndroid/src/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/src/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaAndroid/src/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticaAndroid/src/TaskArrays.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pflQTTPvu9GcH9hf0ROSvtyX2F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="179aff12-a025-4e1e-8a60-11c33883a8fb" name="Default Changelist" comment="" />
+      <created>1615582008069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615582008069</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="412" y="179" width="782" height="490" key="find.popup" timestamp="1615613584794">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state x="412" y="179" width="782" height="490" key="find.popup/0.25.1440.805@0.25.1440.805" timestamp="1615613584794" />
+    <state x="385" y="157" width="670" height="673" key="search.everywhere.popup" timestamp="1615613573334">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state x="385" y="157" width="670" height="673" key="search.everywhere.popup/0.25.1440.805@0.25.1440.805" timestamp="1615613573334" />
+    <state x="385" y="158" width="670" height="676" key="search.everywhere.popup/0.25.1440.809@0.25.1440.809" timestamp="1615582347767" />
+  </component>
+</project>
